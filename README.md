@@ -1,7 +1,10 @@
 # HubIS
 Contôlez vos systèmes d'irrigation gravitaire à distance ! Le projet HubIS permet le developpement de trois capteurs. 
 - Le CapteurFlowter est un petit flotteur qui envoie une information lorsque son état est changé (Position haute / Position basse)
-- Le WatarSensor est un capteur capacitif 
+- Le WatarSensor est un capteur capacitif qui permet de connaitre le taux d'humidité d'un sol. Ce capteur peut être plaçé en bout de champ et peut permettre d'actionner une martelière pour arrêter l'irrigation d'une zone. dans sa version simple, il renvoie simplement la valeur d'humidité du sol
+- La Martelière connectée permet d'activer un petit moteur qui fait tomber une trappe, résultant l'arrêt de l'irrigation d'une parcelle.
+
+# Liste du Matériel
 Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
 
 Liste du matériel commun aux trois capteurs de HubIS : 
