@@ -3,7 +3,10 @@ Contôlez vos systèmes d'irrigation gravitaire à distance ! Capteurs de detect
 
 ## CapteurFlowter
 Liste du matériel nécessaire au Capteur Flowter : 
-- Un
+- Un micro-processeur Arduino pro mini 3.3V
+- Une carte de communication LoRa SX1276
+- Un capteur capacitif
+-- 
 
 ## WatArSensor
 
