@@ -20,13 +20,13 @@ Liste du matériel commun aux trois capteurs de HubIS :
   - Une [bande de connecteurs](https://fr.aliexpress.com/item/32651418137.html?gatewayAdapt=glo2fra&spm=a2g0o.order_list.0.0.21ef5e5bOSVfyT)
 - Une pile [18650](https://fr.aliexpress.com/item/32807032859.html?spm=a2g0o.productlist.0.0.2af63abbDiq71g&algo_pvid=2e3a3c09-991c-4c4f-8f64-7eb89c567085&algo_exp_id=2e3a3c09-991c-4c4f-8f64-7eb89c567085-0&pdp_ext_f=%7B%22sku_id%22%3A%2265139771902%22%7D&pdp_pi=-1%3B4.89%3B-1%3B-1%40salePrice%3BEUR%3Bsearch-mainSearch) et son [support](https://fr.aliexpress.com/item/1005001707889794.html?gatewayAdapt=glo2fra&spm=a2g0o.order_list.0.0.21ef5e5blPeHAN)
 
-## CapteurFlowter
+## Capteur Flowter
 Liste du matériel supplémentaire pour le CapteurFlowteur : 
 
 - Un [capteur de niveau d'eau](https://fr.aliexpress.com/item/32988554390.html?spm=a2g0o.productlist.0.0.39392ec7R3YW7m&algo_pvid=6bbe5437-b904-494b-9c8b-3d9ff1c7bcac&algo_exp_id=6bbe5437-b904-494b-9c8b-3d9ff1c7bcac-0&pdp_ext_f=%7B%22sku_id%22%3A%2266845333367%22%7D&pdp_pi=-1%3B0.84%3B-1%3B-1%40salePrice%3BEUR%3Bsearch-mainSearch)
 - des [cables M-F](https://fr.aliexpress.com/item/32951870747.html?spm=a2g0o.productlist.0.0.74cf7188db3v8I&algo_pvid=0ce807a8-74d8-4064-bd64-870e37476d28&algo_exp_id=0ce807a8-74d8-4064-bd64-870e37476d28-5&pdp_ext_f=%7B%22sku_id%22%3A%2266291478012%22%7D&pdp_pi=-1%3B1.0%3B-1%3B-1%40salePrice%3BEUR%3Bsearch-mainSearch) de la taille voulue.
 
-## WatArSensor
+## WatAr Sensor
 Liste du matériel supplémentaire pour le WatAr Sensor : 
 
 - Un [capteur capacitif](https://fr.aliexpress.com/item/32908693444.html?spm=a2g0o.productlist.0.0.68065411IokKyO&algo_pvid=4752ace8-302a-4c14-967f-84619b11e580&algo_exp_id=4752ace8-302a-4c14-967f-84619b11e580-2&pdp_ext_f=%7B%22sku_id%22%3A%2210000001112702586%22%7D&pdp_pi=-1%3B0.75%3B-1%3B-1%40salePrice%3BEUR%3Bsearch-mainSearch)
