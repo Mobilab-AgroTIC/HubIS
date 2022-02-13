@@ -2,1419 +2,17 @@
     {
         "id": "c0158c6b.68ffa",
         "type": "tab",
-        "label": "HubIS",
+        "label": "Domaine du Merle",
         "disabled": false,
         "info": ""
-    },
-    {
-        "id": "ce6f6a0bdd3686d4",
-        "type": "tab",
-        "label": "Mobilab",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "7ef4c66144bf5d29",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "75830fda.c4db3",
-        "type": "tab",
-        "label": "The Things Node",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "c87222d8.d2c36",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "eu1.cloud.thethings.network",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "willMsg": {},
-        "sessionExpiry": ""
-    },
-    {
-        "id": "ecbc3bc2.851888",
-        "type": "ui_tab",
-        "name": "Domaine du Merle",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "ba6574e9.709d78",
-        "type": "ui_group",
-        "name": "Capteurs Flowters",
-        "tab": "ecbc3bc2.851888",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "43bde6b663d057d5",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-dark",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#097479",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#0eb8c0",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#eeeeee",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#097479",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Mobilab",
-            "hideToolbar": "false",
-            "allowSwipe": "true",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "384e8f588a7f6af6",
-        "type": "ui_group",
-        "name": "Capteur temperature",
-        "tab": "0aefb2d0146297ab",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "0aefb2d0146297ab",
-        "type": "ui_tab",
-        "name": "Mobilab",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "dfb4a60f.d788f8",
-        "type": "ui_group",
-        "name": "Data Export",
-        "tab": "48418b79.0f5834",
-        "order": 1,
-        "disp": true,
-        "width": "12"
-    },
-    {
-        "id": "48418b79.0f5834",
-        "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "dashboard",
-        "order": 1
-    },
-    {
-        "id": "d5f32942b23e3e3f",
-        "type": "ui_group",
-        "name": "WatAr Sensors",
-        "tab": "ecbc3bc2.851888",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "ea9fd3ca.5136c",
-        "type": "mqtt-broker",
-        "name": "my-app",
-        "broker": "eu.thethings.network",
-        "port": "8883",
-        "tls": "283a670c.e20a28",
-        "clientid": "",
-        "usetls": true,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "283a670c.e20a28",
-        "type": "tls-config",
-        "name": "Default",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": true
-    },
-    {
-        "id": "82521e89271ab1e2",
-        "type": "mqtt in",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "DHT22",
-        "topic": "v3/agrotic@ttn/devices/eui-0004a30b00e8f1d8/up",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c87222d8.d2c36",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 110,
-        "y": 100,
-        "wires": [
-            [
-                "435a769a5ac71ce0"
-            ]
-        ]
-    },
-    {
-        "id": "435a769a5ac71ce0",
-        "type": "json",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 190,
-        "y": 180,
-        "wires": [
-            [
-                "cb6e93b256ab10f8"
-            ]
-        ]
-    },
-    {
-        "id": "adde145ab53f060b",
-        "type": "function",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "Decoded.Temp",
-        "func": "var temp = {}\ntemp.payload = (256*msg.payload[0]+msg.payload[1])/100;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 100,
-        "wires": [
-            [
-                "d37c686e5c012132",
-                "e792fa89b7cda3ec",
-                "994cf6a34ce7d0e9",
-                "ac082a0b15e7b1a6"
-            ]
-        ]
-    },
-    {
-        "id": "d37c686e5c012132",
-        "type": "debug",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "e792fa89b7cda3ec",
-        "type": "ui_chart",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "group": "384e8f588a7f6af6",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Temperature :",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "8",
-        "ymax": "40",
-        "removeOlder": "1",
-        "removeOlderPoints": "1000",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 660,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "994cf6a34ce7d0e9",
-        "type": "ui_text",
-        "z": "ce6f6a0bdd3686d4",
-        "group": "384e8f588a7f6af6",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Temperature : ",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 660,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "cb6e93b256ab10f8",
-        "type": "function",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 100,
-        "wires": [
-            [
-                "adde145ab53f060b",
-                "a71bc8dc3b157a6c"
-            ]
-        ]
-    },
-    {
-        "id": "a71bc8dc3b157a6c",
-        "type": "function",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "Decoded.humid",
-        "func": "var temp = {}\ntemp.payload = (256*msg.payload[2]+msg.payload[3])/100;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 280,
-        "wires": [
-            [
-                "cea63aef38bb8c83",
-                "4eeddf18c7f54f67",
-                "f9eaca1a5f437b3a"
-            ]
-        ]
-    },
-    {
-        "id": "cea63aef38bb8c83",
-        "type": "debug",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "4eeddf18c7f54f67",
-        "type": "file",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "filename": "/home/pi/humid.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 670,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ac082a0b15e7b1a6",
-        "type": "file",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "filename": "/home/pi/temp.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 670,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f9eaca1a5f437b3a",
-        "type": "ui_gauge",
-        "z": "ce6f6a0bdd3686d4",
-        "name": "",
-        "group": "384e8f588a7f6af6",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Humidité",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "50",
-        "seg2": "75",
-        "x": 640,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "8a1c6129f56a06ee",
-        "type": "mqtt in",
-        "z": "c0158c6b.68ffa",
-        "name": "WatAr_sensor_1",
-        "topic": "v3/hubis@ttn/devices/eui-0004a30b00eb9965/up",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c87222d8.d2c36",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 2040,
-        "y": 360,
-        "wires": [
-            [
-                "e9feeede513215a6"
-            ]
-        ]
-    },
-    {
-        "id": "e9feeede513215a6",
-        "type": "json",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2190,
-        "y": 360,
-        "wires": [
-            [
-                "8fdc79d86473b007",
-                "cf64fbf8da17b766",
-                "ecc77e2d81537c07"
-            ]
-        ]
-    },
-    {
-        "id": "8fdc79d86473b007",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2320,
-        "y": 360,
-        "wires": [
-            [
-                "ecc77e2d81537c07",
-                "392a0948c6264edd",
-                "cf64fbf8da17b766"
-            ]
-        ]
-    },
-    {
-        "id": "cf64fbf8da17b766",
-        "type": "debug",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2710,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "ecc77e2d81537c07",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/WhataSensor_1.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 2780,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "392a0948c6264edd",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Decoded.payload",
-        "func": "var temp = {}\ntemp.payload = 100 - ((256*msg.payload[0]+msg.payload[1])/1024*100);\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2490,
-        "y": 360,
-        "wires": [
-            [
-                "ecc77e2d81537c07",
-                "cf64fbf8da17b766",
-                "86477497f58f97bd",
-                "63cabedf54e7a6e4"
-            ]
-        ]
-    },
-    {
-        "id": "86477497f58f97bd",
-        "type": "ui_chart",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "group": "d5f32942b23e3e3f",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "WatAr Sensor 1",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "56",
-        "ymax": "60",
-        "removeOlder": "10",
-        "removeOlderPoints": "",
-        "removeOlderUnit": "604800",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 2720,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "63cabedf54e7a6e4",
-        "type": "ui_gauge",
-        "z": "c0158c6b.68ffa",
-        "name": "Gauge_WhataSensor 1",
-        "group": "d5f32942b23e3e3f",
-        "order": 1,
-        "width": "3",
-        "height": "2",
-        "gtype": "gage",
-        "title": "WatAr Sensor 1",
-        "label": "%",
-        "format": "{{value}}",
-        "min": "30",
-        "max": "80",
-        "colors": [
-            "#800000",
-            "#e6e600",
-            "#279f24"
-        ],
-        "seg1": "40",
-        "seg2": "60",
-        "x": 2750,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "c03136267d8222a9",
-        "type": "mqtt in",
-        "z": "c0158c6b.68ffa",
-        "name": "Capteur_flowter_2",
-        "topic": "v3/hubis@ttn/devices/eui-0004a30b00ebb1ec/up",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c87222d8.d2c36",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 110,
-        "y": 460,
-        "wires": [
-            [
-                "4491112525f5c25c",
-                "65323c356c8a73a1"
-            ]
-        ]
-    },
-    {
-        "id": "4491112525f5c25c",
-        "type": "json",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 270,
-        "y": 460,
-        "wires": [
-            [
-                "c7515e3c2d0fb0e9",
-                "7a9313d91329996e",
-                "b449616bcbd0eb7c",
-                "bff16c505e3d8cb7"
-            ]
-        ]
-    },
-    {
-        "id": "c7515e3c2d0fb0e9",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes[0];\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 460,
-        "wires": [
-            [
-                "7a9313d91329996e",
-                "b449616bcbd0eb7c",
-                "bbe98114659a6e65"
-            ]
-        ]
-    },
-    {
-        "id": "7a9313d91329996e",
-        "type": "debug",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "b449616bcbd0eb7c",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/CF2.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 820,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "28b279ef58d9139b",
-        "type": "ui_chart",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "group": "ba6574e9.709d78",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Calan 3d1",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "1",
-        "removeOlder": "10",
-        "removeOlderPoints": "1000",
-        "removeOlderUnit": "604800",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 1010,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bbe98114659a6e65",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Transform payload",
-        "func": "var temp = {}\ntemp.payload = 1 - msg.payload;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 460,
-        "wires": [
-            [
-                "28b279ef58d9139b",
-                "948b86c3a316b600"
-            ]
-        ]
-    },
-    {
-        "id": "bff16c505e3d8cb7",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "time.payload",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.received_at;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 540,
-        "wires": [
-            [
-                "42f345e6747afe4d"
-            ]
-        ]
-    },
-    {
-        "id": "42f345e6747afe4d",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/CF_3D1.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 840,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "948b86c3a316b600",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Transform payload",
-        "func": "var temp = {}\ntemp.payload = 1 - msg.payload;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 810,
-        "y": 500,
-        "wires": [
-            [
-                "28b279ef58d9139b"
-            ]
-        ]
-    },
-    {
-        "id": "6159cebd6ceba59e",
-        "type": "mqtt in",
-        "z": "c0158c6b.68ffa",
-        "name": "Capteur_flowter_1",
-        "topic": "v3/hubis@ttn/devices/0004a30b00ebd5f4/up",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c87222d8.d2c36",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 110,
-        "y": 200,
-        "wires": [
-            [
-                "38ed7f377992a3f0"
-            ]
-        ]
-    },
-    {
-        "id": "38ed7f377992a3f0",
-        "type": "json",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 270,
-        "y": 200,
-        "wires": [
-            [
-                "71b4cc76ca6d7870",
-                "4ee7769087c6e689",
-                "a0c6cdddf76044c9",
-                "8532e63a600bf7b1"
-            ]
-        ]
-    },
-    {
-        "id": "71b4cc76ca6d7870",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes[0];\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 200,
-        "wires": [
-            [
-                "4ee7769087c6e689",
-                "a0c6cdddf76044c9",
-                "09a88235e824fa9e",
-                "f15900fb54768321"
-            ]
-        ]
-    },
-    {
-        "id": "4ee7769087c6e689",
-        "type": "debug",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "a0c6cdddf76044c9",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/CF1.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 820,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f15900fb54768321",
-        "type": "ui_chart",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "group": "ba6574e9.709d78",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "Calan 3d2",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "1",
-        "removeOlder": "5",
-        "removeOlderPoints": "1000",
-        "removeOlderUnit": "604800",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 910,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8532e63a600bf7b1",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "time.payload",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.received_at;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 280,
-        "wires": [
-            [
-                "4e4955407a332140"
-            ]
-        ]
-    },
-    {
-        "id": "4e4955407a332140",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/CF_3D2.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 840,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "09a88235e824fa9e",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Transform payload",
-        "func": "var temp = {}\ntemp.payload = 1 - msg.payload;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 240,
-        "wires": [
-            [
-                "f15900fb54768321"
-            ]
-        ]
-    },
-    {
-        "id": "1a1f21ae02469c95",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Set base path",
-        "func": "//restrict to c:\\temp\\\nvar basePath = \"/home/pi/\";\nvar filename = msg.req.params.fn;\n\n\nif(filename.includes(\"..\\\\\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} else if(filename.includes(\"../\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} \n//TODO: add more checks\n\nmsg.filename = \"/home/pi/hubis/CF_3D1.txt\";\nreturn [msg, null];//fire output 1\n\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1400,
-        "y": 280,
-        "wires": [
-            [
-                "c134a83e8e365ecc"
-            ],
-            [
-                "6e97229e1540e519"
-            ]
-        ]
-    },
-    {
-        "id": "6e97229e1540e519",
-        "type": "http response",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1750,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "c134a83e8e365ecc",
-        "type": "file in",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "",
-        "format": "",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "x": 1570,
-        "y": 260,
-        "wires": [
-            [
-                "6e97229e1540e519"
-            ]
-        ]
-    },
-    {
-        "id": "f992067d22b219c7",
-        "type": "catch",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 1200,
-        "y": 360,
-        "wires": [
-            [
-                "fc2d134bc16daecc",
-                "63c652a79455239c"
-            ]
-        ]
-    },
-    {
-        "id": "fc2d134bc16daecc",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Set 404",
-        "func": "msg.payload = msg.error;\nmsg.statusCode = 404;//resource not found\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1580,
-        "y": 360,
-        "wires": [
-            [
-                "6e97229e1540e519"
-            ]
-        ]
-    },
-    {
-        "id": "63c652a79455239c",
-        "type": "debug",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1350,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "cf9616869cf21f3d",
-        "type": "ui_template",
-        "z": "c0158c6b.68ffa",
-        "d": true,
-        "group": "ba6574e9.709d78",
-        "name": "hubis_CF_3D1",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "format": "<div >\n    <a href=\"/files/hubis_CF_3D1.txt\">Télécharger hubis</a>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 1540,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b53f795a30b32cb1",
-        "type": "comment",
-        "z": "c0158c6b.68ffa",
-        "name": "Create http endpoint <nodered>/files/xxx  where xxx is the file name to download",
-        "info": "",
-        "x": 1420,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "90109325c7ba9df2",
-        "type": "http in",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "url": "/files/:fn",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 1210,
-        "y": 280,
-        "wires": [
-            [
-                "1a1f21ae02469c95"
-            ]
-        ]
-    },
-    {
-        "id": "6d80f7d99022aeb6",
-        "type": "mqtt in",
-        "z": "c0158c6b.68ffa",
-        "name": "WatAr_sensor_2",
-        "topic": "v3/hubis@ttn/devices/eui-0004a30b00ebb7d3/up",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c87222d8.d2c36",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 2040,
-        "y": 600,
-        "wires": [
-            [
-                "383f960b98d07b00"
-            ]
-        ]
-    },
-    {
-        "id": "383f960b98d07b00",
-        "type": "json",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 2190,
-        "y": 600,
-        "wires": [
-            [
-                "43a3a0c3868c0e31",
-                "69f76b3668dcc24e",
-                "019d060ae75c357f"
-            ]
-        ]
-    },
-    {
-        "id": "43a3a0c3868c0e31",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes;\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2320,
-        "y": 600,
-        "wires": [
-            [
-                "019d060ae75c357f",
-                "90631176fd3acbb0",
-                "69f76b3668dcc24e"
-            ]
-        ]
-    },
-    {
-        "id": "69f76b3668dcc24e",
-        "type": "debug",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2710,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "019d060ae75c357f",
-        "type": "file",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "filename": "/home/pi/hubis/WhataSensor_1.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 2780,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "90631176fd3acbb0",
-        "type": "function",
-        "z": "c0158c6b.68ffa",
-        "name": "Decoded.payload",
-        "func": "var temp = {}\ntemp.payload = 100 - ((256*msg.payload[0]+msg.payload[1])/1024*100);\nreturn temp;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2490,
-        "y": 600,
-        "wires": [
-            [
-                "019d060ae75c357f",
-                "69f76b3668dcc24e",
-                "e6dc711f79c9293b",
-                "c463df6c48bdc9d7"
-            ]
-        ]
-    },
-    {
-        "id": "e6dc711f79c9293b",
-        "type": "ui_chart",
-        "z": "c0158c6b.68ffa",
-        "name": "",
-        "group": "d5f32942b23e3e3f",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "label": "WatAr Sensor 2",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "50",
-        "ymax": "",
-        "removeOlder": "10",
-        "removeOlderPoints": "",
-        "removeOlderUnit": "604800",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 2720,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c463df6c48bdc9d7",
-        "type": "ui_gauge",
-        "z": "c0158c6b.68ffa",
-        "name": "Gauge_WhataSensor 2",
-        "group": "d5f32942b23e3e3f",
-        "order": 2,
-        "width": "3",
-        "height": "2",
-        "gtype": "gage",
-        "title": "WatAr Sensor 2",
-        "label": "%",
-        "format": "{{value}}",
-        "min": "30",
-        "max": "80",
-        "colors": [
-            "#800000",
-            "#e6e600",
-            "#279f24"
-        ],
-        "seg1": "40",
-        "seg2": "60",
-        "x": 2750,
-        "y": 720,
-        "wires": []
     },
     {
         "id": "005c451369533684",
         "type": "mqtt out",
         "z": "c0158c6b.68ffa",
-        "name": "Moteur",
-        "topic": "v3/hubis@ttn/devices/eui-0004a30b00f50d7d/down/push",
+        "d": true,
+        "name": "Marteliere 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c188/down/push",
         "qos": "2",
         "retain": "",
         "respTopic": "",
@@ -1423,592 +21,8 @@
         "correl": "",
         "expiry": "",
         "broker": "c87222d8.d2c36",
-        "x": 380,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "37e84543.47bf0a",
-        "type": "mqtt in",
-        "z": "75830fda.c4db3",
-        "name": "my-app +/+/+/events/#",
-        "topic": "+/+/+/events/#",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "ea9fd3ca.5136c",
-        "x": 120,
-        "y": 270,
-        "wires": [
-            [
-                "c65a8f54.00303",
-                "7a9fd36f.dbc8cc",
-                "3cffb28e.a557de"
-            ]
-        ]
-    },
-    {
-        "id": "c65a8f54.00303",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "event",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 330,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "2595c3d8.5221cc",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "uplink received",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "65dda29f.ddaa4c",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "downlink ack'd",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')\t",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "30219d07.cc7d42",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "device activated",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 250,
-        "wires": []
-    },
-    {
-        "id": "ef7c801f.ba827",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "downlink sent",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 350,
-        "wires": []
-    },
-    {
-        "id": "e967721f.47746",
-        "type": "mqtt out",
-        "z": "75830fda.c4db3",
-        "name": "mqtt publish",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "broker": "ea9fd3ca.5136c",
-        "x": 570,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "23c9ee3a.a8d242",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "white",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "111",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 90,
-        "y": 640,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "fecb039.f25f3",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "red",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "100",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 520,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "63c6ca8c.ef3b24",
-        "type": "function",
-        "z": "75830fda.c4db3",
-        "name": "downlink from context",
-        "func": "// Get AppID and DevID as saved from last uplink\nconst [appId, devId] = flow.get(['appId', 'devId']);\n\n// Color value from binary RGB string; '110' = 6 = yellow\nconst color = parseInt(msg.rgb, 2);\n\n// Single-byte payload \nconst bytes = [color];\n\nmsg.topic = `${appId}/devices/${devId}/down`;\n\nmsg.payload = {\n  dev_id: devId,\n  port: 1,\n  confirmed: true,\n  schedule: 'replace',\n  payload_raw: Buffer.from(bytes).toString('base64')\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 340,
-        "y": 520,
-        "wires": [
-            [
-                "e967721f.47746",
-                "5b841f2f.852ce",
-                "4767bfac.792af"
-            ]
-        ],
-        "info": "Creates a downlink for the AppId and DevId known from the last uplink."
-    },
-    {
-        "id": "61370dae.8b01f4",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "magenta",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "101",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 100,
-        "y": 560,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "5b841f2f.852ce",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "downlink",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'rgb ' & msg.rgb & ', ' & $moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 560,
-        "y": 570,
-        "wires": []
-    },
-    {
-        "id": "6e599d71.4bc534",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "cyan",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "011",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 480,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "f8551626.6aef68",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "green",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "010",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 440,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "64df58.eba2b0a8",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "blue",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "001",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 400,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "7990303e.719c7",
-        "type": "inject",
-        "z": "75830fda.c4db3",
-        "name": "yellow",
-        "props": [
-            {
-                "p": "rgb",
-                "v": "110",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 90,
-        "y": 600,
-        "wires": [
-            [
-                "63c6ca8c.ef3b24"
-            ]
-        ]
-    },
-    {
-        "id": "ec58ff62.fd941",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "downlink scheduled",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')",
-        "statusType": "jsonata",
-        "x": 600,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "68fdeeb5.e74c7",
-        "type": "mqtt in",
-        "z": "75830fda.c4db3",
-        "name": "my-app +/devices/+/up",
-        "topic": "+/devices/+/up",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "ea9fd3ca.5136c",
-        "x": 120,
-        "y": 40,
-        "wires": [
-            [
-                "7c0c8ca.2e83774"
-            ]
-        ]
-    },
-    {
-        "id": "b1a4b0d1.e8e9a",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "error occurred",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')\t",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "cbb218ed.a72f38",
-        "type": "file",
-        "z": "75830fda.c4db3",
-        "name": "my-app-mqtt.log",
-        "filename": "my-app-mqtt.log",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 630,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7a9fd36f.dbc8cc",
-        "type": "function",
-        "z": "75830fda.c4db3",
-        "name": "save context and log",
-        "func": "// When scheduling a downlink, we need the AppID and DevID. When only\n// handling uplinks then, rather than parsing the MQTT topic, one could\n// also use msg.payload.app_id and msg.payload.dev_id.\nconst levels = msg.topic.split('/');\nconst appId = levels[0];\nconst devId = levels[2];\nflow.set(['appId', 'devId'], [appId, devId]);\n\n// A file node only saves msg.payload, but +/+/+/events/down/scheduled\n// holds no details about application, device nor timestamp in the\n// MQTT payload, but only: \n//   {\"message\": {\"port\": 1, \"payload_raw\": \"BA==\"}}\n// Same goes for TTN-published errors:\n//   {\"error\": \"Unable to decode payload fields: Internal error: ...\"}}\n// So, ensure the topic and time are also saved into the log file:\nmsg.payload = {\n  appId: appId,\n  devId: devId,\n  topic: msg.topic,\n  timestamp: new Date().toISOString(),\n  payload: msg.payload,\n  error: msg.error\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 380,
-        "y": 120,
-        "wires": [
-            [
-                "cbb218ed.a72f38",
-                "2c6ce28d.db442e"
-            ]
-        ]
-    },
-    {
-        "id": "2c6ce28d.db442e",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "context",
-        "active": true,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$flowContext('devId')",
-        "statusType": "jsonata",
-        "x": 600,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "4767bfac.792af",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "context",
-        "active": true,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$flowContext('devId')",
-        "statusType": "jsonata",
-        "x": 560,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "7c0c8ca.2e83774",
-        "type": "function",
-        "z": "75830fda.c4db3",
-        "name": "decode",
-        "func": "const bytes = Buffer.from(msg.payload.payload_raw, 'base64');\nconst port = msg.payload.port;\n\n// Assuming a Kickstarter The Things Node, with the default sketch;\n// see https://www.thethingsnetwork.org/docs/devices/node/\n// When using a Decoder in the application's Payload Formats in\n// TTN Console, then msg.payload.payload_fields is also available.\nconst events = {\n  1: 'setup',\n  2: 'interval',\n  3: 'motion',\n  4: 'button'\n};\n\nlet i = 0;\nmsg.payload.payload_decoded = {\n  event: events[port] || 'unknown',\n  battery: (bytes[i++] << 8 | bytes[i++]) / 1000,\n  light: bytes[i++] << 8 | bytes[i++],\n  // Sign-extend to 32 bits to support negative values, by shifting\n  // 24 bits to the left (16 too far), followed by a sign-propagating\n  // right shift of 16 bits, to effectively shift 8 bits:\n  temperature: (bytes[i++] << 24 >> 16 | bytes[i++]) / 100\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 340,
-        "y": 40,
-        "wires": [
-            [
-                "2595c3d8.5221cc",
-                "7a9fd36f.dbc8cc"
-            ]
-        ]
-    },
-    {
-        "id": "9b95ad86.23f4c",
-        "type": "catch",
-        "z": "75830fda.c4db3",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 160,
-        "y": 120,
-        "wires": [
-            [
-                "7a9fd36f.dbc8cc"
-            ]
-        ]
-    },
-    {
-        "id": "3cffb28e.a557de",
-        "type": "switch",
-        "z": "75830fda.c4db3",
-        "name": "switch on topic",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "/errors$",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "/activations$",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "/down/scheduled$",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "/down/sent$",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "^.+/down/acks$",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 6,
-        "x": 360,
-        "y": 270,
-        "wires": [
-            [
-                "b1a4b0d1.e8e9a"
-            ],
-            [
-                "30219d07.cc7d42"
-            ],
-            [
-                "ec58ff62.fd941"
-            ],
-            [
-                "ef7c801f.ba827"
-            ],
-            [
-                "65dda29f.ddaa4c"
-            ],
-            [
-                "c2a9121a.fa145"
-            ]
-        ],
-        "outputLabels": [
-            "error",
-            "activation",
-            "downlink scheduled",
-            "downlink sent",
-            "downlink ack'd",
-            "other"
-        ],
-        "info": "Split messages based on their MQTT topic, e.g.:\n\n- `<AppID>/devices/<DevID>/up`\n- `<AppID>/devices/<DevID>/up/<field>`\n- `<AppID>/devices/<DevID>/events/up/errors`\n- `<AppID>/devices/<DevID>/events/create`\n- `<AppID>/devices/<DevID>/events/update`\n- `<AppID>/devices/<DevID>/events/delete`\n- `<AppID>/devices/<DevID>/events/activations`\n- `<AppID>/devices/<DevID>/events/activations/errors`\n- `<AppID>/devices/<DevID>/events/down/scheduled`\n- `<AppID>/devices/<DevID>/events/down/sent`\n- `<AppID>/devices/<DevID>/events/down/acks`\n- `<AppID>/devices/<DevID>/events/down/errors`\n\nNote that `/up/<field>` is not supported for EU868; unclear if subscribing to a wildcard yields both publication of the full payload, plus an additional publication for each field.\n\nOf course, one could also create multiple MQTT subscriptions, to be more specific."
-    },
-    {
-        "id": "c2a9121a.fa145",
-        "type": "debug",
-        "z": "75830fda.c4db3",
-        "name": "other",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "$moment().format('YYYY-MM-DD HH:mm:ss')\t",
-        "statusType": "jsonata",
-        "x": 550,
-        "y": 450,
+        "x": 1190,
+        "y": 360,
         "wires": []
     },
     {
@@ -2016,14 +30,14 @@
         "type": "function",
         "z": "c0158c6b.68ffa",
         "name": "downlink from context",
-        "func": "\nconst bytes = [1];\nmsg.topic = `v3/hubis@ttn/devices/eui-0004a30b00f50d7d/down`;\n\nmsg.payload = {\n    \"downlinks\": [\n        {\n            \"f_port\": 15,\n            \"frm_payload\":Buffer.from(bytes).toString('base64'),\n            \"priority\": \"NORMAL\"\n        }\n    ]\n};\n\nreturn msg;",
+        "func": "\nconst bytes = [1];\nmsg.topic = `v3/merle@ttn/devices/eui-70b3d57ed004c188/down`;\n\nmsg.payload = {\n    \"downlinks\": [\n        {\n            \"f_port\": 15,\n            \"frm_payload\":Buffer.from(bytes).toString('base64'),\n            \"priority\": \"NORMAL\"\n        }\n    ]\n};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 180,
-        "y": 360,
+        "x": 980,
+        "y": 380,
         "wires": [
             [
                 "005c451369533684",
@@ -2043,8 +57,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
-        "y": 300,
+        "x": 810,
+        "y": 380,
         "wires": [
             [
                 "65323c356c8a73a1"
@@ -2063,8 +77,1269 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 390,
-        "y": 380,
+        "x": 1190,
+        "y": 400,
         "wires": []
+    },
+    {
+        "id": "f4daadbe414d50d3",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "CF1 - 0",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c179',\n    \"name\":'CF 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": 0\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 40,
+        "wires": [
+            [
+                "069c1990e3102f10",
+                "a901c8f458d70ac0"
+            ]
+        ]
+    },
+    {
+        "id": "1595b1869c2d32d9",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1240,
+        "y": 40,
+        "wires": [
+            [
+                "f4daadbe414d50d3"
+            ]
+        ]
+    },
+    {
+        "id": "ca289445ca222ff9",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "CF1 - 1",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c179',\n    \"name\":'CF 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": 1\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 80,
+        "wires": [
+            [
+                "069c1990e3102f10",
+                "a901c8f458d70ac0"
+            ]
+        ]
+    },
+    {
+        "id": "9bcb15377efcf24d",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1240,
+        "y": 80,
+        "wires": [
+            [
+                "ca289445ca222ff9"
+            ]
+        ]
+    },
+    {
+        "id": "804fdd461f0b2b57",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "",
+        "measurement": "watarsensor",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1650,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d0afc4f598905cfd",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b48e5a0d334708cf",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "capt 1",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c182',\n    \"name\":'WS 2',\n    \"lat\":43.6425719,\n    \"lon\":5.0167257,\n    \"value\": 42\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 160,
+        "wires": [
+            [
+                "804fdd461f0b2b57",
+                "d0afc4f598905cfd"
+            ]
+        ]
+    },
+    {
+        "id": "278e5449fd2b6fe5",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1230,
+        "y": 160,
+        "wires": [
+            [
+                "b48e5a0d334708cf"
+            ]
+        ]
+    },
+    {
+        "id": "78dba9ebbdbe0429",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "408de2ea69864101",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "capt 2",
+        "func": "var message = {\"name\":'ws2',\"value\":Math.floor(Math.random() * 100)};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 240,
+        "wires": [
+            [
+                "78dba9ebbdbe0429",
+                "804fdd461f0b2b57"
+            ]
+        ]
+    },
+    {
+        "id": "3b189cfc61668bb4",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1230,
+        "y": 240,
+        "wires": [
+            [
+                "408de2ea69864101"
+            ]
+        ]
+    },
+    {
+        "id": "2daa560d73b82731",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "",
+        "measurement": "localisations",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1620,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c6c4f3362c6b8e6b",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "capt 1",
+        "func": "var message = {\"name\":'ws1',\"latitude\":43.6428252,\"longitude\":5.0166597};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 300,
+        "wires": [
+            [
+                "2daa560d73b82731"
+            ]
+        ]
+    },
+    {
+        "id": "1e640ac0e4c2c0b2",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1230,
+        "y": 300,
+        "wires": [
+            [
+                "c6c4f3362c6b8e6b"
+            ]
+        ]
+    },
+    {
+        "id": "15f3a9f6f62ab08c",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c181/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "1d9928d0d5345a62"
+            ]
+        ]
+    },
+    {
+        "id": "1d9928d0d5345a62",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 120,
+        "wires": [
+            [
+                "6bc9d65f9df5a39d",
+                "e010a5266b22537a"
+            ]
+        ]
+    },
+    {
+        "id": "6bc9d65f9df5a39d",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c181',\n    \"name\":'WS 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "4d472a8e545228e5",
+                "538cc185a5b05b66"
+            ]
+        ]
+    },
+    {
+        "id": "4d472a8e545228e5",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "538cc185a5b05b66",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "hubis watarsensor",
+        "measurement": "watarsensor",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "hubis",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9c9c86b34a64acff",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 2",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c182/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "8ce9eb9f68189a1d"
+            ]
+        ]
+    },
+    {
+        "id": "8ce9eb9f68189a1d",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "f43e0e4064150906"
+            ]
+        ]
+    },
+    {
+        "id": "f43e0e4064150906",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c182',\n    \"name\":'WS 2',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "0a45f672d02cc26e",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 3",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c183/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "8bab0cb7f670427e"
+            ]
+        ]
+    },
+    {
+        "id": "8bab0cb7f670427e",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "49b0b117da39f06a"
+            ]
+        ]
+    },
+    {
+        "id": "49b0b117da39f06a",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c183',\n    \"name\":'WS 3',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "143176d0c1d4d166",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 4",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c184/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "55ab2778242194f1"
+            ]
+        ]
+    },
+    {
+        "id": "55ab2778242194f1",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "60265efbc6e25dbb"
+            ]
+        ]
+    },
+    {
+        "id": "60265efbc6e25dbb",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c184',\n    \"name\":'WS 4',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "9525f623b7b1076f",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 5",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c185/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "3be50341d48fb9f7"
+            ]
+        ]
+    },
+    {
+        "id": "3be50341d48fb9f7",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "70819d9c87277b4a"
+            ]
+        ]
+    },
+    {
+        "id": "70819d9c87277b4a",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c185',\n    \"name\":'WS 5',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "724246f20f774594",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 6",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c186/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "baa5dd158885d81c"
+            ]
+        ]
+    },
+    {
+        "id": "baa5dd158885d81c",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "c9ab55d7fdd436c6"
+            ]
+        ]
+    },
+    {
+        "id": "c9ab55d7fdd436c6",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c186',\n    \"name\":'WS 6',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "34f6f092b7fd1e5a",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor 7",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c187/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 360,
+        "wires": [
+            [
+                "e66b88ddc0ccbdb0"
+            ]
+        ]
+    },
+    {
+        "id": "e66b88ddc0ccbdb0",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "2de2e1c390125434"
+            ]
+        ]
+    },
+    {
+        "id": "2de2e1c390125434",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c187',\n    \"name\":'WS 7',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "538cc185a5b05b66",
+                "4d472a8e545228e5"
+            ]
+        ]
+    },
+    {
+        "id": "a13a70323172d69c",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 2",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c17a/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "5bb6a0442d124173"
+            ]
+        ]
+    },
+    {
+        "id": "5bb6a0442d124173",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "bd59019d2d53b653"
+            ]
+        ]
+    },
+    {
+        "id": "bd59019d2d53b653",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c17a',\n    \"name\":'CF 2',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "4387c632d0c3509a",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 3",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c17b/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "b8be5a7d4d6730f5"
+            ]
+        ]
+    },
+    {
+        "id": "b8be5a7d4d6730f5",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 540,
+        "wires": [
+            [
+                "22de222e103b2cd7"
+            ]
+        ]
+    },
+    {
+        "id": "22de222e103b2cd7",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c17b',\n    \"name\":'CF 3',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 540,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "f69b614fb33e364f",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 4",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c17c/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "45f2d7876b95f36d"
+            ]
+        ]
+    },
+    {
+        "id": "45f2d7876b95f36d",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 580,
+        "wires": [
+            [
+                "91ba1b853deb5585"
+            ]
+        ]
+    },
+    {
+        "id": "91ba1b853deb5585",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c17b',\n    \"name\":'CF 4',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "5b3ea53e47e28237",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 5",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c17d/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 620,
+        "wires": [
+            [
+                "8eae9c914e0959f2"
+            ]
+        ]
+    },
+    {
+        "id": "8eae9c914e0959f2",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 620,
+        "wires": [
+            [
+                "c6ce8540f592e6c8"
+            ]
+        ]
+    },
+    {
+        "id": "c6ce8540f592e6c8",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c17d',\n    \"name\":'CF 5',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "c8c8556d8cf1462d",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 6",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c17f/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "c3942d7d033f1ad8"
+            ]
+        ]
+    },
+    {
+        "id": "c3942d7d033f1ad8",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "62343fc23eb49aa8"
+            ]
+        ]
+    },
+    {
+        "id": "62343fc23eb49aa8",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c17f',\n    \"name\":'CF 6',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "8794695f5b0a378b",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 7",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c187/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 700,
+        "wires": [
+            [
+                "5bcabaeb56235a9b"
+            ]
+        ]
+    },
+    {
+        "id": "5bcabaeb56235a9b",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 700,
+        "wires": [
+            [
+                "d1e9e760cfac7f4d"
+            ]
+        ]
+    },
+    {
+        "id": "d1e9e760cfac7f4d",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c180',\n    \"name\":'CF 7',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 700,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "468d0c9aa0fe9420",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "hubis capteurflowter",
+        "measurement": "capteurflowter",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "hubis",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 620,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "fd1e61a8ec89919b",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c179/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "26a547a24dd7f2f6"
+            ]
+        ]
+    },
+    {
+        "id": "26a547a24dd7f2f6",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "e27373b91b6254e3"
+            ]
+        ]
+    },
+    {
+        "id": "e27373b91b6254e3",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c179',\n    \"name\":'CF 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0] *100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "468d0c9aa0fe9420"
+            ]
+        ]
+    },
+    {
+        "id": "e010a5266b22537a",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "069c1990e3102f10",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "hubis capteurflowter",
+        "measurement": "capteurflowter",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "hubis",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1580,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a901c8f458d70ac0",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1550,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c87222d8.d2c36",
+        "type": "mqtt-broker",
+        "name": "Merle",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ef1b568734c2ffb5",
+        "type": "influxdb",
+        "hostname": "simonmoinard.ddns.net",
+        "port": "82",
+        "protocol": "http",
+        "database": "hubis",
+        "name": "",
+        "usetls": false,
+        "tls": "283a670c.e20a28",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "283a670c.e20a28",
+        "type": "tls-config",
+        "name": "Default",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
     }
 ]
