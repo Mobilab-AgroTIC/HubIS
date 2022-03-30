@@ -1,14 +1,4 @@
-/*
- * Mesure de distance avec le HCSR04 et envoi de la mesure en LoRa (RN2483) sur la plateforme The Things network, puis entre en sommeil.
- *    UART_TX (6)   <-->   5 
-      UART_RX (7)   <-->   6 
-      RESET (32)    <-->   10
-      VDD (34)      <-->   3.3V
-      GND (33)      <-->   Gnd
- *
- * Le 3.3V ne semble pas assez puissant pur établir une communnication RX/TX propre avec un baudrate de 57000 (de base). 
- * On se sert de la librairie rn2xx3.h pour changer le baudrate du RN à 9600, avec la fonction autobaud.
-*/
+
 
 // **** INCLUDES *****
 #include "LowPower.h"
