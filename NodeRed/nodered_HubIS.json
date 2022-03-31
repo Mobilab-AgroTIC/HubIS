@@ -1,0 +1,323 @@
+[
+    {
+        "id": "adb12b659c09732f",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor Capa 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c181/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1030,
+        "y": 900,
+        "wires": [
+            [
+                "534b3deb0a4951bf"
+            ]
+        ]
+    },
+    {
+        "id": "534b3deb0a4951bf",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1190,
+        "y": 900,
+        "wires": [
+            [
+                "0853e5e5fb0c0adb"
+            ]
+        ]
+    },
+    {
+        "id": "0853e5e5fb0c0adb",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c181',\n    \"name\":'WSC 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[0]*100/255\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 900,
+        "wires": [
+            [
+                "b4b610cc6c18e35d"
+            ]
+        ]
+    },
+    {
+        "id": "0e6288cbeecaf656",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "CapteurFlowter 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c179/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1040,
+        "y": 940,
+        "wires": [
+            [
+                "536d2499867f732b"
+            ]
+        ]
+    },
+    {
+        "id": "536d2499867f732b",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1190,
+        "y": 940,
+        "wires": [
+            [
+                "0d4906b6546ba372"
+            ]
+        ]
+    },
+    {
+        "id": "0d4906b6546ba372",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c179',\n    \"name\":'CF 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[0]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 940,
+        "wires": [
+            [
+                "297e16bbe3d4f863"
+            ]
+        ]
+    },
+    {
+        "id": "4994622009c24fde",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "var message = {\n    \"id\":'eui-70b3d57ed004c188',\n    \"name\":'WS 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[0]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 860,
+        "wires": [
+            [
+                "b4b610cc6c18e35d"
+            ]
+        ]
+    },
+    {
+        "id": "9b7ea96806a2d94b",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "if (msg.payload.uplink_message.decoded_payload.bytes[0] == 0) {\n    return {\n      \"payload\": {\n        \"downlinks\": [{\n          \"f_port\": 15,\n          \"frm_payload\": \"AQ==\",\n          \"priority\": \"NORMAL\"\n        }]\n      }\n    }\n}\nelse {\n    return;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 820,
+        "wires": [
+            [
+                "09d3084707c1c421"
+            ]
+        ]
+    },
+    {
+        "id": "dfcf4c94c4e3ed0e",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            [
+                "4994622009c24fde",
+                "9b7ea96806a2d94b"
+            ]
+        ]
+    },
+    {
+        "id": "6555df1f9aabb10d",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "WatarSensor Flot 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c188/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1030,
+        "y": 840,
+        "wires": [
+            [
+                "dfcf4c94c4e3ed0e"
+            ]
+        ]
+    },
+    {
+        "id": "09d3084707c1c421",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 1",
+        "topic": "v3/agrotic@ttn/devices/eui-70b3d57ed004e765/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "89462a9d4467976f",
+        "x": 1510,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b4b610cc6c18e35d",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "merle watarsensor",
+        "measurement": "watarsensor",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "merle",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1530,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "297e16bbe3d4f863",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "merle capteurflowter",
+        "measurement": "capteurflowter",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "merle",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1540,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "c87222d8.d2c36",
+        "type": "mqtt-broker",
+        "name": "Merle",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "89462a9d4467976f",
+        "type": "mqtt-broker",
+        "name": "agrotic",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ef1b568734c2ffb5",
+        "type": "influxdb",
+        "hostname": "simonmoinard.ddns.net",
+        "port": "82",
+        "protocol": "http",
+        "database": "hubis",
+        "name": "",
+        "usetls": false,
+        "tls": "283a670c.e20a28",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "283a670c.e20a28",
+        "type": "tls-config",
+        "name": "Default",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    }
+]
