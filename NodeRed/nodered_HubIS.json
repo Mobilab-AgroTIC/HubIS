@@ -2056,7 +2056,7 @@
         "type": "function",
         "z": "c0158c6b.68ffa",
         "name": "",
-        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\n\nlet list = []\n\nglobal.keys().forEach( key => {\n    list.push( { [key]: global.get(key)});\n})\n\nlist = list.sort();\n\nmsg.payload.content = JSON.stringify(list);\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\"[\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\",\", \"\\n\");\nmsg.payload.content = msg.payload.content.replace(\"]\", \"\\n\");\n\nmsg.payload.type = \"message\";\nreturn msg",
+        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\n\nlet obj = {};\nlet rsp = '';\n\nglobal.keys().forEach( key => {\n    obj[key] = global.get(key);\n})\n\nconst ordered = Object.keys(obj).sort().reduce(\n  (obj2, key) => { \n    obj2[key] = obj[key]; \n    return obj2;\n  }, \n  {}\n);\n\nfor(const [key3, value3] of Object.entries(ordered)){\n    rsp+=key3+': '+value3+'\\n';\n}\n\nmsg.payload.content= rsp;\n\nmsg.payload.type = \"message\";\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2082,6 +2082,70 @@
         "y": 1500,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "f44a683f2b8d31da",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\n\nlet list = [];\nlet obj = {};\nlet rsp = '';\n\nglobal.keys().forEach( key => {\n    list.push( { key : global.get(key)});\n    obj[key] = global.get(key);\n    //rsp+=key+': '+global.get(key)+'\\n';\n})\n\nconst ordered = Object.keys(obj).sort().reduce(\n  (obj2, key) => { \n    obj2[key] = obj[key]; \n    return obj2;\n  }, \n  {}\n);\n\nfor(const [key3, value3] of Object.entries(ordered)){\n    rsp+=key3+': '+value3+'\\n';\n}\n\n//msg.payload.content = JSON.stringify(ordered);\nmsg.payload.content= rsp;\n\n\nmsg.payload.type = \"message\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1580,
+        "wires": [
+            [
+                "ae9193781474dcf8"
+            ]
+        ]
+    },
+    {
+        "id": "ae9193781474dcf8",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "6f035e6666342b7b",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1600,
+        "wires": [
+            [
+                "f44a683f2b8d31da"
+            ]
         ]
     },
     {
