@@ -1,4 +1,4 @@
-# Installer un réseau LoRa
+# Construire un réseau LoRa
 
 Le système à développer passe par un réseau bas-débit, appelé LoRa. 
 
