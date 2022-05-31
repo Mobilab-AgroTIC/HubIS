@@ -8,3 +8,8 @@ Un réseau LoRa est comme un réseau WiFi, avec les particularité suivantes :
 - Taille des données envoyées très petites (contre des grosses données pour le WiFi)
 
 Tous les projets du mobilab utilisent la solution gratuite The Things Network pour déployer et utiliser le réseau LoRa.
+
+Comme tout réseau, le réseau installé comporte : 
+
+- Une **passerelle**, ou Gateway : C'est l'équivalent de la box WiFi chez vous
+- Un **objet connecté** capable de communiquer en LoRa
