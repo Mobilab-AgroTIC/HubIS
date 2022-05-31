@@ -3,7 +3,11 @@
 Contôlez vos systèmes d'irrigation gravitaire à distance ! Le projet HubIS permet le developpement de plusieurs capteurs à bas coût. 
 
 - Le **CapteurFlowter** est un boitié placé au niveau de la martelière, et détecte si l'eau déborde du canal via la montée d'un petit flotteur (Position haute ou Position basse)
-![image](https://user-images.githubusercontent.com/24956276/171176651-7885a446-3800-4e8c-ab6d-e9c1b162edfd.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171176651-7885a446-3800-4e8c-ab6d-e9c1b162edfd.png" alt="Sublime's custom image"/>
+</p>
+
 
 - Le **PiLowTech** est une placé au niveau de la martelière, et détecte si l'eau sort du canal à ce niveau est un petit flotteur qui envoie une information lorsque son état est changé (Position haute / Position basse)
 ![image](https://user-images.githubusercontent.com/24956276/171178057-83645072-a6ad-4224-a129-8c37954bd16f.png)
