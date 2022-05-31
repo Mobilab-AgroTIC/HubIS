@@ -4,7 +4,7 @@ Le système à développer passe par un réseau bas-débit, appelé LoRa.
 
 Un réseau LoRa est comme un réseau WiFi, avec les particularité suivantes : 
 - Portée de l'ordre du kilomètre (contre quelques mètres pour le WiFi)
-- Autonomie des capteurs de quelques années (contre quelques heures pour le WiFi)
+- Consomme très peu de courant !: Autonomie des capteurs de quelques années (contre quelques heures pour le WiFi)
 - Taille des données envoyées très petites (contre des grosses données pour le WiFi)
 
 Tous les projets du mobilab utilisent la solution gratuite The Things Network pour déployer et utiliser le réseau LoRa.
@@ -27,6 +27,8 @@ Il existe une multitude de passerelles LoRa compatibles avec le projet. Nous avo
 - UG67 (700€) est la plus chère et la meilleure des passerelles testées. Sa portée est grande et l'appareil est robuste.
 
 ### Brancher et connecter une Passerelle LoRa
+Ce tuto présente le branchement d'une passerelle the Things Gateway
+
 
 # Liste du Matériel
 Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
