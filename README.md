@@ -11,7 +11,7 @@ Contôlez vos systèmes d'irrigation gravitaire à distance ! Le projet HubIS pe
 - Le **PiLowTech** est une placé au niveau de la martelière, et détecte si l'eau sort du canal à ce niveau est un petit flotteur qui envoie une information lorsque son état est changé (Position haute / Position basse)
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/24956276/171178057-83645072-a6ad-4224-a129-8c37954bd16f.png">
+  <img width="660" height="300" src="https://user-images.githubusercontent.com/24956276/171178057-83645072-a6ad-4224-a129-8c37954bd16f.png">
 </p>
 
 - Le **WatarSensor** est un capteur capacitif qui permet de connaitre le taux d'humidité d'un sol. Ce capteur peut être plaçé en bout de champ et peut permettre d'actionner une martelière pour arrêter l'irrigation d'une zone. dans sa version simple, il renvoie simplement la valeur d'humidité du sol
