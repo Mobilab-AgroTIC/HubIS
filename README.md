@@ -4,27 +4,27 @@ Contôlez vos systèmes d'irrigation à distance ! Le projet HubIS permet le dev
 L’objectif principal de HubIS est de favoriser l’émergence, évaluer et accélérer l’adoption d’innovations permettant d’améliorer la performance et la durabilité des systèmes irrigués dans les régions méditerranéennes.
 
 ## Capteur Flowter
-Le **CapteurFlowter** est un boitié placé au niveau de la martelière, et détecte si l'eau déborde du canal via la montée d'un petit flotteur (Position haute ou Position basse)
+Le **CapteurFlowter** est un boitié placé au niveau de la martelière, et détecte si l'eau déborde du canal via la montée d'un petit flotteur (Position haute ou Position basse). Le tutoriel est accessible ici
 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/24956276/171176651-7885a446-3800-4e8c-ab6d-e9c1b162edfd.png">
 </p>
 
 ## PiLowTech
-Le **PiLowTech** est une placé au niveau de la martelière, et détecte si l'eau sort du canal à ce niveau est un petit flotteur qui envoie une information lorsque son état est changé (Position haute / Position basse)
+Le **PiLowTech** est une placé au niveau de la martelière, et détecte si l'eau sort du canal à ce niveau est un petit flotteur qui envoie une information lorsque son état est changé (Position haute / Position basse). Le tutoriel est accessible ici
 
 <p align="center">
   <img width="660" height="300" src="https://user-images.githubusercontent.com/24956276/171178057-83645072-a6ad-4224-a129-8c37954bd16f.png">
 </p>
 
 ## WatArSensor
-Le **WatarSensor** est un capteur capacitif qui permet de connaitre le taux d'humidité d'un sol. Ce capteur peut être plaçé en bout de champ et peut permettre d'actionner une martelière pour arrêter l'irrigation d'une zone. dans sa version simple, il renvoie simplement la valeur d'humidité du sol
+Le **WatarSensor** est un capteur capacitif qui permet de connaitre le taux d'humidité d'un sol. Ce capteur peut être plaçé en bout de champ et peut permettre d'actionner une martelière pour arrêter l'irrigation d'une zone. dans sa version simple, il renvoie simplement la valeur d'humidité du sol. Le tutoriel est accessible ici
 
 ![Watar Sensor](https://user-images.githubusercontent.com/24956276/171176488-8cc74e6c-c3f6-4d16-8e4a-b6d77da6c881.jpg)
 
 ##Lancelot
 
-**Lancelot** est un système qui permet d'activer un petit moteur qui fait tomber une trappe, résultant l'arrêt de l'irrigation d'une parcelle.
+**Lancelot** est un système qui permet d'activer un petit moteur qui fait tomber une trappe, résultant l'arrêt de l'irrigation d'une parcelle. Le tutoriel est accessible ici
 
 # Liste du Matériel
 Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
