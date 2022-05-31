@@ -1,6 +1,7 @@
 # HubIS
 
-Contôlez vos systèmes d'irrigation gravitaire à distance ! Le projet HubIS permet le developpement de plusieurs capteurs à bas coût. 
+Contôlez vos systèmes d'irrigation à distance ! Le projet HubIS permet le developpement de plusieurs capteurs à bas coût. 
+L’objectif principal de HubIS est de favoriser l’émergence, évaluer et accélérer l’adoption d’innovations permettant d’améliorer la performance et la durabilité des systèmes irrigués dans les régions méditerranéennes.
 
 ## Capteur Flowter
 Le **CapteurFlowter** est un boitié placé au niveau de la martelière, et détecte si l'eau déborde du canal via la montée d'un petit flotteur (Position haute ou Position basse)
