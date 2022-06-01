@@ -44,7 +44,7 @@ On va dans ```Fichier```>```Préférences```
   <img src="https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png">
 </p>
 
-Dans la nouvelle denêtre, on cherche ```URL de gestionnaire de cartes supplémentaires``` et on y colle le texte suivant : 
+Dans la nouvelle denêtre, on cherche ```URL de gestionnaire de cartes supplémentaires``` et on y colle le texte suivant, puis cliquer sur ```OK```
 
 ```https://github.com/HelTecAutomation/CubeCell-Arduino/releases/download/V1.4.0/package_CubeCell_index.json```
 
@@ -52,11 +52,16 @@ Dans la nouvelle denêtre, on cherche ```URL de gestionnaire de cartes suppléme
 
 On ouvre Outils > Type de cartes > Gestionnaire de Cartes
 
-![image](https://user-images.githubusercontent.com/24956276/168776797-24dedbd7-e37d-494b-a5fc-c4302abd9980.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171403617-b7479014-ef44-430a-ae37-232c8c688a19.png">
+</p>
 
-On recherce depuis la barre de recherche MKR. Une librairie est trouvée : "Arduino SAMD Boards". On clique sur Installer. L'installation peut prendre 1min.
+On recherce depuis la barre de recherche ```Cubecell```. Une librairie est trouvée : ```CubeCell Development Framework```. On clique sur Installer. L'installation peut prendre 1min.
 
-![image](https://user-images.githubusercontent.com/24956276/168777036-4c035800-1c95-4f91-ac7e-8996d260b482.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171403910-d90e1c8b-4be9-4b94-936c-cf3e32cdf047.png">
+</p>
+
 
 On selectionne finalement la carte utilisée dans outils > Type de Carte > Arduino SAMD > Arduino MKR GSM 1400 : 
 
