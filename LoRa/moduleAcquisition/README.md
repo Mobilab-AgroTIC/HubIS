@@ -6,9 +6,11 @@ Le module d'acqusistion LoRa est au centre de nombreux systèmes développés da
 Dans un premier temps, nous allons construire le module. Puis, comme pour la passerelle, il faut d'abord déclarer *virtuellement* le module sur le site The Things Network, qui va lui assigner des codes d'accès. On récupère ensuite ces codes d'accès pour les rentrer dans le module d'acquisition, qui pourra alors transmettre des données jusqu'au site. 
 
 <p align="center">
+  
 | ![space-1.jpg](https://user-images.githubusercontent.com/24956276/171441603-d26ef67e-7566-49ca-8db9-e4ef4eccf30b.png) | 
 |:--:| 
 | *Un module d'Acquisition dans son boitier (en noir), rattaché à un flotteur pour mesurer une hauteur d'eau* |
+  
 </p>
 
 # Construction du module 
