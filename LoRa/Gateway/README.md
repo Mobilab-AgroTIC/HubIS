@@ -25,7 +25,7 @@ Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner u
 
 On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171407055-537251ec-c1b4-448e-a95f-392677c2fa2b.png) puis remplir plusieurs informations : 
 
-- Gateway ID
-- 
+- ```Gateway ID``` : l'identifiant de la passerelle
+- ```Frequency plan``` dans la partie **```LoRaWan options```**
 
 
