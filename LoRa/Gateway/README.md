@@ -73,3 +73,5 @@ On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis
 Si tout fonctionne, on peut voir dans la page principale ```Overview``` de la paserelle qu'elle est active : ```Last activity 5 secondes ago```
 
 ![image](https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png)
+
+Félicitations, votre réseau LoRa est opérationnel ! Il est temps de revenir sur le tuto de votre projet mobilab
