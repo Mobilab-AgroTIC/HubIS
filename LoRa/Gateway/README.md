@@ -38,7 +38,7 @@ Aller sur l'onglet de gauche ```API keys``` et cliquer sur le bouton bleu ![imag
 
 ![image](https://user-images.githubusercontent.com/24956276/171410203-868b04d2-d6c1-4c9a-98df-96356bb193ae.png)
 
-On peut enfin revenir sur la page principale de la passerelle en cliquant à gauche sur ```Overview```.
+On peut enfin revenir sur la page principale de la passerelle en cliquant à gauche sur ```Overview```. Notons que le statut de la paserelle est toujours ```Disconnected``` pour l'instant.
 
 ### Paramétrer la passerelle Things Gateway avec la API key
 
