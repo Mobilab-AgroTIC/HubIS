@@ -35,7 +35,7 @@ L'installation demandera quelques autorisations, qu'il faudra accepter.
 Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre :
 
 <p align="center">
-  <img width="400" height="250" src="https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png">
+  <img width="250" height="250" src="https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png">
 </p>
 
 On va dans ```Fichier```>```Préférences```
