@@ -55,3 +55,11 @@ on ouvre ensuite une fenetre Internet pour aller sur le site ```192.168.84.1```
 - On clique sur ```Show advanced options``` :
   - ```Account server``` : https://eu1.cloud.thethings.network
   - ```Gateway Key``` : c'est l'```API key``` que l'on a copié plus haut ! Vérifier qu'il n'y a pas d'espace à la fin de cette clef.
+
+On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis s'active. L'opération peut prendre jusqu'à 10minutes. 
+
+- La LED 1 est allumée : La passerelle est branchée
+
+- La LED 2 clignote lentement : La paserelle cherche à se connecter
+- La LED 2 clignote rapidement : La paserelle n'a pas réussi à se connecter. Refaire le paramétrage de la passerelle.
+- La LED 2 est allumée : 
