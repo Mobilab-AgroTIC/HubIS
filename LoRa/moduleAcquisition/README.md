@@ -7,11 +7,12 @@ Comme pour la passerelle, il faut d'abord déclarer *virtuellement* le module su
 
 # Déclaration du module sur The Things Network
 
-## Création de l'application 
+## Créer une application sur The Things Network
 
 Une application c'est comme un dossier qui va contenir plusieurs capteurs (on peut imaginer une flotte de 20 capteurs de températures, qui vont communiquer sur la même application de The Things Network). 
 
-Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/) puis ```Go to applications```.
+Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/)  *Si c'est la première fois, il faut cliquer sur register puis renseigner un username, une adresse mail, un password. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site.*
+On clique sur ```Go to applications```.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171421890-cb1e07ed-5135-402c-be44-e4bdf2fffc24.png">
@@ -21,8 +22,23 @@ On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/
 
 On arrive sur la page ```Overview``` de l'application, c'est la page principale où l'on pourra voir toutes les activités des capteurs installés. 
 
-## Création de l'application 
+## Declarer un nouveau module 
 
+Sur la page ```Overview``` de l'application, on clique sur ![image](https://user-images.githubusercontent.com/24956276/171426773-0ec080f6-9ddd-442d-bf35-d37620b5a9f2.png).
+
+Il faut cliquer sur l'onget ```Manually``` Plusieurs éléments sont à renseigner ici : 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171429266-31c08617-d46f-4cea-834b-96047fd2052d.png">
+</p>
+
+- ```Frequency plan``` : choisir ```Europe 863-870 MHz```. *C'est la fréquence de communication de LoRa en Europe*
+- ```LoRaWAN version``` : choisir ```LoRaWAN Specification 1.0.2``` *C'est le protocole de communication utilisé par notre carte*
+- ```Regional Parameters version``` : choisir ```RP001 Regional Parameters 1.0.2```
+- ```DevEUI``` : cliquer sur ```Generate``` *C'est l'identifiant du module que l'on va créer*
+- ```AppEUI``` : Cliquer sur ```Fill with zeros``` *C'est l'identifiant de l'application*
+- ```AppKey``` : Cliquer sur ```Generate``` *C'est le mot de passe pour accéder à l'application*
+- ```End device ID``` : C'est le nom du futur module. Choisir quelque chose de simple qui n'a pas été encore pris, par exemple ```capteur-humidite-1```
 
 # Construction du module 
 ## Module d'Acquisition V1
