@@ -74,7 +74,10 @@ On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. O
   <img src="https://user-images.githubusercontent.com/24956276/171432079-994e6a3e-9a5f-4b68-90d2-a274cdc170c9.png">
 </p>
 
-## Paramétrage de la carte d'acquisition :
+A noter la partie droite ```Live data```, qui note chaque activité. Quand les données viendront du capteur, c'est ici qu'elles seront marquées. A ce stade, les données les plus importantes sont dans ```Activation information```. C'est la qu'on trouve les codes d'accès que l'on va renseigner au module ! 
+
+## Paramétrer le module d'acquisition :
+
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
 <p align="center">
