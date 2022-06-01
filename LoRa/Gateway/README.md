@@ -30,11 +30,15 @@ On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](h
 
 On termine par ```Create Gateway``` tout en bas. On arrive alors sur la page de notre nouvelle passerelle, fraichement créée : 
 
-![image](https://user-images.githubusercontent.com/24956276/171409585-8cd596a5-9b63-4815-b449-bd936392b314.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171409585-8cd596a5-9b63-4815-b449-bd936392b314.png">
+</p>
 
 Aller sur l'onglet de gauche ```API keys``` et cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409893-4c07cffa-f4ab-467a-ad18-403f98acc321.png), puis le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171410245-10dec05d-205d-4361-ab27-25881f782d9f.png). Dans la nouvelle page, il faut impérativement copier la clef ```API key```car elle ne sera plus jamais disponible après avoir cliqué sur ![image](https://user-images.githubusercontent.com/24956276/171410593-6fbbab93-4485-46d8-b33e-e075c55f0df2.png) ! Pensez donc à la mettre dans un fichier texte quelque part, vous en aurez besoin pour la suite.
 
-![image](https://user-images.githubusercontent.com/24956276/171410203-868b04d2-d6c1-4c9a-98df-96356bb193ae.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171410203-868b04d2-d6c1-4c9a-98df-96356bb193ae.png">
+</p>
 
 On peut enfin revenir sur la page principale de la passerelle en cliquant à gauche sur ```Overview```. Notons que le statut de la paserelle est toujours ```Disconnected``` pour l'instant.
 
@@ -46,7 +50,9 @@ Brancher la passerelle Things Gateway sur le secteur. Retirer le capot blac et a
 On va momentanément se déconnecter d'Internet pour se connecter en WiFi au réseau ```thethings_XXX```. Le mot de passe est ```thethings```
 on ouvre ensuite une fenetre Internet pour aller sur le site ```192.168.84.1```
 
-![image](https://user-images.githubusercontent.com/24956276/171412428-cfdfba7f-9fe6-455d-88f7-2804d8a8beab.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171412428-cfdfba7f-9fe6-455d-88f7-2804d8a8beab.png">
+</p>
 
 - ```Gateway ID``` doit être le même que celui renseigné sur The Things Network plus haut
 - ```WiFi Access Point``` et ```WiFi Password``` sont les informations du WiFi sur lequel la passerelle va pouvoir se connecter à Internet. Si la passerelle est branché en Ethernet, ces champs peuvent être vides.
@@ -69,8 +75,9 @@ On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis
 - Toutes les LED clignotent bizarrement : la gateway est toujours en train de se mettre à jour. Ne pas toucher
 
 Si tout fonctionne, on peut voir dans la page principale ```Overview``` de la paserelle qu'elle est active : ```Last activity 5 secondes ago```
+
 <p align="center">
-![image](https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png)
+  <img src="https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png">
 </p>
 
 Félicitations, votre réseau LoRa est opérationnelle ! 
