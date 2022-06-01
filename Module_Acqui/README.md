@@ -24,6 +24,29 @@ La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell.
 </p>
 
 ## Paramétrage de la carte d'acquisition :
+Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) comme le montre la photo 2 :
+
+![image](https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png)
+L'installation vous posera quelques questions, dites "oui" à tout.
+
+## Paramétrage d'Arduino pour la carte MKR GSM 1400 ou NB 1500
+Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre.
+
+![image](https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png)
+
+On ouvre Outils > Type de cartes > Gestionnaire de Cartes
+
+![image](https://user-images.githubusercontent.com/24956276/168776797-24dedbd7-e37d-494b-a5fc-c4302abd9980.png)
+
+On recherce depuis la barre de recherche MKR. Une librairie est trouvée : "Arduino SAMD Boards". On clique sur Installer. L'installation peut prendre 1min.
+
+![image](https://user-images.githubusercontent.com/24956276/168777036-4c035800-1c95-4f91-ac7e-8996d260b482.png)
+
+On selectionne finalement la carte utilisée dans outils > Type de Carte > Arduino SAMD > Arduino MKR GSM 1400 : 
+
+![image](https://user-images.githubusercontent.com/24956276/168798769-1dd4935a-432c-4c87-a512-c35bd6eb8f39.png)
+
+Tout est configuré ! 
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
