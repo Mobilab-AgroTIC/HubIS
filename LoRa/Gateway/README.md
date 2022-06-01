@@ -25,7 +25,7 @@ Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner u
 
 On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171407055-537251ec-c1b4-448e-a95f-392677c2fa2b.png) puis remplir plusieurs informations : 
 
-- ```Gateway ID``` : l'identifiant de la passerelle, ne pouvant contenir que des minuscules, chiffres ou ```-```
-- ```Frequency plan``` dans la partie **```LoRaWan options```**
-
+- ```Gateway ID``` : l'identifiant de la passerelle, ne pouvant contenir que des minuscules, chiffres ou des tirets ```-```
+- ```Frequency plan``` dans la partie **```LoRaWan options```** à mettre en ```Europe 863-870 MHz (SF9 for RX2 - recommended)```
+- ```Automatic updates``` : Cocher en Enabled
 
