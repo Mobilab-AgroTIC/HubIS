@@ -23,7 +23,8 @@ Direction [ce site](https://eu1.cloud.thethings.network/console/gateways).
 
 Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner un ```username```, une ```adresse mail```, un ```password```. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site. 
 
-On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171407055-537251ec-c1b4-448e-a95f-392677c2fa2b.png) puis remplir plusieurs informations : 
+On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409958-12ce6a0d-8328-4e47-8add-69bd87d22133.png)
+ puis remplir plusieurs informations : 
 
 - ```Gateway ID``` : l'identifiant de la passerelle, ne pouvant contenir que des minuscules, chiffres ou des tirets ```-```
 - ```Frequency plan``` dans la partie **```LoRaWan options```** à mettre en ```Europe 863-870 MHz (SF9 for RX2 - recommended)```
