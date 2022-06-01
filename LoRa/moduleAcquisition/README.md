@@ -80,7 +80,7 @@ On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. O
 
 A noter la partie droite ```Live data```, qui note chaque activité. Quand les données viendront du capteur, c'est ici qu'elles seront marquées. A ce stade, les données les plus importantes sont dans ```Activation information```. C'est la qu'on trouve les codes d'accès que l'on va renseigner au module ! 
 
-## Paramétrer le module d'acquisition :
+## Préparation d'Arduino pour paramétrer le module d'acquisition :
 
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
@@ -126,8 +126,17 @@ On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Cart
   <img src="https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png">
 </p>
 
-La carte est prête à être configurée ! il faut copier tout [ce code](https://raw.githubusercontent.com/Mobilab-AgroTIC/HubIS/main/Capteur_Flowter/Capteur_Flowter_CubeCell/Capteur_Flowter_CubeCell.ino), puis coller tout le code
+La carte est prête à être configurée ! 
 
+## Paramétrer le module d'acquisition :
+
+Dans la fenêtre Arduino, supprimer tout le code pour obtenir une page vierge comme ceci : 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171442737-422dca53-2446-44a3-baaa-b033688b1684.png">
+</p>
+
+il faut maintenant copier tout [ce code](https://raw.githubusercontent.com/Mobilab-AgroTIC/HubIS/main/Capteur_Flowter/Capteur_Flowter_CubeCell/Capteur_Flowter_CubeCell.ino) (pensez au raccourci ```Ctrl```+```A``` et ```Ctrl```+```C``` pour aller plus vite), puis le coller dans la fenêtre vierge d'Arduino (```Ctrl```+```V```).
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
