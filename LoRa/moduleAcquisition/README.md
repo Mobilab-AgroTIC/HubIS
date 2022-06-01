@@ -132,7 +132,7 @@ On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Cart
 
 La carte est prête à être configurée ! 
 
-## Paramétrer le module d'acquisition :
+# 3. Paramétrage du module d'acquisition :
 
 Dans la fenêtre Arduino, supprimer tout le code pour obtenir une page vierge comme ceci : 
 
@@ -141,6 +141,12 @@ Dans la fenêtre Arduino, supprimer tout le code pour obtenir une page vierge co
 </p>
 
 il faut maintenant copier tout [ce code](https://raw.githubusercontent.com/Mobilab-AgroTIC/HubIS/main/Capteur_Flowter/Capteur_Flowter_CubeCell/Capteur_Flowter_CubeCell.ino) (pensez au raccourci ```Ctrl```+```A``` et ```Ctrl```+```C``` pour aller plus vite), puis le coller dans la fenêtre vierge d'Arduino (```Ctrl```+```V```).
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171444533-e456aeec-f77b-4715-88eb-c1732cf0109f.png">
+</p>
+
+On touche à la fin ! Il faut maintenant que l'on mette les codes d'accès dans ce code pour que le module d'acqusition sache où aller
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
