@@ -124,11 +124,20 @@ On recherce depuis la barre de recherche ```Cubecell```. Une librairie est trouv
 </p>
 
 
-On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Carte``` > ```CubeCell``` > ```CubeCell Module (HTCC01)``` : 
+On selectionne la carte utilisée dans ```outils``` > ```Type de Carte``` > ```CubeCell``` > ```CubeCell Module (HTCC01)``` : 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png">
 </p>
+
+On en profite pour aller dans ```outils``` > ```LORAWAN_REGION``` > ```REGION_EU868```
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171449177-57bafbce-d34a-4f34-a17f-63ece58c1fc3.png">
+</p>
+
+Ainsi que dans ```outils``` > ```LORAWAN_AT_SUPPORT``` > ```OFF```
+
+On choisit finalement le port pour téléverser
 
 La carte est prête à être configurée ! 
 
@@ -158,7 +167,7 @@ Puis on clique sur le module en question pour arriver à cette page :
   <img src="https://user-images.githubusercontent.com/24956276/171447459-6bf2e1b5-a0f8-4de7-9618-93006fcfa1fd.png">
 </p>
 
-On se dirige dans la section ```Activation information```, il va falloir récupérer les ```devEui```, ```appEui``` et ```appKey``` au bon format : pour se faire, il faut cliquer sur l'oeil ![image](https://user-images.githubusercontent.com/24956276/171448063-51c3fcc8-a667-4b31-95e4-80980a5b8bd3.png) puis sur les trois ```<>```. On peut enfin cliquer 1 par 1 sur les 3 logos ![image](https://user-images.githubusercontent.com/24956276/171448197-4ae925ec-9ebf-4dbb-80ca-9c635fa2f66a.png) pour coller ce code d'accès dans la fenêtre Arduino
+On se dirige dans la section ```Activation information```, il va falloir récupérer les ```devEui```, ```appEui``` et ```appKey``` au bon format : pour se faire, il faut cliquer sur l'oeil ![image](https://user-images.githubusercontent.com/24956276/171448063-51c3fcc8-a667-4b31-95e4-80980a5b8bd3.png) puis sur les trois ```<>```. On peut enfin cliquer 1 par 1 sur les 3 logos ![image](https://user-images.githubusercontent.com/24956276/171448197-4ae925ec-9ebf-4dbb-80ca-9c635fa2f66a.png) pour coller ce code d'accès dans la fenêtre Arduino :
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171448875-c9e37723-31a1-4701-85c8-8a1da4d89635.gif">
