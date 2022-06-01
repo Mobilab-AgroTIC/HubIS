@@ -6,7 +6,11 @@ Le module d'acqusistion LoRa est au centre de nombreux systèmes développés da
 Comme pour la passerelle, il faut d'abord déclarer *virtuellement* le module sur le site The Things Network, qui va lui assigner des codes d'accès. On récupère ensuite ces codes d'accès pour les rentrer dans le module d'acquisition, qui pourra alors transmettre des données jusqu'au site. 
 
 # Déclaration du module sur The Things Network
-## 
+
+## Création de l'application 
+
+Une application c'est comme un dossier qui va contenir plusieurs capteurs (on peut imaginer une flotte de 20 capteurs de températures, qui vont communiquer sur la même application de The Things Network). 
+
 Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/) puis ```Go to applications```.
 
 <p align="center">
@@ -16,6 +20,9 @@ Direction le site de [The Things Network](https://eu1.cloud.thethings.network/co
 On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171422130-f0d5dc9c-c491-41a0-8dfb-b492304c2caa.png) puis on donne un nom simmple à l'application, puis on clique sur ![image](https://user-images.githubusercontent.com/24956276/171422264-7c65ba54-6e88-4c42-b1df-06b951284b62.png)
 
 On arrive sur la page ```Overview``` de l'application, c'est la page principale où l'on pourra voir toutes les activités des capteurs installés. 
+
+## Création de l'application 
+
 
 # Construction du module 
 ## Module d'Acquisition V1
