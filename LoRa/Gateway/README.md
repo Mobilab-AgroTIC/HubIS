@@ -29,3 +29,7 @@ On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](h
 - ```Frequency plan``` dans la partie **```LoRaWan options```** à mettre en ```Europe 863-870 MHz (SF9 for RX2 - recommended)```
 - ```Automatic updates``` : Cocher en Enabled
 
+On termine par ```Create Gateway``` tout en bas. On arrive alors sur la page de notre nouvelle passerelle, fraichement créée : 
+
+![image](https://user-images.githubusercontent.com/24956276/171409585-8cd596a5-9b63-4815-b449-bd936392b314.png)
+
