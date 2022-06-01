@@ -69,8 +69,9 @@ On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis
 - Toutes les LED clignotent bizarrement : la gateway est toujours en train de se mettre à jour. Ne pas toucher
 
 Si tout fonctionne, on peut voir dans la page principale ```Overview``` de la paserelle qu'elle est active : ```Last activity 5 secondes ago```
-
+<p align="center">
 ![image](https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png)
+</p>
 
 Félicitations, votre réseau LoRa est opérationnelle ! 
 
