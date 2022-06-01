@@ -5,9 +5,9 @@ Un Capteur Flowter coûte environ 30€.
 
 # Pré-requis
 
-Le Capteur Flowter envoie ses données via un réseau LoRa TTN. Il est imperatif d'avoir une couverture LoRa sur l'exploitation ! Si ce n'est pas le cas, vous pouvez suivre [ce tutoriel](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa) pour installer un réseau LoRa
+1. Le Capteur Flowter envoie ses données via un réseau LoRa TTN. Il est imperatif d'avoir une couverture LoRa sur l'exploitation ! Si ce n'est pas le cas, vous pouvez suivre [ce tutoriel](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa) pour installer un réseau LoRa
 
-La Capteur Flowter est basé sur un module d'acquisition à développer en suivi [ce tutoriel ! ](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/Module_Acqui)
+2. La Capteur Flowter est basé sur un module d'acquisition à développer en suivi [ce tutoriel ! ](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/Module_Acqui)
 
 # Matériel nécessaire
 
