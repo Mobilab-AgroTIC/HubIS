@@ -27,13 +27,12 @@ La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell.
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) comme le montre la photo 2 :
 
 ![image](https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png)
-L'installation vous posera quelques questions, dites "oui" à tout.
+L'installation demandera quelques autorisations, qu'il faudra accepter.
 
-## Paramétrage d'Arduino pour la carte MKR GSM 1400 ou NB 1500
+## Paramétrage d'Arduino pour la carte CubeCell
 Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre.
 
 ![image](https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png)
-
 
 ![image](https://user-images.githubusercontent.com/24956276/171401907-0fc8333a-9b52-4717-a687-3eac4d24f7d2.png)
 
