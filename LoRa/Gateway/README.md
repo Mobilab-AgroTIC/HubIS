@@ -1,10 +1,8 @@
-# La passerelle LoRa
+# Les passerelles LoRa
 
 ## Présentation
 
-Une passerelle LoRa est essentielle pour pouvoir communiquer avec les capteurs que l'on va développer. Elle correspond à la "box" WiFi chez vous.
-La passerelle doit-être installé si possible en hauteur, dans un environnement découvert, et doit avoir un accès à internet (WiFi ou Ethernet)
-Une passerelle peut accueillir une très grande quantité de capteurs, il n'est pas nécessaire d'en acheter une par capteur !
+Une passerelle LoRa est essentielle pour pouvoir communiquer avec les capteurs que l'on va développer. Elle correspond à la "box" WiFi chez vous, ou à l'antenne 4G la plus proche de votre téléphone.
 
 A savoir : si un voisin a déjà déployé sa passerelle LoRa, il n'est peut-être pas nécessaire d'acheter soi-même une passerelle ! Il est donc conseillé de tester d'abord la couverture avant d'acheter une passerelle.
 
@@ -74,4 +72,11 @@ Si tout fonctionne, on peut voir dans la page principale ```Overview``` de la pa
 
 ![image](https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png)
 
-Félicitations, votre réseau LoRa est opérationnel ! Il est temps de revenir sur le tuto de votre projet mobilab
+Félicitations, votre réseau LoRa est opérationnel ! 
+
+### Installation de la paserelle LoRa
+
+La passerelle doit-être installée si possible en hauteur, dans un environnement découvert, et doit avoir un accès à internet (WiFi ou Ethernet)
+Une passerelle peut accueillir une très grande quantité de capteurs, il n'est pas nécessaire d'en acheter une par capteur !
+
+Il est temps de revenir sur le tuto de votre projet ;)
