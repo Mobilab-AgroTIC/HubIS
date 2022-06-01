@@ -27,7 +27,7 @@ La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell.
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
 <p align="center">
-  <img width="400" height="300" src="https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png">
+  <img width="400" height="250" src="https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png">
 </p>
 L'installation demandera quelques autorisations, qu'il faudra accepter.
 
