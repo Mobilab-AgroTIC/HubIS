@@ -50,3 +50,8 @@ on ouvre ensuite une fenetre Internet pour aller sur le site ```192.168.84.1```
 
 ![image](https://user-images.githubusercontent.com/24956276/171412428-cfdfba7f-9fe6-455d-88f7-2804d8a8beab.png)
 
+- ```Gateway ID``` doit être le même que celui renseigné sur The Things Network plus haut
+- ```WiFi Access Point``` et ```WiFi Password``` sont les informations du WiFi sur lequel la passerelle va pouvoir se connecter à Internet. Si la passerelle est branché en Ethernet, ces champs peuvent être vides.
+- On clique sur ```Show advanced options``` :
+  - ```Account server``` : https://eu1.cloud.thethings.network
+  - ```Gateway Key``` : c'est l'```API key``` que l'on a copié plus haut ! Vérifier qu'il n'y a pas d'espace à la fin de cette clef.
