@@ -3,7 +3,27 @@
 
 Le module d'acqusistion LoRa est au centre de nombreux systèmes développés dans le mobilab AgroTIC. Il permet de récupérer les données d'un capteur (flotteur, température, humidité, etc) et de le transmettre via un réseau dit 'Bas-débit'. Un module coûte environ 30€ est est relativement simple à développer. 
 
-Comme pour la passerelle, il faut d'abord déclarer *virtuellement* le module sur le site The Things Network, qui va lui assigner des codes d'accès. On récupère ensuite ces codes d'accès pour les rentrer dans le module d'acquisition, qui pourra alors transmettre des données jusqu'au site. 
+Dans un premier temps, nous allons construire le module. Puis, comme pour la passerelle, il faut d'abord déclarer *virtuellement* le module sur le site The Things Network, qui va lui assigner des codes d'accès. On récupère ensuite ces codes d'accès pour les rentrer dans le module d'acquisition, qui pourra alors transmettre des données jusqu'au site. 
+
+# Construction du module 
+## Module d'Acquisition V1
+
+Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
+
+- Une carte [Cubecell HTC01 868MHz](https://www.amazon.fr/LoRaWAN-d%C3%A9veloppement-consommation-d%C3%A9nergie-Intelligente/dp/B07ZH7NL38/ref=sr_1_2?crid=1OHV1O5DEMZ3K&keywords=cubecell&qid=1654076800&sprefix=cubecell%2Caps%2C786&sr=8-2) (17€)
+- Une [petite breadboard](https://fr.aliexpress.com/item/32711841420.html?spm=a2g0o.productlist.0.0.65c62a6bTbWAZZ&algo_pvid=d5826731-e561-4cfd-949f-23708ba8ce65&algo_exp_id=d5826731-e561-4cfd-949f-23708ba8ce65-1&pdp_ext_f=%7B%22sku_id%22%3A%2260928567388%22%7D&pdp_npi=2%40dis%21EUR%21%211.21%21%21%211.22%21%21%400b0a050116540768736257657ef0c0%2160928567388%21sea) (2€)
+- Un [câble USB - micro USB](https://fr.aliexpress.com/item/1005004011620185.html?spm=a2g0o.productlist.0.0.521c25ae6qpBKJ&algo_pvid=3c669216-9262-4620-b0f1-91bdfd384a27&algo_exp_id=3c669216-9262-4620-b0f1-91bdfd384a27-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000027732934935%22%7D&pdp_npi=2%40dis%21EUR%21%212.42%21%21%21%21%21%400b0a050116540769447078326ef0c0%2112000027732934935%21sea) (2€). _Vous avez peut-être ce câble déjà chez vous : dans ce cas, il faut s'assurer qu'il soit DATA : le câble ne doit pas servir qu'à alimenter, mais transfère aussi des données (les câbles issus des boites de téléphones le sont, en général). Pour le savoir, on peut brancher son téléphone à un ordinateur. Si on ne peut pas aller dans ses données de téléphone, ce câble n'est pas DATA._
+- Une [pile LiPo 18650](https://fr.aliexpress.com/item/1005003884402783.html?spm=a2g0o.productlist.0.0.152d3abbwRZw6U&algo_pvid=6e3a1f8f-b240-427e-84e6-4edd11873acb&algo_exp_id=6e3a1f8f-b240-427e-84e6-4edd11873acb-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000027385901241%22%7D&pdp_npi=2%40dis%21EUR%21%2123.65%21%21%21%21%21%402100bddd16540848646242236e36d2%2112000027385901241%21sea) (2€)
+- Un [support de pile LiPo ](https://fr.aliexpress.com/item/1005001660193629.html?spm=a2g0o.productlist.0.0.41f663cb5UzfhA&algo_pvid=bb7100fb-5a41-41ea-a0b6-641953164b12&algo_exp_id=bb7100fb-5a41-41ea-a0b6-641953164b12-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000017030989115%22%7D&pdp_npi=2%40dis%21EUR%21%210.57%21%21%21%21%21%402100bddd16540847580796849e36d2%2112000017030989115%21sea) (0.5€)
+- Optionnel : un [chargeur de pile LiPo](https://fr.aliexpress.com/item/4000389548504.html?spm=a2g0o.ppclist.product.2.2aa5MKt2MKt2dV&pdp_npi=2%40dis%21EUR%21%E2%82%AC%201%2C50%21%E2%82%AC%201%2C50%21%21%21%21%21%40211b5e2116540847018041103ebb31%2110000001590316714%21btf&_t=pvid%3Aeb3f5609-ca17-4705-a884-e4d30379c65f&afTraceInfo=4000389548504__pc__pcBridgePPC__xxxxxx__1654084702&gatewayAdapt=glo2fra) (2€)
+
+## Montage de la carte d'acquisition : 
+
+La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell. Il faut également clipser le câble rouge et noir sous la carte CubeCell, ainsi que l'antenne, comme ceci :
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/24956276/171400798-5848a176-b9ec-4251-8e83-1398ba19a25d.png">
+</p>
 
 # Déclaration du module sur The Things Network
 
@@ -44,30 +64,14 @@ Vous devez obtenir ceci :
 
 Cliquer sur ![image](https://user-images.githubusercontent.com/24956276/171431102-9ed150bc-d95b-4d9f-9a8e-cbf899882d05.png). On revient à la page d'accueil ```Overview```. On remarque qu'un nouveau module est déclaré dans la partie ```End devices``` en bas. 
 
-![image](https://user-images.githubusercontent.com/24956276/171431428-4b5d8664-e3f2-4be4-b7fb-71dd50b029dd.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171431428-4b5d8664-e3f2-4be4-b7fb-71dd50b029dd.png">
+</p>
 
 On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. On arrive sur la page du capteur. On remarque également qu'il n'a jamais été actif : 
-![image](https://user-images.githubusercontent.com/24956276/171432079-994e6a3e-9a5f-4b68-90d2-a274cdc170c9.png)
-
-
-# Construction du module 
-## Module d'Acquisition V1
-
-Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
-
-- Une carte [Cubecell HTC01 868MHz](https://www.amazon.fr/LoRaWAN-d%C3%A9veloppement-consommation-d%C3%A9nergie-Intelligente/dp/B07ZH7NL38/ref=sr_1_2?crid=1OHV1O5DEMZ3K&keywords=cubecell&qid=1654076800&sprefix=cubecell%2Caps%2C786&sr=8-2) (17€)
-- Une [petite breadboard](https://fr.aliexpress.com/item/32711841420.html?spm=a2g0o.productlist.0.0.65c62a6bTbWAZZ&algo_pvid=d5826731-e561-4cfd-949f-23708ba8ce65&algo_exp_id=d5826731-e561-4cfd-949f-23708ba8ce65-1&pdp_ext_f=%7B%22sku_id%22%3A%2260928567388%22%7D&pdp_npi=2%40dis%21EUR%21%211.21%21%21%211.22%21%21%400b0a050116540768736257657ef0c0%2160928567388%21sea) (2€)
-- Un [câble USB - micro USB](https://fr.aliexpress.com/item/1005004011620185.html?spm=a2g0o.productlist.0.0.521c25ae6qpBKJ&algo_pvid=3c669216-9262-4620-b0f1-91bdfd384a27&algo_exp_id=3c669216-9262-4620-b0f1-91bdfd384a27-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000027732934935%22%7D&pdp_npi=2%40dis%21EUR%21%212.42%21%21%21%21%21%400b0a050116540769447078326ef0c0%2112000027732934935%21sea) (2€). _Vous avez peut-être ce câble déjà chez vous : dans ce cas, il faut s'assurer qu'il soit DATA : le câble ne doit pas servir qu'à alimenter, mais transfère aussi des données (les câbles issus des boites de téléphones le sont, en général). Pour le savoir, on peut brancher son téléphone à un ordinateur. Si on ne peut pas aller dans ses données de téléphone, ce câble n'est pas DATA._
-- Une [pile LiPo 18650](https://fr.aliexpress.com/item/1005003884402783.html?spm=a2g0o.productlist.0.0.152d3abbwRZw6U&algo_pvid=6e3a1f8f-b240-427e-84e6-4edd11873acb&algo_exp_id=6e3a1f8f-b240-427e-84e6-4edd11873acb-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000027385901241%22%7D&pdp_npi=2%40dis%21EUR%21%2123.65%21%21%21%21%21%402100bddd16540848646242236e36d2%2112000027385901241%21sea) (2€)
-- Un [support de pile LiPo ](https://fr.aliexpress.com/item/1005001660193629.html?spm=a2g0o.productlist.0.0.41f663cb5UzfhA&algo_pvid=bb7100fb-5a41-41ea-a0b6-641953164b12&algo_exp_id=bb7100fb-5a41-41ea-a0b6-641953164b12-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000017030989115%22%7D&pdp_npi=2%40dis%21EUR%21%210.57%21%21%21%21%21%402100bddd16540847580796849e36d2%2112000017030989115%21sea) (0.5€)
-- Optionnel : un [chargeur de pile LiPo](https://fr.aliexpress.com/item/4000389548504.html?spm=a2g0o.ppclist.product.2.2aa5MKt2MKt2dV&pdp_npi=2%40dis%21EUR%21%E2%82%AC%201%2C50%21%E2%82%AC%201%2C50%21%21%21%21%21%40211b5e2116540847018041103ebb31%2110000001590316714%21btf&_t=pvid%3Aeb3f5609-ca17-4705-a884-e4d30379c65f&afTraceInfo=4000389548504__pc__pcBridgePPC__xxxxxx__1654084702&gatewayAdapt=glo2fra) (2€)
-
-## Montage de la carte d'acquisition : 
-
-La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell. Il faut également clipser le câble rouge et noir sous la carte CubeCell, ainsi que l'antenne, comme ceci :
 
 <p align="center">
-  <img height="300" src="https://user-images.githubusercontent.com/24956276/171400798-5848a176-b9ec-4251-8e83-1398ba19a25d.png">
+  <img src="https://user-images.githubusercontent.com/24956276/171432079-994e6a3e-9a5f-4b68-90d2-a274cdc170c9.png">
 </p>
 
 ## Paramétrage de la carte d'acquisition :
