@@ -122,7 +122,7 @@ On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Cart
   <img src="https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png">
 </p>
 
-La carte est prête à être configurée ! il faut copier tout [ce code ](https://github.com/Mobilab-AgroTIC/HubIS/blob/main/Capteur_Flowter/Capteur_Flowter_CubeCell/Capteur_Flowter_CubeCell.ino) en cliquant sur ![image](https://user-images.githubusercontent.com/24956276/171434387-205a3612-3891-469a-a072-c84fd2a6e063.png)
+La carte est prête à être configurée ! il faut copier tout [ce code](https://raw.githubusercontent.com/Mobilab-AgroTIC/HubIS/main/Capteur_Flowter/Capteur_Flowter_CubeCell/Capteur_Flowter_CubeCell.ino), puis coller tout le code
 
 
 ## Module Acquisition V2
