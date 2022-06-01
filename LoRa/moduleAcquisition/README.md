@@ -3,7 +3,19 @@
 
 Le module d'acqusistion LoRa est au centre de nombreux systèmes développés dans le mobilab AgroTIC. Il permet de récupérer les données d'un capteur (flotteur, température, humidité, etc) et de le transmettre via un réseau dit 'Bas-débit'. Un module coûte environ 30€ est est relativement simple à développer. 
 
+Comme pour la passerelle, il faut d'abord déclarer le module sur le site The Things Network, qui va lui assigner des codes d'accès. On récupère ensuite ces codes d'accès pour les rentrer dans le module d'acquisition, qui pourra alors transmettre des données jusqu'au site. 
 
+# Déclaration du module sur The Things Network
+## 
+Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/) puis ```Go to applications```. On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171422130-f0d5dc9c-c491-41a0-8dfb-b492304c2caa.png) puis on donne un nom simmple à l'application, puis on clique sur ![image](https://user-images.githubusercontent.com/24956276/171422264-7c65ba54-6e88-4c42-b1df-06b951284b62.png)
+
+
+<p align="center">
+  <img height="300" src="https://user-images.githubusercontent.com/24956276/171421890-cb1e07ed-5135-402c-be44-e4bdf2fffc24.png">
+</p>
+
+
+# Construction du module 
 ## Module d'Acquisition V1
 
 Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
