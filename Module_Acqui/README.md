@@ -44,8 +44,9 @@ On va dans ```Fichier```>```Préférences```
   <img src="https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png">
 </p>
 
+Dans la nouvelle denêtre, on cherche ```URL de gestionnaire de cartes supplémentaires``` et on y colle le texte suivant : 
 
-
+```https://github.com/HelTecAutomation/CubeCell-Arduino/releases/download/V1.4.0/package_CubeCell_index.json```
 
 ![image](https://user-images.githubusercontent.com/24956276/171401907-0fc8333a-9b52-4717-a687-3eac4d24f7d2.png)
 
