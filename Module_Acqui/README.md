@@ -20,14 +20,14 @@ Les liens redirigent vers le site Aliexpress à titre informatif : D'autres four
 La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell. Il faut également clipser le câble rouge et noir sous la carte CubeCell, ainsi que l'antenne, comme ceci :
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/24956276/171400798-5848a176-b9ec-4251-8e83-1398ba19a25d.png">
+  <img height="300" src="https://user-images.githubusercontent.com/24956276/171400798-5848a176-b9ec-4251-8e83-1398ba19a25d.png">
 </p>
 
 ## Paramétrage de la carte d'acquisition :
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
 <p align="center">
-  <img width="400" height="250" src="https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png">
+  <img height="250" src="https://user-images.githubusercontent.com/24956276/168775993-2691511c-9ea9-4fee-9f0e-90afb1747dbb.png">
 </p>
 L'installation demandera quelques autorisations, qu'il faudra accepter.
 
@@ -35,7 +35,7 @@ L'installation demandera quelques autorisations, qu'il faudra accepter.
 Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre :
 
 <p align="center">
-  <img width="250" height="250" src="https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png">
+  <img height="250" src="https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png">
 </p>
 
 On va dans ```Fichier```>```Préférences```
