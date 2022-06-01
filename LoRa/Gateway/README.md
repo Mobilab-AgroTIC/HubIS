@@ -56,11 +56,16 @@ on ouvre ensuite une fenetre Internet pour aller sur le site ```192.168.84.1```
   - ```Account server``` : https://eu1.cloud.thethings.network
   - ```Gateway Key``` : c'est l'```API key``` que l'on a copié plus haut ! Vérifier qu'il n'y a pas d'espace à la fin de cette clef.
 
-On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis s'active. L'opération peut prendre jusqu'à 10minutes. 
+On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis s'active. L'opération peut prendre jusqu'à 10minutes. Le code des LED est le suivant : 
 
 - La LED 1 est allumée : La passerelle est branchée
-
 - La LED 2  : 
- - clignote lentement : La paserelle cherche à se connecter
-- La LED 2 clignote rapidement : La paserelle n'a pas réussi à se connecter. Refaire le paramétrage de la passerelle.
-- La LED 2 est allumée : 
+  - clignote lentement : La paserelle cherche à se connecter à internet
+  - clignote rapidement : La paserelle n'a pas réussi à se connecter. Refaire le paramétrage de la passerelle.
+  - est allumée : Connection à Internet réussie ! 
+- La LED 3  : 
+  - clignote lentement : La paserelle cherche à s'activer
+  - clignote rapidement : La paserelle n'a pas réussi à s'activer sur The THings Network. Refaire toute l'installation.
+  - est allumée : L'Activation est réussie
+- La LED 4 est allumée : Tout roule ! 
+- Toutes les LED clignotent bizarrement : la gateway est toujours en train de se mettre à jour. Ne pas toucher
