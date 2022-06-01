@@ -72,7 +72,9 @@ Si tout fonctionne, on peut voir dans la page principale ```Overview``` de la pa
 
 ![image](https://user-images.githubusercontent.com/24956276/171415046-b08f340e-cf5f-46eb-a5cc-a74616078862.png)
 
-Félicitations, votre réseau LoRa est opérationnel ! 
+Félicitations, votre réseau LoRa est opérationnelle ! 
+
+Ancien tuto : [ici](https://docs.google.com/document/d/15u7gVZ0O7rmBvpWaHETV42GnluCNkuVWq6kZX1yau00/edit)
 
 ### Installation de la paserelle LoRa
 
