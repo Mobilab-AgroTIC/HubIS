@@ -60,6 +60,7 @@ On clique enfin sur ```save```. La passerelle se met à jour si nécessaire puis
 
 - La LED 1 est allumée : La passerelle est branchée
 
-- La LED 2 clignote lentement : La paserelle cherche à se connecter
+- La LED 2  : 
+ - clignote lentement : La paserelle cherche à se connecter
 - La LED 2 clignote rapidement : La paserelle n'a pas réussi à se connecter. Refaire le paramétrage de la passerelle.
 - La LED 2 est allumée : 
