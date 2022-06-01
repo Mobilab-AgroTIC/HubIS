@@ -11,7 +11,7 @@ Direction le site de [The Things Network](https://eu1.cloud.thethings.network/co
 
 
 <p align="center">
-  <img height="300" src="https://user-images.githubusercontent.com/24956276/171421890-cb1e07ed-5135-402c-be44-e4bdf2fffc24.png">
+  <img src="https://user-images.githubusercontent.com/24956276/171421890-cb1e07ed-5135-402c-be44-e4bdf2fffc24.png">
 </p>
 
 
