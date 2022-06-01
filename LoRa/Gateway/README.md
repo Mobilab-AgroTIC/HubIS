@@ -15,13 +15,13 @@ Il existe une multitude de passerelles LoRa compatibles avec le projet. Nous avo
 - UG65 (350€) est une passerelle avec la norme IP65 (résiste à l'eau mais pas à l'immersion et aux énormes intempéries). Sa portée est supérieure à 1km
 - UG67 (700€) est la plus chère et la meilleure des passerelles testées. Sa portée est grande et l'appareil est robuste.
 
-## Brancher et connecter une Passerelle LoRa
+## Activer une Passerelle LoRa
 
-Ce tuto présente le branchement d'une passerelle the Things Gateway et son activation sur The Things Network, en deux étapes : Tout d'abord, on déclare une passerelle sur le site, qui va nous donner des codes d'accès. Ensuite, on renseigne ces codes d'accès à la passerelle pour qu'elle puisse se connecter. 
+Ce tuto présente le branchement d'une passerelle the Things Gateway et son activation sur The Things Network, en deux étapes : Tout d'abord, on déclare une passerelle sur le site, qui va nous donner un code d'accès. Ensuite, on donne ce code d'accès à la passerelle pour qu'elle puisse se connecter. 
 
-Direction [ce site](https://eu1.cloud.thethings.network/console/gateways). 
+### Déclarer une nouvelle passerelle sur The Things Network
 
-Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner un ```username```, une ```adresse mail```, un ```password```. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site. 
+Direction [ce site](https://eu1.cloud.thethings.network/console/gateways). *Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner un ```username```, une ```adresse mail```, un ```password```. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site.* 
 
 On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409958-12ce6a0d-8328-4e47-8add-69bd87d22133.png)
  puis remplir plusieurs informations : 
@@ -36,9 +36,17 @@ On termine par ```Create Gateway``` tout en bas. On arrive alors sur la page de 
 
 Aller sur l'onglet de gauche ```API keys``` et cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409893-4c07cffa-f4ab-467a-ad18-403f98acc321.png), puis le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171410245-10dec05d-205d-4361-ab27-25881f782d9f.png). Dans la nouvelle page, il faut impérativement copier la clef ```API key```car elle ne sera plus jamais disponible après avoir cliqué sur ![image](https://user-images.githubusercontent.com/24956276/171410593-6fbbab93-4485-46d8-b33e-e075c55f0df2.png) ! Pensez donc à la mettre dans un fichier texte quelque part, vous en aurez besoin pour la suite.
 
-
-
-
 ![image](https://user-images.githubusercontent.com/24956276/171410203-868b04d2-d6c1-4c9a-98df-96356bb193ae.png)
 
+On peut enfin revenir sur la page principale de la passerelle en cliquant à gauche sur ```Overview```.
+
+### Paramétrer la passerelle Things Gateway avec la API key
+
+Il faut maintenant donner ce code à la passerelle, pour qu'elle puisse se connecter à The Things Network ! 
+
+Brancher la passerelle Things Gateway sur le secteur. Retirer le capot blac et appuyer 5 secondes sur le bouton ```RESET```
+On va momentanément se déconnecter d'Internet pour se connecter en WiFi au réseau ```thethings_XXX```. Le mot de passe est ```thethings```
+on ouvre ensuite une fenetre Internet pour aller sur le site ```192.168.84.1```
+
+![image](https://user-images.githubusercontent.com/24956276/171412428-cfdfba7f-9fe6-455d-88f7-2804d8a8beab.png)
 
