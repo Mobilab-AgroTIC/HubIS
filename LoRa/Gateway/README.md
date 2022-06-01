@@ -4,7 +4,7 @@
 
 Une passerelle LoRa est essentielle pour pouvoir communiquer avec les capteurs que l'on va développer. Elle correspond à la "box" WiFi chez vous, ou à l'antenne 4G la plus proche de votre téléphone.
 
-A savoir : si un voisin a déjà déployé sa passerelle LoRa, il n'est peut-être pas nécessaire d'acheter soi-même une passerelle ! Il est donc conseillé de tester d'abord la couverture avant d'acheter une passerelle.
+A savoir : si un voisin a déjà déployé sa passerelle LoRa, il n'est peut-être pas nécessaire d'acheter soi-même une passerelle ! Il est donc conseillé de tester la couverture avant d'acheter une passerelle. Le test peut se faire avec un [module d'acquisition LoRa](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa/moduleAcquisition)
 
 ## Les passerelles testées
 Il existe une multitude de passerelles LoRa compatibles avec le projet. Nous avons testé plusieurs passerelles LoRa : 
@@ -93,4 +93,4 @@ Les passerelles peuvent être stockées dans une grosse boite de dérivation pou
 
 ![image](https://user-images.githubusercontent.com/24956276/171419408-31791f65-3f24-433d-978c-50582aa9960d.png)
 
-Il est temps de revenir sur le tuto de votre projet ;)
+Il est temps de tester votre réseau en [connectant un module d'acquisition](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa/moduleAcquisition) à The Things Network ! ;)
