@@ -66,9 +66,8 @@ On recherce depuis la barre de recherche ```Cubecell```. Une librairie est trouv
 On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Carte``` > ```CubeCell``` > ```CubeCell Module (HTCC01)``` : 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/24956276/171403910-d90e1c8b-4be9-4b94-936c-cf3e32cdf047.png">
+  <img src="https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png">
 </p>
-![image](https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png)
 
 La carte est prête à être configurée ! 
 
