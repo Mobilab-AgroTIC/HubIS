@@ -36,6 +36,10 @@ Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre.
 
 ![image](https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png)
 
+On va dans ```Fichier```>```Préférences```
+![image](https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png)
+
+
 ![image](https://user-images.githubusercontent.com/24956276/171401907-0fc8333a-9b52-4717-a687-3eac4d24f7d2.png)
 
 On ouvre Outils > Type de cartes > Gestionnaire de Cartes
