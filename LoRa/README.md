@@ -12,4 +12,4 @@ Tous les projets du mobilab utilisent la solution gratuite The Things Network po
 Comme tout réseau, le réseau installé comporte : 
 
 - Une **[passerelle](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa/Gateway)**, ou Gateway : C'est l'équivalent de la box WiFi chez vous
-- Un **objet connecté** capable de communiquer en LoRa
+- Un **[objet connecté](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/LoRa/moduleAcquisition)** capable de communiquer en LoRa
