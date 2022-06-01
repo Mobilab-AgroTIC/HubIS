@@ -7,6 +7,7 @@ Dans un premier temps, nous allons construire le module. Puis, comme pour la pas
 
 <p align="center">
   <img height="300" src="https://user-images.githubusercontent.com/24956276/171441603-d26ef67e-7566-49ca-8db9-e4ef4eccf30b.png">
+  
   <em>Un module d'Acquisition dans son boitier (en noir), rattaché à un flotteur pour mesurer une hauteur d'eau</em>
 </p>
 
