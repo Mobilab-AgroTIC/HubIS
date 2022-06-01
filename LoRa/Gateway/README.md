@@ -16,4 +16,16 @@ Il existe une multitude de passerelles LoRa compatibles avec le projet. Nous avo
 - UG67 (700€) est la plus chère et la meilleure des passerelles testées. Sa portée est grande et l'appareil est robuste.
 
 ## Brancher et connecter une Passerelle LoRa
-Ce tuto présente le branchement d'une passerelle the Things Gateway
+
+Ce tuto présente le branchement d'une passerelle the Things Gateway et son activation sur The Things Network, en deux étapes : Tout d'abord, on déclare une passerelle sur le site, qui va nous donner des codes d'accès. Ensuite, on renseigne ces codes d'accès à la passerelle pour qu'elle puisse se connecter. 
+
+Direction [ce site](https://eu1.cloud.thethings.network/console/gateways). 
+
+Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner un ```username```, une ```adresse mail```, un ```password```. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site. 
+
+On se retrouve sur la page ```Gateways```. Cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171407055-537251ec-c1b4-448e-a95f-392677c2fa2b.png) puis remplir plusieurs informations : 
+
+- Gateway ID
+- 
+
+
