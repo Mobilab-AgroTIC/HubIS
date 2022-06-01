@@ -28,10 +28,6 @@ Sur la page ```Overview``` de l'application, on clique sur ![image](https://user
 
 Il faut cliquer sur l'onget ```Manually``` Plusieurs éléments sont à renseigner ici : 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/24956276/171429266-31c08617-d46f-4cea-834b-96047fd2052d.png">
-</p>
-
 - ```Frequency plan``` : choisir ```Europe 863-870 MHz```. *C'est la fréquence de communication de LoRa en Europe*
 - ```LoRaWAN version``` : choisir ```LoRaWAN Specification 1.0.2``` *C'est le protocole de communication utilisé par notre carte*
 - ```Regional Parameters version``` : choisir ```RP001 Regional Parameters 1.0.2```
@@ -39,6 +35,20 @@ Il faut cliquer sur l'onget ```Manually``` Plusieurs éléments sont à renseign
 - ```AppEUI``` : Cliquer sur ```Fill with zeros``` *C'est l'identifiant de l'application*
 - ```AppKey``` : Cliquer sur ```Generate``` *C'est le mot de passe pour accéder à l'application*
 - ```End device ID``` : C'est le nom du futur module. Choisir quelque chose de simple qui n'a pas été encore pris, par exemple ```capteur-humidite-1```
+
+Vous devez obtenir ceci : 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171429266-31c08617-d46f-4cea-834b-96047fd2052d.png">
+</p>
+
+Cliquer sur ![image](https://user-images.githubusercontent.com/24956276/171431102-9ed150bc-d95b-4d9f-9a8e-cbf899882d05.png). On revient à la page d'accueil ```Overview```. On remarque qu'un nouveau module est déclaré dans la partie ```End devices``` en bas. 
+
+![image](https://user-images.githubusercontent.com/24956276/171431428-4b5d8664-e3f2-4be4-b7fb-71dd50b029dd.png)
+
+On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. On arrive sur la page du capteur. On remarque également qu'il n'a jamais été actif : 
+![image](https://user-images.githubusercontent.com/24956276/171432079-994e6a3e-9a5f-4b68-90d2-a274cdc170c9.png)
+
 
 # Construction du module 
 ## Module d'Acquisition V1
