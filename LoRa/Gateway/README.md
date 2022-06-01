@@ -89,4 +89,8 @@ Ancien tuto : [ici](https://docs.google.com/document/d/15u7gVZ0O7rmBvpWaHETV42Gn
 La passerelle doit-être installée si possible en hauteur, dans un environnement découvert, et doit avoir un accès à internet (WiFi ou Ethernet)
 Une passerelle peut accueillir une très grande quantité de capteurs, il n'est pas nécessaire d'en acheter une par capteur !
 
+Les passerelles peuvent être stockées dans une grosse boite de dérivation pour les protéger.
+
+![image](https://user-images.githubusercontent.com/24956276/171419408-31791f65-3f24-433d-978c-50582aa9960d.png)
+
 Il est temps de revenir sur le tuto de votre projet ;)
