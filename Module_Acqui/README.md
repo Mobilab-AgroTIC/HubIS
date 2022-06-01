@@ -50,7 +50,7 @@ Dans la nouvelle denêtre, on cherche ```URL de gestionnaire de cartes suppléme
 
 ![image](https://user-images.githubusercontent.com/24956276/171401907-0fc8333a-9b52-4717-a687-3eac4d24f7d2.png)
 
-On ouvre Outils > Type de cartes > Gestionnaire de Cartes
+On ouvre ```Outils``` > ```Type de cartes``` > ```Gestionnaire de Cartes```
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171403617-b7479014-ef44-430a-ae37-232c8c688a19.png">
@@ -63,11 +63,14 @@ On recherce depuis la barre de recherche ```Cubecell```. Une librairie est trouv
 </p>
 
 
-On selectionne finalement la carte utilisée dans outils > Type de Carte > Arduino SAMD > Arduino MKR GSM 1400 : 
+On selectionne finalement la carte utilisée dans ```outils``` > ```Type de Carte``` > ```CubeCell``` > ```CubeCell Module (HTCC01)``` : 
 
-![image](https://user-images.githubusercontent.com/24956276/168798769-1dd4935a-432c-4c87-a512-c35bd6eb8f39.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24956276/171403910-d90e1c8b-4be9-4b94-936c-cf3e32cdf047.png">
+</p>
+![image](https://user-images.githubusercontent.com/24956276/171404604-f7375034-6d13-4de5-b73e-26d2fb6caede.png)
 
-Tout est configuré ! 
+La carte est prête à être configurée ! 
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
