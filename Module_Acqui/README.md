@@ -41,7 +41,7 @@ Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre :
 On va dans ```Fichier```>```Préférences```
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png">
+  <img src="https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png">
 </p>
 
 
