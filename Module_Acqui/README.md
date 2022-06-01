@@ -32,12 +32,19 @@ Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/
 L'installation demandera quelques autorisations, qu'il faudra accepter.
 
 ## Paramétrage d'Arduino pour la carte CubeCell
-Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre.
+Une fois installé, on lance le logiciel Arduino. Une fenêtre s'ouvre :
 
-![image](https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png)
+<p align="center">
+  <img width="400" height="250" src="https://user-images.githubusercontent.com/24956276/168776482-0613947c-0370-4ca8-819b-ab0c045d7667.png">
+</p>
 
 On va dans ```Fichier```>```Préférences```
-![image](https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png)
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/24956276/171402445-3abafa64-0c47-4f23-907e-1e0cedf2e524.png">
+</p>
+
+
 
 
 ![image](https://user-images.githubusercontent.com/24956276/171401907-0fc8333a-9b52-4717-a687-3eac4d24f7d2.png)
