@@ -17,7 +17,7 @@ Le **PiLowTech** est une canne planté dans le sol à la profondeur voulue, et r
 </p>
 
 ## WatArSensor
-Le **WatarSensor** est un capteur similaire au Capteur Flowter, qui permet de connaitre le taux d'humidité d'un sol. Ce capteur est placé en fin de parcelle pour les irrigations gravitaires et renvoie si l'eau est arrivée en fin de parcelle (flotteur en position haute) ou pas (flotteur en position basse). Le tutoriel est accessible ici
+Le **WatarSensor** est un capteur similaire au Capteur Flowter, qui permet de connaitre le taux d'humidité d'un sol. Ce capteur est placé en fin de parcelle pour les irrigations gravitaires et renvoie si l'eau est arrivée en fin de parcelle (flotteur en position haute) ou pas (flotteur en position basse). [Le tutoriel est accessible ici](https://github.com/Mobilab-AgroTIC/HubIS/tree/main/WatAr_Sensor)
 
 ![Watar Sensor](https://user-images.githubusercontent.com/24956276/171176488-8cc74e6c-c3f6-4d16-8e4a-b6d77da6c881.jpg)
 
