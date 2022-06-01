@@ -7,13 +7,15 @@ Comme pour la passerelle, il faut d'abord déclarer le module sur le site The Th
 
 # Déclaration du module sur The Things Network
 ## 
-Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/) puis ```Go to applications```. On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171422130-f0d5dc9c-c491-41a0-8dfb-b492304c2caa.png) puis on donne un nom simmple à l'application, puis on clique sur ![image](https://user-images.githubusercontent.com/24956276/171422264-7c65ba54-6e88-4c42-b1df-06b951284b62.png)
-
+Direction le site de [The Things Network](https://eu1.cloud.thethings.network/console/) puis ```Go to applications```.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171421890-cb1e07ed-5135-402c-be44-e4bdf2fffc24.png">
 </p>
 
+On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171422130-f0d5dc9c-c491-41a0-8dfb-b492304c2caa.png) puis on donne un nom simmple à l'application, puis on clique sur ![image](https://user-images.githubusercontent.com/24956276/171422264-7c65ba54-6e88-4c42-b1df-06b951284b62.png)
+
+On arrive sur la page ```Overview``` de l'application, c'est la page principale où l'on pourra voir toutes les activités des capteurs installés. 
 
 # Construction du module 
 ## Module d'Acquisition V1
