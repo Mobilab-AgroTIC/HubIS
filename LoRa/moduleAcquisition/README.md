@@ -137,7 +137,11 @@ On en profite pour aller dans ```outils``` > ```LORAWAN_REGION``` > ```REGION_EU
 
 Ainsi que dans ```outils``` > ```LORAWAN_AT_SUPPORT``` > ```OFF```
 
-On choisit finalement le port pour téléverser
+On choisit finalement le port pour envoyer le code. C'est celui qui s'apelle CubeCell
+
+![image](https://user-images.githubusercontent.com/24956276/171452451-a3cb065d-adeb-46bb-a29b-8e726129ee56.png)
+
+Note : Parfois, il y a plusieurs ports d'indiqués et on ne sait pas lequel choisir. il suffit de débrancher, regarder les ports disponibles, puis rebrancher et refaire l'opération. Celui qui a apparu est celui qu'il faut séléctionner. 
 
 La carte est prête à être configurée ! 
 
@@ -173,7 +177,7 @@ On se dirige dans la section ```Activation information```, il va falloir récup�
   <img src="https://user-images.githubusercontent.com/24956276/171448875-c9e37723-31a1-4701-85c8-8a1da4d89635.gif">
 </p>
 
-
+On fait ```Ctrl```+```U``` pour envoyer le code à la carte. L'opération peut prendre 1min, vous pouvez guetter sur The Things Network si une donnée est bien arrivée !
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
