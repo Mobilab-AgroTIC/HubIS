@@ -146,7 +146,9 @@ il faut maintenant copier tout [ce code](https://raw.githubusercontent.com/Mobil
   <img src="https://user-images.githubusercontent.com/24956276/171444533-e456aeec-f77b-4715-88eb-c1732cf0109f.png">
 </p>
 
-On touche à la fin ! Il faut maintenant que l'on mette les codes d'accès dans ce code pour que le module d'acqusition sache où aller
+On touche à la fin ! Il faut maintenant que l'on mette les codes d'accès dans ce code pour que le module d'acqusition ait les droits d'envoi. ça se passe justement dans les 3 premières lignes, qui commencent par ```uint8_t```. On retrouve les ```devEui```, ```appEui``` et ```appKey``` ! Retournons sur notre [page Things Network](https://eu1.cloud.thethings.network/console/applications), dans l'application créée plus haut. On retourne sur la page du capteur en cliquant sur le nom du capteur dans la partie ```End devices```
+
+![image](https://user-images.githubusercontent.com/24956276/171446206-b644c05f-da01-4aeb-a368-d9db4890ab4c.png)
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
