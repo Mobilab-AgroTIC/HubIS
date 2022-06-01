@@ -13,7 +13,7 @@ Dans un premier temps, nous allons construire le module. Puis, comme pour la pas
   
 </p>
 
-# Construction du module 
+# 1. Construction du module 
 ## Module d'Acquisition V1
 
 Les liens redirigent vers le site Aliexpress à titre informatif : D'autres fournisseurs peuvent livrer ce genre de produits ! 
@@ -33,7 +33,7 @@ La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell.
   <img height="300" src="https://user-images.githubusercontent.com/24956276/171400798-5848a176-b9ec-4251-8e83-1398ba19a25d.png">
 </p>
 
-# Déclaration du module sur The Things Network
+# 2. Déclaration du module sur The Things Network
 
 ## Créer une application sur The Things Network
 
