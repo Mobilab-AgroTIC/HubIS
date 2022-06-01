@@ -34,5 +34,10 @@ On termine par ```Create Gateway``` tout en bas. On arrive alors sur la page de 
 
 ![image](https://user-images.githubusercontent.com/24956276/171409585-8cd596a5-9b63-4815-b449-bd936392b314.png)
 
-Aller sur l'onglet de gauche ```API keys``` et cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409893-4c07cffa-f4ab-467a-ad18-403f98acc321.png)
+Aller sur l'onglet de gauche ```API keys``` et cliquer sur le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171409893-4c07cffa-f4ab-467a-ad18-403f98acc321.png), puis le bouton bleu ![image](https://user-images.githubusercontent.com/24956276/171410245-10dec05d-205d-4361-ab27-25881f782d9f.png). Dans la nouvelle page, il faut impérativement copier la clef ```API key```car elle ne sera plus jamais disponible après avoir cliqué sur ![image](https://user-images.githubusercontent.com/24956276/171410524-3a34ea05-f637-4af6-a76f-0d37749ed2e7.png)
+
+
+
+![image](https://user-images.githubusercontent.com/24956276/171410203-868b04d2-d6c1-4c9a-98df-96356bb193ae.png)
+
 
