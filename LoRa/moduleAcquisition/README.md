@@ -35,7 +35,7 @@ La carte Cubecell est livrée avec des broches, à souder sur la carte Cubecell.
 
 # 2. Déclaration du module sur The Things Network
 
-## Créer une application sur The Things Network
+## 2.1. Créer une application sur The Things Network
 
 Une application c'est comme un dossier qui va contenir plusieurs capteurs (on peut imaginer une flotte de 20 capteurs de températures, qui vont communiquer sur la même application de The Things Network). 
 
@@ -84,7 +84,7 @@ On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. O
 
 A noter la partie droite ```Live data```, qui note chaque activité. Quand les données viendront du capteur, c'est ici qu'elles seront marquées. A ce stade, les données les plus importantes sont dans ```Activation information```. C'est la qu'on trouve les codes d'accès que l'on va renseigner au module ! 
 
-## Préparation d'Arduino pour paramétrer le module d'acquisition :
+## 2.2. Préparation d'Arduino pour paramétrer le module d'acquisition :
 
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
@@ -159,7 +159,7 @@ il faut maintenant copier tout [ce code](https://raw.githubusercontent.com/Mobil
   <img src="https://user-images.githubusercontent.com/24956276/171444533-e456aeec-f77b-4715-88eb-c1732cf0109f.png">
 </p>
 
-On touche à la fin ! Il faut maintenant que l'on mette les codes d'accès dans ce code pour que le module d'acqusition ait les droits d'envoi. ça se passe justement dans les 3 premières lignes, qui commencent par *uint8_t*. On retrouve les ```devEui```, ```appEui``` et ```appKey``` ! Retournons sur notre [page Things Network](https://eu1.cloud.thethings.network/console/applications), dans l'application créée plus haut. On retourne sur la page du capteur en cliquant sur le nom du capteur dans la partie ```End devices```
+On touche à la fin ! Il faut maintenant que l'on mette les codes d'accès dans ce code pour que le module d'acqusition ait les droits d'envoi. ça se passe justement dans les 3 premières lignes, qui commencent par *uint8_t*. On retrouve les ```devEui```, ```appEui``` et ```appKey``` ! On retroune sur la [page des applications de Things Network](https://eu1.cloud.thethings.network/console/applications), puis on séléctionne l'application créée plus haut. On retourne sur la page du capteur en cliquant sur le nom du capteur dans la partie ```End devices```
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171446206-b644c05f-da01-4aeb-a368-d9db4890ab4c.png">
@@ -171,13 +171,19 @@ Puis on clique sur le module en question pour arriver à cette page :
   <img src="https://user-images.githubusercontent.com/24956276/171447459-6bf2e1b5-a0f8-4de7-9618-93006fcfa1fd.png">
 </p>
 
-On se dirige dans la section ```Activation information```, il va falloir récupérer les ```devEui```, ```appEui``` et ```appKey``` au bon format : pour se faire, il faut cliquer sur l'oeil ![image](https://user-images.githubusercontent.com/24956276/171448063-51c3fcc8-a667-4b31-95e4-80980a5b8bd3.png) puis sur les trois ```<>```. On peut enfin cliquer 1 par 1 sur les 3 logos ![image](https://user-images.githubusercontent.com/24956276/171448197-4ae925ec-9ebf-4dbb-80ca-9c635fa2f66a.png) pour coller ce code d'accès dans la fenêtre Arduino :
+On se dirige dans la section ```Activation information```, il va falloir récupérer les ```devEui```, ```appEui``` et ```appKey``` au bon format : pour se faire, il faut cliquer sur l'oeil ![image](https://user-images.githubusercontent.com/24956276/171448063-51c3fcc8-a667-4b31-95e4-80980a5b8bd3.png) puis sur les trois ```<>```. On peut enfin cliquer 1 par 1 sur les 3 logos ![image](https://user-images.githubusercontent.com/24956276/171448197-4ae925ec-9ebf-4dbb-80ca-9c635fa2f66a.png) pour copier et coller ce code d'accès dans la fenêtre Arduino :
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/171448875-c9e37723-31a1-4701-85c8-8a1da4d89635.gif">
 </p>
 
-On fait ```Ctrl```+```U``` pour envoyer le code à la carte. L'opération peut prendre 1min, vous pouvez guetter sur The Things Network si une donnée est bien arrivée !
+On fait ```Ctrl```+```U``` pour envoyer le code à la carte. L'opération peut prendre 1min, vous pouvez guetter sur The Things Network qu'une donnée est bien arrivée !
+
+# 4. Réalisation du boitier de protection
+
+N'importe quelle boite de dérivation fera l'affaire pour protéger le module d'acquisition. Pour ceux qui ont à disposition une imprimante 3D (pensez à vous renseigner sur des fablabs à proximité), les plans d'impressions sont accessible ici en format .stl 
+
+Félicitations, le module d'acquisisition est prêt ! Il ne reste plus qu'a brancher un capteur dessus pour récupérer cette donnée.
 
 ## Module Acquisition V2
 Module plus complexe ! et moins cher
