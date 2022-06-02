@@ -50,7 +50,7 @@ On clique sur le bouton bleu ![image](https://user-images.githubusercontent.com/
 
 On arrive sur la page ```Overview``` de l'application, c'est la page principale où l'on pourra voir toutes les activités des capteurs installés. 
 
-## Declarer un nouveau module 
+## 2.2. Declarer un nouveau module 
 
 Sur la page ```Overview``` de l'application, on clique sur ![image](https://user-images.githubusercontent.com/24956276/171426773-0ec080f6-9ddd-442d-bf35-d37620b5a9f2.png).
 
@@ -84,7 +84,7 @@ On peut cliquer sur le nom du module déclaré pour avoir plus d'informations. O
 
 A noter la partie droite ```Live data```, qui note chaque activité. Quand les données viendront du capteur, c'est ici qu'elles seront marquées. A ce stade, les données les plus importantes sont dans ```Activation information```. C'est la qu'on trouve les codes d'accès que l'on va renseigner au module ! 
 
-## 2.2. Préparation d'Arduino pour paramétrer le module d'acquisition :
+## 2.3. Préparation d'Arduino pour paramétrer le module d'acquisition :
 
 Il faut au préalable installer le [logiciel Arduino](https://www.arduino.cc/en/software) sur son ordinateur. Choisissez l'installation pour votre ordinateur (Windows, linux, mac, etc) :
 
