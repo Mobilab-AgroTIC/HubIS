@@ -1,5 +1,5 @@
 
-# Le module d'Acquisition LoRa
+# Le module d'acquisition LoRa
 
 Le module d'acqusistion LoRa est au centre de nombreux systèmes développés dans le mobilab AgroTIC. Il permet de récupérer les données d'un capteur (flotteur, température, humidité, etc) et de le transmettre via un réseau dit 'Bas-débit'. Un module coûte environ 30€ est est relativement simple à développer. 
 
