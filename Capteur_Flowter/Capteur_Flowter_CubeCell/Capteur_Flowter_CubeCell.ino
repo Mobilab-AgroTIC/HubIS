@@ -2,14 +2,14 @@
 #include "Arduino.h"
 
 //Set these OTAA parameters to match your app/node in TTN
-uint8_t devEui[] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x04, 0xE7, 0x65 };
+uint8_t devEui[] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x05, 0x19, 0x0D };
 uint8_t appEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-uint8_t appKey[] = { 0xD9, 0x38, 0x64, 0xD4, 0xC5, 0x65, 0x96, 0x89, 0x4E, 0xBE, 0xB0, 0x0E, 0xC1, 0xF6, 0xF6, 0x71 };
+uint8_t appKey[] = { 0x2E, 0x24, 0x08, 0xD2, 0x5B, 0x08, 0x5C, 0x9C, 0x77, 0xEA, 0xFE, 0x03, 0x37, 0xE7, 0x4B, 0xE4 };
+int temps = 120; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
-
 static uint8_t counter=0;
-uint8_t lora_data[1];
+uint8_t lora_data[2];
 uint8_t downlink ;
 
 ///////////////////////////////////////////////////
@@ -38,10 +38,7 @@ static void lowPowerSleep(uint32_t sleeptime)
 ///////////////////////////////////////////////////
 void setup() {
 	Serial.begin(115200);
- 
-  pinMode(GPIO1,OUTPUT);
-  digitalWrite(GPIO1,LOW);
-  pinMode(GPIO2,OUTPUT_PULLUP);
+  pinMode(GPIO2,INPUT_PULLUP);
   
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
@@ -68,40 +65,25 @@ void setup() {
 void loop()
 {
   counter++; 
-  
-  lowPowerSleep(15000);  
-
   delay(10);
-  lora_data[0] = digitalRead(GPIO2);
+  uint8_t voltage = getBatteryVoltage()/50; //Tension en %
 
+  Serial.printf("\nVoltage : %d\n", voltage);
+  lora_data[0] = voltage;
+  lora_data[1] = digitalRead(GPIO2);
+  
   //Now send the data. The parameters are "data size, data pointer, port, request ack"
   Serial.printf("\nSending packet with counter=%d\n", counter);
-  //Here we send confirmed packed (ACK requested) only for the first five (remember there is a fair use policy)
-  bool requestack=counter<5?true:false;
+  Serial.printf("\nValue to send : %d\n", lora_data[1]);
+
+  //Here we send confirmed packed (ACK requested) only for the first two (remember there is a fair use policy)
+  bool requestack=counter<2?true:false;
   if (LoRaWAN.send(sizeof(lora_data), lora_data, 1, requestack)) {
     Serial.println("Send OK");
   } else {
     Serial.println("Send FAILED");
   }
-}
 
-///////////////////////////////////////////////////
-//Example of handling downlink data
-void downLinkDataHandle(McpsIndication_t *mcpsIndication)
-{
-  Serial.printf("Received downlink: %s, RXSIZE %d, PORT %d, DATA: ",mcpsIndication->RxSlot?"RXWIN2":"RXWIN1",mcpsIndication->BufferSize,mcpsIndication->Port);
-  for(uint8_t i=0;i<mcpsIndication->BufferSize;i++) {
-    Serial.printf("%02X",mcpsIndication->Buffer[i]);
-  }
-  Serial.println();
-  
-  downlink = mcpsIndication->Buffer[0];
-  Serial.println();
-  if (downlink == 1){
-    Serial.println("active downlink received");
-    digitalWrite(GPIO1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(2000);                       // wait for a second
-    digitalWrite(GPIO1, LOW);    // turn the LED off by making the voltage LOW
-  }
-  else {Serial.println("passive donwlink received");}  
+  lowPowerSleep(temps*1000);  
+  delay(10);
 }
