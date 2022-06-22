@@ -23,4 +23,4 @@ Le **WatarSensor** est un capteur similaire au Capteur Flowter, qui permet de co
 
 ## Lancelot
 
-**Lancelot** est un système qui permet d'activer un petit moteur pour fermer une martelière, suite à l'arrivée d'eau en abs de parcelle. Le tutoriel est accessible ici
+**Lancelot** est un système qui permet d'activer un petit moteur pour fermer une martelière, suite à l'arrivée d'eau en bas de parcelle. Le tutoriel est accessible ici
