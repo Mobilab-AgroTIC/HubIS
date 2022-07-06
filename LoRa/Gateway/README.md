@@ -13,8 +13,26 @@ Il existe une multitude de passerelles LoRa compatibles avec le projet. Nous avo
 - UG65 (350€) est une passerelle avec la norme IP65 (résiste à l'eau mais pas à l'immersion et aux énormes intempéries). Sa portée est supérieure à 1km
 - UG67 (700€) est la plus chère et la meilleure des passerelles testées. Sa portée est grande et l'appareil est robuste.
 
-## Activer une Passerelle LoRa
+## Activer une Passerelle LoRa - Things Gateway Indoor
+Cette partie est inspirée de https://www.thethingsindustries.com/docs/gateways/thethingsindoorgateway/
 
+Direction [ce site](https://eu1.cloud.thethings.network/console/gateways). *Si c'est la première fois, il faut cliquer sur ```register``` puis renseigner un ```username```, une ```adresse mail```, un ```password```. Pensez à regarder le mail reçu pour valider l'inscription ! On se connecte enfin en retournant sur le site.* 
+
+On se retrouve sur la page ```Gateways```. Cliquer sur le bouton "Claim Gateway" puis renplir les informations suivantes : 
+
+- ```Gateway EUI``` : Il est composé des 6 paires de numéros sous le QRcode de l'étiquette, commançant souvent par ```58-A0-CB```. Attention, il faut ajouter ```FF-FE``` entre la 3 ème et la 4 ème paire ! par exemple, si j'ai ```58-A0-CB-01-02-03```, le EUI sera ```58-A0-CB-FF-FE-01-02-03```
+- ```Claim code``` : c'est le WifiPW sur l'étiquette de la passerelle
+- ```Gateway ID``` : un nom à choisir, ne comprenant rien d'autre que des ```-```, des chiffres ou des minuscules. 
+- ```Frequency Plan``` : Choisir ```Europe 863-870 (SF9 - recommended)```
+
+On termine avec le bouton bleu ```Claim```. Si tout est OK, on est redirigé sur la page de la Passerelle tout juste créée. Il est indiqué 'Not connected' ou 'never seen' : laissons cette page de côté, car on va maintenant brancher la Things Indoor
+
+On branche la Things Gateway Indoor (par USB, ou sur secteur directement). On appuie 5 secondes sur ```RESET``` en bas de la passerelle pour observer un changement de clignottement de la LED, puis 10 secondes sur ```SETUP```. La LED clignote rapidement en orange à ce stade.
+
+On va maintenant connecter la Things Gateway Indoor à Internet. Il faut se d'abord se connecter au WiFi émit par la Things Gateway ```Minihub-XXXXXX```. Le mot de passe est WifiPW écrit sur l'étiquette de la passerelle. Une fois connecté, on va sur internet et on se dirige sur le site ```192.168.4.1```. Une page apparait, avec plusieurs Wifi identifiés. Il faut choisir celui qui nous intéresse en cliquant sur ```+```, et en renseignant le mot de passe de ce WiFi. Une fois fait, on clique sur Save&Reboot. On peut revenir sur votre WiFi, et revenir voir la page de la passerelle. On attend 5 min, à partir d'un certain temps la gateway devrait arrêter de clignoter (rester en Vert), et la page devrait indiquer ```last activity : just now```. Félicitations ! Vous possédez un réseau LoRa.
+
+
+## Activer une Passerelle LoRa - Things Gateway
 Ce tuto présente le branchement d'une passerelle the Things Gateway et son activation sur The Things Network, en deux étapes : Tout d'abord, on déclare une passerelle sur le site, qui va nous donner un code d'accès. Ensuite, on donne ce code d'accès à la passerelle pour qu'elle puisse se connecter. 
 
 ### Déclarer une nouvelle passerelle sur The Things Network
