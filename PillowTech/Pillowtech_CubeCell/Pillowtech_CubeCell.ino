@@ -37,7 +37,7 @@ static void lowPowerSleep(uint32_t sleeptime)
 
 ///////////////////////////////////////////////////
 void setup() {
-	Serial.begin(115200);
+  Serial.begin(115200);
   
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
