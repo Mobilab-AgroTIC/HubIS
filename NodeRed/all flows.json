@@ -1,0 +1,3631 @@
+[
+    {
+        "id": "c0158c6b.68ffa",
+        "type": "tab",
+        "label": "Merle",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ce6f6a0bdd3686d4",
+        "type": "tab",
+        "label": "mobilab",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "da47573109afdf78",
+        "type": "tab",
+        "label": "Simon",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ccfde1e3c76d84a6",
+        "type": "tab",
+        "label": "Formation HubIS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ebfaaced2198a43e",
+        "type": "tab",
+        "label": "MQTT TTN",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a67f88892c4e93a1",
+        "type": "tab",
+        "label": "UMR G-EAU",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e06bc55d8dd361de",
+        "type": "tab",
+        "label": "Massuguiere",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c87222d8.d2c36",
+        "type": "mqtt-broker",
+        "name": "merle",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ef1b568734c2ffb5",
+        "type": "influxdb",
+        "hostname": "simonmoinard.ddns.net",
+        "port": "82",
+        "protocol": "http",
+        "database": "hubis",
+        "name": "",
+        "usetls": false,
+        "tls": "283a670c.e20a28",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "529446537c023706",
+        "type": "telegram bot",
+        "botname": "HubIS_Merle_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "283a670c.e20a28",
+        "type": "tls-config",
+        "name": "Default",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    },
+    {
+        "id": "d5625c075fb3068c",
+        "type": "mqtt-broker",
+        "name": "davele",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4c4675b0facc59f3",
+        "type": "mqtt-broker",
+        "name": "g-eau",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "47acec9daaaa46ab",
+        "type": "telegram bot",
+        "botname": "mobilab",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "e45b6e0a08ae6cba",
+        "type": "mqtt-broker",
+        "name": "formation-hubis",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8334d85569d21dd1",
+        "type": "mqtt-broker",
+        "name": "bat21",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4cbc635de4d01ef6",
+        "type": "mqtt-broker",
+        "name": "massuguiere",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "500d0d6924dff902",
+        "type": "mqtt-broker",
+        "name": "simon",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f1606e37b5f351bb",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "WatarSensor Capa 1",
+        "topic": "v3/merle@ttn/devices/eui-70b3d57ed004c183/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1430,
+        "y": 360,
+        "wires": [
+            [
+                "7f89de49d1d94102"
+            ]
+        ]
+    },
+    {
+        "id": "7f89de49d1d94102",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1590,
+        "y": 360,
+        "wires": [
+            [
+                "58baf55dae947c2e"
+            ]
+        ]
+    },
+    {
+        "id": "58baf55dae947c2e",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "",
+        "func": "var message = {\n    \"id\":msg.payload.end_device_ids.device_id,\n    \"name\":'WS capacitif 1',\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"battery\" : msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"value\":  (((msg.payload.uplink_message.decoded_payload.bytes[1]*255) + msg.payload.uplink_message.decoded_payload.bytes[2]))\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d5e0ac3051be131",
+        "type": "telegram command",
+        "z": "c0158c6b.68ffa",
+        "name": "hello",
+        "command": "/hello",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "529446537c023706",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 180,
+        "wires": [
+            [
+                "e6838161c54ee823"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e6838161c54ee823",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\nmsg.payload.content = \"Bonjour ! \\nVous pouvez me demander l'état des capteurs installés en m'envoyant /etat\";\nmsg.payload.type = \"message\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "920f448cf3ce03d7"
+            ]
+        ]
+    },
+    {
+        "id": "69861898bac2ca3e",
+        "type": "telegram command",
+        "z": "c0158c6b.68ffa",
+        "name": "etat",
+        "command": "/etat",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "529446537c023706",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "bf9f65b99c93af1a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bf9f65b99c93af1a",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\n\nlet obj = {};\nlet rsp = '';\n\n// pour chaque clef devEUI, assigne la valeur [0].state puis renomme la clef en le nom\nflow.keys().forEach( key => {\n    obj[key] = flow.get(key)[0].state;\n    obj[flow.get(key)[0].name] = obj[key];\n    delete obj[key];\n})\n\n//Ordonne les clefs dans l'ordre alphabétique\nconst ordered = Object.keys(obj).sort().reduce(\n  (obj2, key) => { \n    obj2[key] = obj[key]; \n    return obj2;\n  }, \n  {}\n);\n\n//Construit le message\nfor(const [key3, value3] of Object.entries(ordered)){\n    rsp+=key3+': '+value3+'\\n';\n}\n\nmsg.payload.content= rsp;\n\nmsg.payload.type = \"message\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "920f448cf3ce03d7"
+            ]
+        ]
+    },
+    {
+        "id": "920f448cf3ce03d7",
+        "type": "telegram sender",
+        "z": "c0158c6b.68ffa",
+        "name": "Send msg",
+        "bot": "529446537c023706",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7088af8576abdf32",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "",
+        "func": "var newVal = msg.payload.value;\nvar name = msg.payload.name;\n\nif (flow.get(name) != newVal){\n    flow.set(name,newVal);\n    msg.payload={}\n    msg.payload.chatId =\"-616958052\";\n    msg.payload.content = name + \" est en \" + newVal;\n    msg.payload.type = \"message\";\n    return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 320,
+        "wires": [
+            [
+                "5c1cf128fd603f9f"
+            ]
+        ]
+    },
+    {
+        "id": "5c1cf128fd603f9f",
+        "type": "telegram sender",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "Send msg",
+        "bot": "529446537c023706",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20636f59.fed13",
+        "type": "telegram event",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "bot": "47acec9daaaa46ab",
+        "event": "callback_query",
+        "autoanswer": true,
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "f0a3c788.7bbb18"
+            ]
+        ]
+    },
+    {
+        "id": "d0ae190d.071828",
+        "type": "telegram sender",
+        "z": "c0158c6b.68ffa",
+        "name": "show keyboard",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "23220303.4a427c",
+                "b470d3de2e6f466d"
+            ]
+        ]
+    },
+    {
+        "id": "3426758a.a2d09a",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "Keyboard",
+        "func": "context.global.keyboard = { messageId : msg.payload.messageId };\n\nvar opts = {\n  reply_to_message_id: msg.payload.messageId,\n  reply_markup: JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": \"3C1\",\n                    \"callback_data\": \"3C1\"            \n                }, \n                {\n                    \"text\": \"3C2\",\n                    \"callback_data\": \"3C2\"            \n                }, \n                {\n                    \"text\": \"3C3\",\n                    \"callback_data\": \"3C3\"            \n                }],[\n                {\n                    \"text\": \"3D1\",\n                    \"callback_data\": \"3D1\"            \n                }, \n                {\n                    \"text\": \"3D2\",\n                    \"callback_data\": \"3D2\"            \n                }],[\n                {\n                    \"text\": \"3E1\",\n                    \"callback_data\": \"3E1\"            \n                }, \n                {\n                    \"text\": \"3E2\",\n                    \"callback_data\": \"3E2\"            \n                }]\n            ]\n  })\n};\n\nmsg.payload.content = 'Bien reçu ! Quelle martelière dois-je fermer ?';\nmsg.payload.options = opts;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "d0ae190d.071828",
+                "b470d3de2e6f466d"
+            ]
+        ]
+    },
+    {
+        "id": "d7bfbd4.da4e34",
+        "type": "telegram command",
+        "z": "c0158c6b.68ffa",
+        "name": "/lancelot",
+        "command": "/lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "3426758a.a2d09a",
+                "b470d3de2e6f466d"
+            ]
+        ]
+    },
+    {
+        "id": "43cecef5.e2e93",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "YES*2",
+        "func": "var messageId = context.global.keyboard.Id;\n\nmsg.payload.type = 'message';\nmsg.payload.content = \"C'est parti pour Lancelot \" + messageId +\"!\";\nmsg.payload.device = messageId;\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "8e746981.f48368",
+                "251551b413dfbd0b",
+                "d31f11f9bae21392"
+            ]
+        ]
+    },
+    {
+        "id": "8e746981.f48368",
+        "type": "telegram sender",
+        "z": "c0158c6b.68ffa",
+        "name": "send",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c6089c4.883006",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "YES",
+        "func": "// This is the message id of the initial keyboard that is simply exchanged by a new one.\nvar messageId = context.global.keyboard.messageId;\ncontext.global.keyboard.Id = msg.payload.content;\n\n// This is a sample of how to send a second inline keyboard with modified buttons\nvar reply_markup = JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": msg.payload.content + \", sûr ?\",\n                    \"callback_data\": \"1\"        \n                }, \n                {\n                    \"text\": \"Fausse manip !\",\n                    \"callback_data\": \"0\"           \n                }]\n            ]\n  });\n\n\nvar options = {\n    chat_id : msg.payload.chatId,\n    reply_markup : reply_markup,\n    message_id : messageId\n};\n\nmsg.payload.type = 'editMessageReplyMarkup';\nmsg.payload.content = reply_markup;\nmsg.payload.options = options;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "8e746981.f48368"
+            ]
+        ]
+    },
+    {
+        "id": "23220303.4a427c",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "save msgId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0a3c788.7bbb18",
+        "type": "switch",
+        "z": "c0158c6b.68ffa",
+        "d": true,
+        "name": "check callback data",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "istype",
+                "v": "string",
+                "vt": "string"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "43cecef5.e2e93"
+            ],
+            [
+                "8e23029e.001b7"
+            ],
+            [
+                "2c6089c4.883006"
+            ]
+        ]
+    },
+    {
+        "id": "251551b413dfbd0b",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "Remove message",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "8e746981.f48368"
+            ]
+        ]
+    },
+    {
+        "id": "8e23029e.001b7",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "NO",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'message';\nmsg.payload.content = \"Annulation.\"\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "8e746981.f48368",
+                "251551b413dfbd0b"
+            ]
+        ]
+    },
+    {
+        "id": "b2c323b686ecdf66",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 1",
+        "topic": "v3/merle@ttn/devices/lancelot-1/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "3d6e51573ad7959d",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3E1",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 380,
+        "wires": [
+            [
+                "b2c323b686ecdf66",
+                "71f1366e325f370c"
+            ]
+        ]
+    },
+    {
+        "id": "d31f11f9bae21392",
+        "type": "switch",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload.device",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "3E1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3D2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3D1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3C3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3C2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3C1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3E2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "3d6e51573ad7959d"
+            ],
+            [
+                "9948b86d2c56294b"
+            ],
+            [
+                "95aab9530134c447"
+            ],
+            [
+                "4cc8668e0566730f"
+            ],
+            [
+                "59459545e6d1f95e"
+            ],
+            [
+                "c81ff3d8572f1337"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3d443156d7d1301f",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 2",
+        "topic": "v3/merle@ttn/devices/lancelot-2/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9948b86d2c56294b",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3D2",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 440,
+        "wires": [
+            [
+                "3d443156d7d1301f"
+            ]
+        ]
+    },
+    {
+        "id": "e63849b6f1e3ebe1",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 3",
+        "topic": "v3/merle@ttn/devices/lancelot-3/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "95aab9530134c447",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3D1",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 480,
+        "wires": [
+            [
+                "e63849b6f1e3ebe1"
+            ]
+        ]
+    },
+    {
+        "id": "74b3d669a8762e25",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 4",
+        "topic": "v3/merle@ttn/devices/lancelot-4/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4cc8668e0566730f",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3C3",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 540,
+        "wires": [
+            [
+                "74b3d669a8762e25"
+            ]
+        ]
+    },
+    {
+        "id": "037c4b788a352e6f",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 5",
+        "topic": "v3/merle@ttn/devices/lancelot-5/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "59459545e6d1f95e",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3C2",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "037c4b788a352e6f"
+            ]
+        ]
+    },
+    {
+        "id": "8a4a890599b82f5f",
+        "type": "mqtt out",
+        "z": "c0158c6b.68ffa",
+        "name": "Lancelot 6",
+        "topic": "v3/merle@ttn/devices/lancelot-6/down/push",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c87222d8.d2c36",
+        "x": 990,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c81ff3d8572f1337",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "3C1",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\",\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 620,
+        "wires": [
+            [
+                "8a4a890599b82f5f"
+            ]
+        ]
+    },
+    {
+        "id": "34466e23e13359b4",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "get payload",
+        "func": "var message = {\n    \"devEUI\": msg.payload.end_device_ids.device_id,\n    \"name\":flow.get(msg.payload.end_device_ids.device_id)[0]['name'],\n    \"lat\":43.642874,\n    \"lon\":5.017567,\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[0]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "bef870124d446478",
+                "dc915dc9832d9635",
+                "c200fd611b69bd90"
+            ]
+        ]
+    },
+    {
+        "id": "0410e01b1fe2a6dd",
+        "type": "mqtt in",
+        "z": "c0158c6b.68ffa",
+        "name": "MQTT merle app",
+        "topic": "",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 760,
+        "y": 100,
+        "wires": [
+            [
+                "34466e23e13359b4"
+            ]
+        ]
+    },
+    {
+        "id": "bef870124d446478",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "get state evolution",
+        "func": "var newVal = msg.payload.value;\nvar devEUI = msg.payload.devEUI;\nvar name = msg.payload.name;\nmsg.telegram={};\n\nif (flow.get(devEUI)[0]['state'] != newVal){\n    flow.get(devEUI)[0]['state'] = newVal;\n    \n    msg.telegram.payload={}\n    msg.telegram.payload.chatId =\"-673912717\";\n    msg.telegram.payload.content = name + \" est en \" + newVal;\n    msg.telegram.payload.type = \"message\";\n    return msg.telegram;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 100,
+        "wires": [
+            [
+                "4703b58514451293",
+                "da276c807f2768a0"
+            ]
+        ]
+    },
+    {
+        "id": "dc915dc9832d9635",
+        "type": "influxdb out",
+        "z": "c0158c6b.68ffa",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "InfluxDB - merle",
+        "measurement": "devices",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "merle",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "67328d002106f722",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "set dynMQTT",
+        "func": "msg1={}\nmsgsend=[]\nfor (const i in msg.payload){\n    msg1[i]= {\n    \"topic\": 'v3/' + msg.payload[i].appName + '@ttn/devices/' + msg.payload[i].devEUI + '/up',\n    \"action\":'subscribe',\n    \"devEUI\" : msg.payload[i].devEUI,\n    \"name\" : msg.payload[i].name\n    };\n    msgsend.push(msg1[i])\n}\nreturn [msgsend];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "0410e01b1fe2a6dd",
+                "717aba0caf9191ca"
+            ]
+        ]
+    },
+    {
+        "id": "4703b58514451293",
+        "type": "telegram sender",
+        "z": "c0158c6b.68ffa",
+        "name": "Send msg",
+        "bot": "529446537c023706",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1320,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93342c44cec684e6",
+        "type": "json",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "67328d002106f722"
+            ]
+        ]
+    },
+    {
+        "id": "717aba0caf9191ca",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "Set context data",
+        "func": "flow.set(msg.devEUI,[{'name':msg.name,'state':0}])\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4109260467277739",
+        "type": "file in",
+        "z": "c0158c6b.68ffa",
+        "name": "Read Merle.json",
+        "filename": "Documents/mobilab_ttn/hubis.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "93342c44cec684e6"
+            ]
+        ]
+    },
+    {
+        "id": "c25f274a90537b4d",
+        "type": "watch",
+        "z": "c0158c6b.68ffa",
+        "name": "Watch ttn.json",
+        "files": "Documents/mobilab_ttn/hubis.json",
+        "recursive": "",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "4109260467277739"
+            ]
+        ]
+    },
+    {
+        "id": "aefa835220afc678",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "Inject auto",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 95,
+        "y": 60,
+        "wires": [
+            [
+                "4109260467277739"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "50e3e9d54b29ef0c",
+        "type": "comment",
+        "z": "c0158c6b.68ffa",
+        "name": "WS mobile ",
+        "info": "WS mobile",
+        "x": 1460,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "da276c807f2768a0",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e10356487fd28885",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "msg.payload={}\nmsg.payload.chatId =\"-673912717\";\n\nlet obj = {};\nlet rsp = '';\n\nflow.keys().forEach( key => {\n    obj[key] = flow.get(key[1]);\n})\n\nconst ordered = Object.keys(obj).sort().reduce(\n  (obj2, key) => { \n    obj2[key] = obj[key]; \n    return obj2;\n  }, \n  {}\n);\n\nfor(const [key3, value3] of Object.entries(ordered)){\n    rsp+=key3+': '+value3+'\\n';\n}\n\nmsg.payload.content= rsp;\n\nmsg.payload.type = \"message\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 520,
+        "wires": [
+            [
+                "0257a0a3757fc5cc"
+            ]
+        ]
+    },
+    {
+        "id": "0257a0a3757fc5cc",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d098dc70890755d3",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "e10356487fd28885"
+            ]
+        ]
+    },
+    {
+        "id": "c200fd611b69bd90",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9c2becf9daf00156",
+        "type": "inject",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "5840e28e217551fd"
+            ]
+        ]
+    },
+    {
+        "id": "5840e28e217551fd",
+        "type": "function",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "func": "msg.payload={}\n\nmsg.payload = flow.keys()\nmsg.payload.chatId =\"-673912717\";\n\nlet obj = {};\nlet rsp = '';\n\nflow.keys().forEach( key => {\n    obj[key] = flow.get(key)[0].state;\n    obj[flow.get(key)[0].name] = obj[key];\n})\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 560,
+        "wires": [
+            [
+                "205260fb18bbddbc"
+            ]
+        ]
+    },
+    {
+        "id": "205260fb18bbddbc",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3c243db44f094f1a",
+        "type": "telegram command",
+        "z": "c0158c6b.68ffa",
+        "name": "/Lancelot",
+        "command": "/Lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "3426758a.a2d09a"
+            ]
+        ]
+    },
+    {
+        "id": "b470d3de2e6f466d",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "71f1366e325f370c",
+        "type": "debug",
+        "z": "c0158c6b.68ffa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a4eb1f0e190218ac",
+        "type": "mqtt in",
+        "z": "da47573109afdf78",
+        "name": "Test",
+        "topic": "v3/agrotic@ttn/devices/eui-70b3d57ed004b2c4/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "bcf0ec9af531fe0b"
+            ]
+        ]
+    },
+    {
+        "id": "bcf0ec9af531fe0b",
+        "type": "json",
+        "z": "da47573109afdf78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "4d5dd83790099120"
+            ]
+        ]
+    },
+    {
+        "id": "b563e3c33257df90",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Decoded.Temp",
+        "func": "var temp = {}\ntemp.payload = (256*msg.payload[2]+msg.payload[3])/10;\nreturn temp;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 580,
+        "wires": [
+            [
+                "ac60e0f6d784f0fe"
+            ]
+        ]
+    },
+    {
+        "id": "ac60e0f6d784f0fe",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4d5dd83790099120",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "var temp = {}\ntemp.payload = msg.payload.uplink_message.decoded_payload.bytes;\nreturn temp;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "b563e3c33257df90",
+                "f111cf0af08a92f8",
+                "19653751e91771fc"
+            ]
+        ]
+    },
+    {
+        "id": "f111cf0af08a92f8",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Decoded.humid",
+        "func": "var temp = {}\ntemp.payload = (msg.payload[1]);\nreturn temp;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 680,
+        "wires": [
+            [
+                "56ece57a2525cf59"
+            ]
+        ]
+    },
+    {
+        "id": "56ece57a2525cf59",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "19653751e91771fc",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Decoded.power",
+        "func": "var temp = {}\ntemp.payload = (msg.payload[0]);\nreturn temp;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 620,
+        "wires": [
+            [
+                "bdd7d543e04df384"
+            ]
+        ]
+    },
+    {
+        "id": "bdd7d543e04df384",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1b6c9e8f3b22eee2",
+        "type": "mqtt in",
+        "z": "da47573109afdf78",
+        "name": "MQTT merle app",
+        "topic": "",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "c87222d8.d2c36",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 1100,
+        "y": 1120,
+        "wires": [
+            [
+                "4428e74e61c3229e"
+            ]
+        ]
+    },
+    {
+        "id": "4428e74e61c3229e",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "get payload",
+        "func": "var message = {\n    \"devEUI\": msg.payload.end_device_ids.device_id,\n    \"name\":flow.get(msg.payload.end_device_ids.device_id)[0]['name'],\n    \"lat\":43.642874,\n    \"lon\":5.017567,\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[0]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1120,
+        "wires": [
+            [
+                "064de8744b793a86"
+            ]
+        ]
+    },
+    {
+        "id": "92677cfc2bddb3d8",
+        "type": "file in",
+        "z": "da47573109afdf78",
+        "name": "Read Merle.json",
+        "filename": "Documents/mobilab_ttn/hubis.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 600,
+        "y": 1120,
+        "wires": [
+            [
+                "81629847f53b4f17"
+            ]
+        ]
+    },
+    {
+        "id": "81629847f53b4f17",
+        "type": "json",
+        "z": "da47573109afdf78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 750,
+        "y": 1120,
+        "wires": [
+            [
+                "23446c8419230099"
+            ]
+        ]
+    },
+    {
+        "id": "23446c8419230099",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "MQTT subscribe",
+        "func": "msg1={}\nmsgsend=[]\nfor (const i in msg.payload){\n    msg1[i]= {\n    \"topic\": 'v3/'+ msg.payload[i].appName +'@ttn/devices/'+msg.payload[i].devEUI+'/up',\n    \"action\":'subscribe',\n    \"devEUI\" : msg.payload[i].devEUI,\n    \"name\" : msg.payload[i].name\n    };\n    msgsend.push(msg1[i])\n}\nreturn [msgsend];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1120,
+        "wires": [
+            [
+                "1b6c9e8f3b22eee2",
+                "68a57b886c6d41c6"
+            ]
+        ]
+    },
+    {
+        "id": "a5dcc0a3fa37d211",
+        "type": "watch",
+        "z": "da47573109afdf78",
+        "name": "Watch ttn.json",
+        "files": "Documents/mobilab_ttn/hubis.json",
+        "recursive": "",
+        "x": 430,
+        "y": 1120,
+        "wires": [
+            [
+                "92677cfc2bddb3d8"
+            ]
+        ]
+    },
+    {
+        "id": "d33552e0191dcaf8",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Fonction payload dans 2 msg",
+        "func": "var msg2 = {\n    \"topic\": 'v3/merle@ttn/devices/eui-70b3d57ed004c189/up',\n    \"action\":'subscribe',\n};\n\nreturn [ [msg2,msg2] ];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e7901c7a66f04b5",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Fonction payload en objet",
+        "func": "var msg1 = { payload:\"first out of output 1\" };\nvar msg2 = { payload:\"second out of output 1\" };\nvar msg3 = { payload:\"third out of output 1\" };\nvar msg4 = { payload:\"only message from output 2\" };\nreturn [ [ msg1, msg2, msg3 ], msg4 ];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9e2a1b163b9ad12",
+        "type": "file",
+        "z": "da47573109afdf78",
+        "name": "hubis_test",
+        "filename": "Documents/mobilab_ttn/hubis_test.json",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 950,
+        "y": 1180,
+        "wires": [
+            [
+                "cdf94c57ac27d32f"
+            ]
+        ]
+    },
+    {
+        "id": "cdf94c57ac27d32f",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "e0f25ce18e47ea93",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 415,
+        "y": 1180,
+        "wires": [
+            [
+                "efdd54cb22f505f6"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "efdd54cb22f505f6",
+        "type": "file in",
+        "z": "da47573109afdf78",
+        "name": "Read ttn.json",
+        "filename": "Documents/mobilab_ttn/hubis_test.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 530,
+        "y": 1180,
+        "wires": [
+            [
+                "c3c7adf3a02c4db4"
+            ]
+        ]
+    },
+    {
+        "id": "c3c7adf3a02c4db4",
+        "type": "json",
+        "z": "da47573109afdf78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 670,
+        "y": 1180,
+        "wires": [
+            [
+                "4bce72d5d2ec3d38"
+            ]
+        ]
+    },
+    {
+        "id": "fb6acc43d98810e7",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "Inject auto",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 435,
+        "y": 1080,
+        "wires": [
+            [
+                "92677cfc2bddb3d8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "0f202bd29c585feb",
+        "type": "comment",
+        "z": "da47573109afdf78",
+        "name": "",
+        "info": "Flow pour se connecter en MQTT dynamique a tous les nodes répértoriés dans un fichier",
+        "x": 1000,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "4bce72d5d2ec3d38",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "\nvar myObj = {\n    \"devEUI\":\"eui-70b3d57ed004c18a\",\n    \"name\":\"3C3-WS(Aval)\",\n    \"appName\" : \"merle\"\n};\n//push the object to your array\nmsg.payload.push(myObj);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1180,
+        "wires": [
+            [
+                "e9e2a1b163b9ad12"
+            ]
+        ]
+    },
+    {
+        "id": "24522788ef73a79a",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "e8f02f15c4766d43",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "msg1 = {}\nmsg1 = msg.payload.find(obj => obj.devEUI === \"eui-70b3d57ed004c188\")\n\nreturn msg1;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1240,
+        "wires": [
+            [
+                "2fe4923abc70bf36"
+            ]
+        ]
+    },
+    {
+        "id": "2fe4923abc70bf36",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ee7075ea4be3436f",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 415,
+        "y": 1240,
+        "wires": [
+            [
+                "317ba1d36539f29d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "317ba1d36539f29d",
+        "type": "file in",
+        "z": "da47573109afdf78",
+        "name": "Read ttn.json",
+        "filename": "Documents/mobilab_ttn/hubis_test.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 530,
+        "y": 1240,
+        "wires": [
+            [
+                "bef3c0c0c82a074f"
+            ]
+        ]
+    },
+    {
+        "id": "bef3c0c0c82a074f",
+        "type": "json",
+        "z": "da47573109afdf78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 670,
+        "y": 1240,
+        "wires": [
+            [
+                "e8f02f15c4766d43",
+                "24522788ef73a79a"
+            ]
+        ]
+    },
+    {
+        "id": "347de02423bd4faa",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "msg.payload = flow.get('test')[0]['un'];\nreturn msg ;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 780,
+        "wires": [
+            [
+                "975a51844c0835ec"
+            ]
+        ]
+    },
+    {
+        "id": "0c78eb469d382c0d",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 780,
+        "wires": [
+            [
+                "347de02423bd4faa"
+            ]
+        ]
+    },
+    {
+        "id": "68a57b886c6d41c6",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "Set context data",
+        "func": "flow.set(msg.devEUI,[{'name' : msg.name,'state':\"\"}])\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "975a51844c0835ec",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "973e396434ef9a11",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 455,
+        "y": 1340,
+        "wires": [
+            [
+                "9c65032fa0ef631c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9c65032fa0ef631c",
+        "type": "file in",
+        "z": "da47573109afdf78",
+        "name": "Read ttn.json",
+        "filename": "Documents/mobilab_ttn/hubis.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 570,
+        "y": 1340,
+        "wires": [
+            [
+                "c406ddeead72b30e"
+            ]
+        ]
+    },
+    {
+        "id": "c406ddeead72b30e",
+        "type": "json",
+        "z": "da47573109afdf78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 1340,
+        "wires": [
+            [
+                "06e63075628ba81e"
+            ]
+        ]
+    },
+    {
+        "id": "06e63075628ba81e",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "064de8744b793a86",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "get state evolution",
+        "func": "var newVal = msg.payload.value;\nvar devEUI = msg.payload.devEUI;\nvar name = msg.payload.name;\n\nif (flow.get(devEUI)[0]['state'] != newVal){\n    flow.get(devEUI)[0]['state'] = newVal;\n    \n    msg.payload={}\n    msg.payload.chatId =\"-673912717\";\n    msg.payload.content = name + \" est en \" + newVal;\n    msg.payload.type = \"message\";\n    return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8e6b3e081ef43b7",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "flow.get('test')[0]['un'] = 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5acdede30d77886b",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            [
+                "c8e6b3e081ef43b7"
+            ]
+        ]
+    },
+    {
+        "id": "8bb2b8f6fdcf7f75",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 700,
+        "wires": [
+            [
+                "f941035b9cdb4393"
+            ]
+        ]
+    },
+    {
+        "id": "f941035b9cdb4393",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "flow.set(\"test\",[{'un' : 1,'deux':2}]);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "863d8d638d378d94",
+        "type": "comment",
+        "z": "da47573109afdf78",
+        "name": "Manipuler les variables de contexte",
+        "info": "Flow pour utiliser les flow context",
+        "x": 1060,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "91c332eda9734c61",
+        "type": "comment",
+        "z": "da47573109afdf78",
+        "name": "Manipuler les payload",
+        "info": "Flow pour utiliser les flow context",
+        "x": 1020,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3173568f4c7bfe9c",
+        "type": "comment",
+        "z": "da47573109afdf78",
+        "name": "Manipuler les variables de contexte",
+        "info": "Flow pour utiliser les flow context",
+        "x": 1060,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "e557d24aff799f39",
+        "type": "debug",
+        "z": "da47573109afdf78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "0238727e08e62320",
+        "type": "function",
+        "z": "da47573109afdf78",
+        "name": "",
+        "func": "let obj = {};\nlet rsp = '';\n\nflow.keys().forEach( key => {\n    obj[key] = flow.get(key)[0]['name'] + \" : \" + flow.get(key)[0]['state'];\n\n})\n\nreturn obj;\n\n//return flow.get() ;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 860,
+        "wires": [
+            [
+                "e557d24aff799f39"
+            ]
+        ]
+    },
+    {
+        "id": "87533238ca49355c",
+        "type": "inject",
+        "z": "da47573109afdf78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 860,
+        "wires": [
+            [
+                "0238727e08e62320"
+            ]
+        ]
+    },
+    {
+        "id": "562ccc5fb11a6b3c",
+        "type": "influxdb out",
+        "z": "ccfde1e3c76d84a6",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "Influx formationhubis",
+        "measurement": "pilowtech",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "formationhubis",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "06c44faf0e8b5614",
+        "type": "function",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "func": "var message = {\n    \"id\":msg.payload.end_device_ids.device_id,\n    \"name\":msg.payload.end_device_ids.device_id,\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"power\" : msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[1],\n    \"value2\": msg.payload.uplink_message.decoded_payload.bytes[2]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 100,
+        "wires": [
+            [
+                "562ccc5fb11a6b3c",
+                "c416c019aa649eb7"
+            ]
+        ]
+    },
+    {
+        "id": "e4a44a27d9f79833",
+        "type": "json",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "06c44faf0e8b5614"
+            ]
+        ]
+    },
+    {
+        "id": "5d12e6398649ea6e",
+        "type": "mqtt in",
+        "z": "ccfde1e3c76d84a6",
+        "name": "PiLowTech",
+        "topic": "v3/formation-hubis@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e45b6e0a08ae6cba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "e4a44a27d9f79833"
+            ]
+        ]
+    },
+    {
+        "id": "c416c019aa649eb7",
+        "type": "function",
+        "z": "ccfde1e3c76d84a6",
+        "d": true,
+        "name": "",
+        "func": "var newVal = msg.payload.value;\nvar name = msg.payload.name;\nif (flow.get(name) != newVal){\n    flow.set(name,newVal);\n    \n    msg.payload={}\n    msg.payload.chatId =\"-678982646\";\n    msg.payload.content = name + \" est en \" + newVal;\n    msg.payload.type = \"message\";\n    return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "3117d9b5cedd70ad",
+                "ed7c689d8a895d00"
+            ]
+        ]
+    },
+    {
+        "id": "ed7c689d8a895d00",
+        "type": "telegram sender",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "bot": "529446537c023706",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3117d9b5cedd70ad",
+        "type": "debug",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "12df3d4c7c6517e3",
+        "type": "comment",
+        "z": "ccfde1e3c76d84a6",
+        "name": "API Key Formation HubIS",
+        "info": "NNSXS.IMHRNXEB34NRTV6FIQRS6SHYOB5D6NAIUM33JWA.C72PFJF33IHUIOEVOXWQ35JQQR26ZYBATHLVTW7LWTYNONX67ABQ",
+        "x": 170,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e3ca3a5df51315c4",
+        "type": "comment",
+        "z": "ebfaaced2198a43e",
+        "name": "Clef API DAvele",
+        "info": "NNSXS.RZLSMHS2CTC3UOPNQ5HOL5QVKOCZU6T7YOYYD7Y.2TVJOMIOFFSUWV7MVFXMNQ3THG2SEK7VTWSCGQFYY4S3KIB6TAGQ\n",
+        "x": 140,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dd6824de7aa1ddbf",
+        "type": "mqtt in",
+        "z": "ebfaaced2198a43e",
+        "name": "Davele TTN",
+        "topic": "v3/davele@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "d5625c075fb3068c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "74694e16f97882e7"
+            ]
+        ]
+    },
+    {
+        "id": "74694e16f97882e7",
+        "type": "json",
+        "z": "ebfaaced2198a43e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 270,
+        "y": 120,
+        "wires": [
+            [
+                "59c2263969a91d27"
+            ]
+        ]
+    },
+    {
+        "id": "59c2263969a91d27",
+        "type": "function",
+        "z": "ebfaaced2198a43e",
+        "name": "decode payload",
+        "func": "var message = {\n    \"id\":msg.payload.end_device_ids.device_id,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"power\": msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"distance\": (msg.payload.uplink_message.decoded_payload.bytes[1]*256)+msg.payload.uplink_message.decoded_payload.bytes[2],\n    \"bpm\": msg.payload.uplink_message.decoded_payload.bytes[3],\n    \"lux\": msg.payload.uplink_message.decoded_payload.bytes[4]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "066312b62aa8feba",
+                "c640196c1dc24b83"
+            ]
+        ]
+    },
+    {
+        "id": "066312b62aa8feba",
+        "type": "influxdb out",
+        "z": "ebfaaced2198a43e",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "influx davele",
+        "measurement": "measurement",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "davele",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c640196c1dc24b83",
+        "type": "debug",
+        "z": "ebfaaced2198a43e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e20b6bf1db430be2",
+        "type": "mqtt in",
+        "z": "ebfaaced2198a43e",
+        "name": "Bat21",
+        "topic": "v3/bat21@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "8334d85569d21dd1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "95306d323ca135b3"
+            ]
+        ]
+    },
+    {
+        "id": "95306d323ca135b3",
+        "type": "function",
+        "z": "ebfaaced2198a43e",
+        "name": "",
+        "func": "var message = {\n    \"id\": msg.payload.end_device_ids.device_id,\n    \"power\": msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"temp\": (((msg.payload.uplink_message.decoded_payload.bytes[1]*255 + msg.payload.uplink_message.decoded_payload.bytes[2])-5000)/100),\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "d2d984efdf79beee",
+                "8b3a91379117d172"
+            ]
+        ]
+    },
+    {
+        "id": "d2d984efdf79beee",
+        "type": "debug",
+        "z": "ebfaaced2198a43e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8b3a91379117d172",
+        "type": "influxdb out",
+        "z": "ebfaaced2198a43e",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "influx bat21",
+        "measurement": "temperature",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "bat21",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 410,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a504510b3422137d",
+        "type": "mqtt in",
+        "z": "ebfaaced2198a43e",
+        "name": "simon",
+        "topic": "v3/simon@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "500d0d6924dff902",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "2b6dba30cbd13fef"
+            ]
+        ]
+    },
+    {
+        "id": "2b6dba30cbd13fef",
+        "type": "function",
+        "z": "ebfaaced2198a43e",
+        "name": "",
+        "func": "var message = {\n    \"id\": msg.payload.end_device_ids.device_id,\n    \"power\": msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"temp1\": (((msg.payload.uplink_message.decoded_payload.bytes[1]*255 + msg.payload.uplink_message.decoded_payload.bytes[2])-5000)/100)\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "31f1bb24a434ceea"
+            ]
+        ]
+    },
+    {
+        "id": "31f1bb24a434ceea",
+        "type": "influxdb out",
+        "z": "ebfaaced2198a43e",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "influx simon",
+        "measurement": "temperature",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "simon",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f754f2791b717b91",
+        "type": "comment",
+        "z": "ebfaaced2198a43e",
+        "name": "API Key simon",
+        "info": "App Simon\n\nNNSXS.Q32ROYYPRTDN7TC63H2IYS3UBXJOAHTHRMXUT2Q.6NFMDP6BN4BUUD5ZE2KGXRFEOJHTWZQ35SZ2V6XWP7NCKINFK2OA\n\n",
+        "x": 140,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f1672f88b4f9ab49",
+        "type": "comment",
+        "z": "ebfaaced2198a43e",
+        "name": "API Key Bat21",
+        "info": "App Bat21\n\nNNSXS.7XEX6R7SOXZREESWOJA2NUYIVKQR4DWCAJHNNYI.P53QHJ6WURUYH4QITLNNDBRCM3PEYCX25OCQCTERW5KE32UPMO3A",
+        "x": 140,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9dec7b124995c0da",
+        "type": "mqtt in",
+        "z": "a67f88892c4e93a1",
+        "name": "G-EAU",
+        "topic": "v3/g-eau@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4675b0facc59f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "1034a44dea5e4bea"
+            ]
+        ]
+    },
+    {
+        "id": "1034a44dea5e4bea",
+        "type": "json",
+        "z": "a67f88892c4e93a1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "e8486c04f1480737"
+            ]
+        ]
+    },
+    {
+        "id": "e8486c04f1480737",
+        "type": "function",
+        "z": "a67f88892c4e93a1",
+        "name": "",
+        "func": "var message = {\n    \"id\": msg.payload.end_device_ids.device_id,\n    \"power\": msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"Val2\": msg.payload.uplink_message.decoded_payload.bytes[1],\n    \"Val3\": msg.payload.uplink_message.decoded_payload.bytes[2]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [
+                "aaddc28717b4c6c6",
+                "033fc2025e4ad385"
+            ]
+        ]
+    },
+    {
+        "id": "aaddc28717b4c6c6",
+        "type": "influxdb out",
+        "z": "a67f88892c4e93a1",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "geau_database",
+        "measurement": "humidity",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "geau",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 520,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "033fc2025e4ad385",
+        "type": "debug",
+        "z": "a67f88892c4e93a1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a2bee2b14749e6c2",
+        "type": "influxdb out",
+        "z": "e06bc55d8dd361de",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "Influx",
+        "measurement": "devices",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "massuguiere",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fd9af1b45c2382bc",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "getData",
+        "func": "var message = {\n    \"name\":msg.payload.end_device_ids.device_id,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"power\" : msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[1]\n};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "a2bee2b14749e6c2",
+                "add158933931a174"
+            ]
+        ]
+    },
+    {
+        "id": "df11dc93d8e81237",
+        "type": "json",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "fd9af1b45c2382bc"
+            ]
+        ]
+    },
+    {
+        "id": "733336c3c05a5d36",
+        "type": "mqtt in",
+        "z": "e06bc55d8dd361de",
+        "name": "Gaeclamassuguiere13",
+        "topic": "v3/gaeclamassuguiere13@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4cbc635de4d01ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "df11dc93d8e81237"
+            ]
+        ]
+    },
+    {
+        "id": "22ffa3794a3696b1",
+        "type": "comment",
+        "z": "e06bc55d8dd361de",
+        "name": "API Key MASSUGUIERE",
+        "info": "NNSXS.LSXUJI6PCE4BBE7NAX7SXGUKVN2MXBQWTRBHIUI.C2XEZ74KRNLBCCWPUR2FU3DIK6TZLZ7YLLTIL3ZXTTML33SKE3GQ",
+        "x": 130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8aab06537747fe64",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "hello",
+        "command": "/hello",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 320,
+        "wires": [
+            [
+                "96a76f8d4b2496f9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "96a76f8d4b2496f9",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "var message={\n\"chatId\" : msg.payload.chatId,\n\"content\" : \"Bonjour ! Vous pouvez me demander l'état des capteurs installés en m'envoyant /etat\",\n\"type\" : \"message\"\n}\nif (message.chatId== flow.get(\"chatId\")){\n    msg.payload = message\n    return msg\n}\nelse {}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "67b6adb594a5bd1b"
+            ]
+        ]
+    },
+    {
+        "id": "20bcaebedd7ce7cf",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "etat",
+        "command": "/etat",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 360,
+        "wires": [
+            [
+                "120bc384f17f0ec7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "120bc384f17f0ec7",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n    \n    //msg.payload={}\n    msg.payload.chatId = msg.payload.chatId;\n\n    // Récupérer l'array \"devicesData\" depuis la variable de contexte\n    var devicesData = flow.get(\"watar\");\n    \n    if (Array.isArray(devicesData)) {\n      // Générer le message avec l'état des capteurs\n      var message = \"État des WatAr :\\n\";\n    \n      devicesData.forEach(function (device) {\n        message += device.name + \" : \" + device.state + \"\\n\";\n      });\n    \n      msg.payload.content = message;\n      return msg;\n    } \n    \n    else {\n      msg.payload.content = \"Aucun WatAr trouvé !\";\n    }\n    \n    msg.payload.type = \"message\";\n    return msg\n}\nelse {}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "67b6adb594a5bd1b"
+            ]
+        ]
+    },
+    {
+        "id": "cbc9b7488938b0de",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "01a09ab37ce09c9d"
+            ]
+        ]
+    },
+    {
+        "id": "34491b5c1a3038eb",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "ChatID",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "flow.set(\"chatId\",'-969309650');\nflow.set(\"appId\",'gaeclamassuguiere13')\n",
+        "finalize": "",
+        "libs": [],
+        "x": 80,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "add158933931a174",
+        "type": "switch",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "watar",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "lancelot",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "e8f4198673ec2bd7"
+            ],
+            [
+                "96b153e9f2bff2a5"
+            ],
+            [
+                "9295226178be4e03"
+            ]
+        ]
+    },
+    {
+        "id": "e8f4198673ec2bd7",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Watar",
+        "func": "var devicesData = flow.get(\"watar\");\nvar msg2 = msg.payload;\nvar oldValue ;\nvar alerte = \"\";\n\n// Vérifier si l'array existe déjà dans le contexte\nif (!devicesData) {\n  devicesData = []; // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n\n\n// Rechercher l'index de l'élément correspondant au \"capteur 2\" dans l'array\nvar capteurIndex = devicesData.findIndex(function (device) {\n  return device.name === msg2.name;\n});\n\n// Vérifier si l'élément \"capteur 2\" a été trouvé\nif (capteurIndex !== -1) {\n\n    oldValue = devicesData[capteurIndex].state;\n    // Le \"capteur\" existe dans l'array, mettez à jour son état\n    devicesData[capteurIndex].state = msg2.value;\n    \n} else {\n  // Le \"capteur\" n'existe pas dans l'array, donc nous allons le créer\n  var nouveauCapteur = {\n    \"name\": msg2.name,\n    \"state\": msg2.value}\n  ;\n  devicesData.push(nouveauCapteur);\n}\n\n// Fonction de comparaison pour trier par ordre alphabétique des noms\nfunction compareName(a, b) {\n  var nameA = a.name.toLowerCase();\n  var nameB = b.name.toLowerCase();\n  if (nameA < nameB) return -1;\n  if (nameA > nameB) return 1;\n  return 0;\n}\n\n// Trier l'array par ordre alphabétique des noms des capteurs en utilisant la fonction de comparaison\ndevicesData.sort(compareName);\n\n// Enregistrer à nouveau l'array trié dans la variable de contexte \"devicesData\"\nflow.set(\"watar\", devicesData);\n\n// Envoi alerte si l'état a changé\nmsg.telegram={};\n\nif (oldValue != msg.payload.value){\n    oldValue = msg.payload.value;\n    msg.telegram.payload={}\n    msg.telegram.payload.chatId =flow.get(\"chatId\");\n    msg.telegram.payload.content = \"le \" + msg2.name + \" passe en \" + msg2.value ;\n    msg.telegram.payload.type = \"message\";\n    return msg.telegram;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 80,
+        "wires": [
+            [
+                "8061abb8da8875c7"
+            ]
+        ]
+    },
+    {
+        "id": "8061abb8da8875c7",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96b153e9f2bff2a5",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "func": "var devicesData = flow.get(\"lancelot\");\nvar msg2 = msg.payload;\nvar oldValue ;\nvar alerte = \"\";\n\n// Vérifier si l'array existe déjà dans le contexte\nif (!devicesData) {\n  devicesData = []; // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n\n\n// Rechercher l'index de l'élément correspondant au \"capteur 2\" dans l'array\nvar capteurIndex = devicesData.findIndex(function (device) {\n  return device.name === msg2.name;\n});\n\n// Vérifier si l'élément \"capteur 2\" a été trouvé\nif (capteurIndex !== -1) {\n\n    // Le \"capteur\" existe dans l'array, mettez à jour son état\n    //devicesData[capteurIndex].state = msg2.value;\n    \n} else {\n  // Le \"capteur\" n'existe pas dans l'array, donc nous allons le créer\n  var nouveauCapteur = {\n    \"name\": msg2.name//,\n    //\"state\": msg2.value\n    }\n  ;\n  devicesData.push(nouveauCapteur);\n}\n\n// Fonction de comparaison pour trier par ordre alphabétique des noms\nfunction compareName(a, b) {\n  var nameA = a.name.toLowerCase();\n  var nameB = b.name.toLowerCase();\n  if (nameA < nameB) return -1;\n  if (nameA > nameB) return 1;\n  return 0;\n}\n\n// Trier l'array par ordre alphabétique des noms des capteurs en utilisant la fonction de comparaison\ndevicesData.sort(compareName);\n\n// Enregistrer à nouveau l'array trié dans la variable de contexte \"devicesData\"\nflow.set(\"lancelot\", devicesData);\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9295226178be4e03",
+        "type": "debug",
+        "z": "e06bc55d8dd361de",
+        "name": "Autre",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e016ce31b591b8eb",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "command": "/Lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "f6d94ee2d9a9c8ee"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "15efd0bd8fedcac7",
+        "type": "telegram event",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "bot": "47acec9daaaa46ab",
+        "event": "callback_query",
+        "autoanswer": true,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "c192185cbe21c6be"
+            ]
+        ]
+    },
+    {
+        "id": "01a09ab37ce09c9d",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "save msgId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "445d0fae3fccb3eb",
+        "type": "switch",
+        "z": "e06bc55d8dd361de",
+        "name": "check callback data",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "istype",
+                "v": "string",
+                "vt": "string"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "fb8c880e597bad8a"
+            ],
+            [
+                "98f2b3cebedaddbb"
+            ],
+            [
+                "4f47baaca6870882"
+            ]
+        ]
+    },
+    {
+        "id": "98f2b3cebedaddbb",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "annulation",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'message';\nmsg.payload.content = \"Annulation.\"\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "9414cf6577df12ce",
+                "8030b4c905da941e"
+            ]
+        ]
+    },
+    {
+        "id": "4f47baaca6870882",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "confirmation",
+        "func": "// This is the message id of the initial keyboard that is simply exchanged by a new one.\nvar messageId = context.global.keyboard.messageId;\ncontext.global.keyboard.Id = msg.payload.content;\n\n// This is a sample of how to send a second inline keyboard with modified buttons\nvar reply_markup = JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": msg.payload.content + \", sûr ?\",\n                    \"callback_data\": \"1\"        \n                }, \n                {\n                    \"text\": \"Fausse manip !\",\n                    \"callback_data\": \"0\"           \n                }]\n            ]\n  });\n\n\nvar options = {\n    chat_id : msg.payload.chatId,\n    reply_markup : reply_markup,\n    message_id : messageId\n};\n\nmsg.payload.type = 'editMessageReplyMarkup';\nmsg.payload.content = reply_markup;\nmsg.payload.options = options;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "9414cf6577df12ce"
+            ]
+        ]
+    },
+    {
+        "id": "fb8c880e597bad8a",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "envoi",
+        "func": "var messageId = context.global.keyboard.Id;\n\nmsg.payload.type = 'message';\nmsg.payload.content = \"C'est parti pour Lancelot \" + messageId +\"!\";\nmsg.payload.device = messageId;\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "9414cf6577df12ce",
+                "8030b4c905da941e",
+                "b7f77f7d58fefd3a"
+            ]
+        ]
+    },
+    {
+        "id": "8030b4c905da941e",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Remove message",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "9414cf6577df12ce"
+            ]
+        ]
+    },
+    {
+        "id": "9414cf6577df12ce",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "send",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6d94ee2d9a9c8ee",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n\ncontext.global.keyboard = { messageId : msg.payload.messageId };\n\n\nvar inputArray = flow.get(\"lancelot\");\n// Vérifier si l'array existe déjà dans le contexte\nif (!inputArray) {\n  // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n// Initialiser un nouvel array pour stocker les boutons transformés du clavier\nvar keyboardButtons = [];\n\n// Utiliser forEach pour itérer sur chaque élément du tableau\ninputArray.forEach(function(item) {\n  // Extraire le nom du bouton (si \"name\" est défini, sinon utiliser une valeur par défaut)\n  var buttonText = item.name || \"no_name\";\n  // Extraire le callback_data du bouton (si \"name\" est défini, sinon utiliser une valeur par défaut)\n  var callbackData = item.name || \"no_name\";\n\n  var button = {\n    text: buttonText,\n    callback_data: callbackData\n  };\n\n  keyboardButtons.push(button);\n});\n\nvar transformedArray = keyboardButtons.map(function(item) {\n  return [item];\n});\n\n\nvar transformedObject = {\n  \"inline_keyboard\": transformedArray\n};\nvar opts = {\n  reply_to_message_id: msg.payload.messageId,\n  reply_markup: JSON.stringify(transformedObject)\n};\n\nmsg.payload.content = 'Bien reçu ! Quelle martelière dois-je fermer ?';\nmsg.payload.options = opts;\n\nreturn [ msg ];\n}\nelse {};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "cbc9b7488938b0de"
+            ]
+        ]
+    },
+    {
+        "id": "c192185cbe21c6be",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "filtre",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n    return msg;\n}\n\nelse ;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "445d0fae3fccb3eb"
+            ]
+        ]
+    },
+    {
+        "id": "de4492428ae02a5d",
+        "type": "mqtt out",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4cbc635de4d01ef6",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b7f77f7d58fefd3a",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Prepare downlink",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\", //\"frm_payload\": Buffer.from(bytes).toString('base64'),\n      \"priority\": \"NORMAL\"\n    }]\n  },\n  \"topic\" : \"v3/\"+flow.get(\"appId\")+\"@ttn/devices/\"+msg.payload.device+\"/down/push\" //\"<ApplicationID>>/devices/\" + dev_id + \"/down\";\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [
+                "de4492428ae02a5d"
+            ]
+        ]
+    },
+    {
+        "id": "67b6adb594a5bd1b",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ee09cfb328ae6df",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "lancelot",
+        "command": "/lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 240,
+        "wires": [
+            [
+                "f6d94ee2d9a9c8ee"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "257eec22672387b1",
+        "type": "inject",
+        "z": "e06bc55d8dd361de",
+        "name": " ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "ae41e87ecd977f44"
+            ]
+        ]
+    },
+    {
+        "id": "ae41e87ecd977f44",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "1",
+        "func": "var message = {\n    \"name\":\"lancelot-15\",\n    \"rssi\":-140,\n    \"snr\":10,\n    \"power\" : 80,\n    \"value\": 1\n};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "add158933931a174"
+            ]
+        ]
+    },
+    {
+        "id": "b0f5a8d4f2331f83",
+        "type": "inject",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "691f480e7812bdfd"
+            ]
+        ]
+    },
+    {
+        "id": "691f480e7812bdfd",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "ChatID",
+        "func": "var test =flow.get(\"lancelot\");\n\nmsg.payload = test[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "22fb366ff4f0a566"
+            ]
+        ]
+    },
+    {
+        "id": "22fb366ff4f0a566",
+        "type": "debug",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 420,
+        "wires": []
+    }
+]

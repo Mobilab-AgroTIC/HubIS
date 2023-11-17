@@ -1,0 +1,223 @@
+[
+    {
+        "id": "ccfde1e3c76d84a6",
+        "type": "tab",
+        "label": "Formation HubIS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "562ccc5fb11a6b3c",
+        "type": "influxdb out",
+        "z": "ccfde1e3c76d84a6",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "Influx formationhubis",
+        "measurement": "pilowtech",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "formationhubis",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "06c44faf0e8b5614",
+        "type": "function",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "func": "var message = {\n    \"id\":msg.payload.end_device_ids.device_id,\n    \"name\":msg.payload.end_device_ids.device_id,\n    \"lat\":43.6429209,\n    \"lon\":5.0165597,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"power\" : msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"value\": msg.payload.uplink_message.decoded_payload.bytes[1],\n    \"value2\": msg.payload.uplink_message.decoded_payload.bytes[2]\n};\n\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 100,
+        "wires": [
+            [
+                "562ccc5fb11a6b3c",
+                "c416c019aa649eb7"
+            ]
+        ]
+    },
+    {
+        "id": "e4a44a27d9f79833",
+        "type": "json",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "06c44faf0e8b5614"
+            ]
+        ]
+    },
+    {
+        "id": "5d12e6398649ea6e",
+        "type": "mqtt in",
+        "z": "ccfde1e3c76d84a6",
+        "name": "PiLowTech",
+        "topic": "v3/formation-hubis@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e45b6e0a08ae6cba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "e4a44a27d9f79833"
+            ]
+        ]
+    },
+    {
+        "id": "c416c019aa649eb7",
+        "type": "function",
+        "z": "ccfde1e3c76d84a6",
+        "d": true,
+        "name": "",
+        "func": "var newVal = msg.payload.value;\nvar name = msg.payload.name;\nif (flow.get(name) != newVal){\n    flow.set(name,newVal);\n    \n    msg.payload={}\n    msg.payload.chatId =\"-678982646\";\n    msg.payload.content = name + \" est en \" + newVal;\n    msg.payload.type = \"message\";\n    return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "3117d9b5cedd70ad",
+                "ed7c689d8a895d00"
+            ]
+        ]
+    },
+    {
+        "id": "ed7c689d8a895d00",
+        "type": "telegram sender",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "bot": "529446537c023706",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3117d9b5cedd70ad",
+        "type": "debug",
+        "z": "ccfde1e3c76d84a6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "12df3d4c7c6517e3",
+        "type": "comment",
+        "z": "ccfde1e3c76d84a6",
+        "name": "API Key Formation HubIS",
+        "info": "NNSXS.IMHRNXEB34NRTV6FIQRS6SHYOB5D6NAIUM33JWA.C72PFJF33IHUIOEVOXWQ35JQQR26ZYBATHLVTW7LWTYNONX67ABQ",
+        "x": 170,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ef1b568734c2ffb5",
+        "type": "influxdb",
+        "hostname": "simonmoinard.ddns.net",
+        "port": "82",
+        "protocol": "http",
+        "database": "hubis",
+        "name": "",
+        "usetls": false,
+        "tls": "283a670c.e20a28",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "e45b6e0a08ae6cba",
+        "type": "mqtt-broker",
+        "name": "formation-hubis",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "529446537c023706",
+        "type": "telegram bot",
+        "botname": "HubIS_Merle_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "283a670c.e20a28",
+        "type": "tls-config",
+        "name": "Default",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    }
+]

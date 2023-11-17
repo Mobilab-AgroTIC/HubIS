@@ -2,11 +2,10 @@
 #include "Arduino.h"
 
 //Set these OTAA parameters to match your app/node in TTN
-uint8_t devEui[] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x05, 0xDE, 0x13 };
+uint8_t devEui[] = { 0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x05, 0xFD, 0x1C };
 uint8_t appEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-uint8_t appKey[] = { 0xB9, 0x65, 0x4E, 0xAB, 0xAF, 0x60, 0x83, 0x16, 0x8E, 0x23, 0x50, 0xBC, 0x90, 0xB9, 0xE7, 0x11 };
-
-int temps = 180; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
+uint8_t appKey[] = { 0xF4, 0x70, 0xD2, 0x0F, 0x35, 0xCD, 0xC8, 0x0E, 0x39, 0x09, 0xCC, 0x34, 0xCC, 0x30, 0x32, 0x66 };
+int temps = 100; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
@@ -39,7 +38,10 @@ static void lowPowerSleep(uint32_t sleeptime)
 ///////////////////////////////////////////////////
 void setup() {
   Serial.begin(115200);
-  pinMode(GPIO2,INPUT_PULLUP);
+  pinMode(GPIO7,OUTPUT);
+  digitalWrite(GPIO7,LOW);
+  pinMode(GPIO2, OUTPUT_PULLUP); // GPIO2 = Broche 1 !!
+  digitalWrite(GPIO2, HIGH); // GPIO2 = Broche 1 !!
   
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
@@ -66,16 +68,22 @@ void setup() {
 void loop()
 {
   counter++; 
-  delay(10);
-  uint8_t voltage = getBatteryVoltage()/50; //Tension en %
-
-  Serial.printf("\nVoltage : %d\n", voltage);
-  lora_data[0] = voltage;
-  lora_data[1] = digitalRead(GPIO2);
+  digitalWrite(GPIO7,HIGH);
+  delay(1000); //temps nécessaire pour la mise en route des capteurs
   
+  uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
+  
+  int sensorValue2 = digitalRead(GPIO2); // GPIO2 = Broche 1 !!
+  Serial.printf("\nVal 2 : %d\n", sensorValue2);
+  Serial.printf("\nVoltage : %d\n", voltage);
+  
+  digitalWrite(GPIO7,LOW);
+
+  lora_data[0] = voltage;
+  lora_data[1] = sensorValue2;
   //Now send the data. The parameters are "data size, data pointer, port, request ack"
   Serial.printf("\nSending packet with counter=%d\n", counter);
-  Serial.printf("\nValue to send : %d\n", lora_data[1]);
+  Serial.printf("\nValue 1 to send : %d\n", lora_data[1]);
 
   //Here we send confirmed packed (ACK requested) only for the first two (remember there is a fair use policy)
   bool requestack=counter<2?true:false;

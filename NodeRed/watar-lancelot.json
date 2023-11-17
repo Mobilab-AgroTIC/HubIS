@@ -1,0 +1,817 @@
+[
+    {
+        "id": "e06bc55d8dd361de",
+        "type": "tab",
+        "label": "Massuguiere",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a2bee2b14749e6c2",
+        "type": "influxdb out",
+        "z": "e06bc55d8dd361de",
+        "influxdb": "ef1b568734c2ffb5",
+        "name": "Influx",
+        "measurement": "devices",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "massuguiere",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fd9af1b45c2382bc",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "getData",
+        "func": "var message = {\n    \"name\":msg.payload.end_device_ids.device_id,\n    \"rssi\":msg.payload.uplink_message.rx_metadata[0].rssi,\n    \"snr\":msg.payload.uplink_message.rx_metadata[0].snr,\n    \"power\" : msg.payload.uplink_message.decoded_payload.bytes[0],\n    \"value\": 1-msg.payload.uplink_message.decoded_payload.bytes[1]\n};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "a2bee2b14749e6c2",
+                "add158933931a174"
+            ]
+        ]
+    },
+    {
+        "id": "df11dc93d8e81237",
+        "type": "json",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "fd9af1b45c2382bc"
+            ]
+        ]
+    },
+    {
+        "id": "733336c3c05a5d36",
+        "type": "mqtt in",
+        "z": "e06bc55d8dd361de",
+        "name": "Gaeclamassuguiere13",
+        "topic": "v3/gaeclamassuguiere13@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4cbc635de4d01ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "df11dc93d8e81237"
+            ]
+        ]
+    },
+    {
+        "id": "22ffa3794a3696b1",
+        "type": "comment",
+        "z": "e06bc55d8dd361de",
+        "name": "API Key MASSUGUIERE",
+        "info": "NNSXS.LSXUJI6PCE4BBE7NAX7SXGUKVN2MXBQWTRBHIUI.C2XEZ74KRNLBCCWPUR2FU3DIK6TZLZ7YLLTIL3ZXTTML33SKE3GQ",
+        "x": 130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8aab06537747fe64",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "hello",
+        "command": "/hello",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 320,
+        "wires": [
+            [
+                "96a76f8d4b2496f9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "96a76f8d4b2496f9",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "var message={\n\"chatId\" : msg.payload.chatId,\n\"content\" : \"Bonjour ! Vous pouvez me demander l'état des capteurs installés en m'envoyant /etat\",\n\"type\" : \"message\"\n}\nif (message.chatId== flow.get(\"chatId\")){\n    msg.payload = message\n    return msg\n}\nelse {}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "67b6adb594a5bd1b"
+            ]
+        ]
+    },
+    {
+        "id": "20bcaebedd7ce7cf",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "etat",
+        "command": "/etat",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 360,
+        "wires": [
+            [
+                "120bc384f17f0ec7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "120bc384f17f0ec7",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n    \n    //msg.payload={}\n    msg.payload.chatId = msg.payload.chatId;\n\n    // Récupérer l'array \"devicesData\" depuis la variable de contexte\n    var devicesData = flow.get(\"watar\");\n    \n    if (Array.isArray(devicesData)) {\n      // Générer le message avec l'état des capteurs\n      var message = \"État des WatAr :\\n\";\n    \n      devicesData.forEach(function (device) {\n        message += device.name + \" : \" + device.state + \"\\n\";\n      });\n    \n      msg.payload.content = message;\n      return msg;\n    } \n    \n    else {\n      msg.payload.content = \"Aucun WatAr trouvé !\";\n    }\n    \n    msg.payload.type = \"message\";\n    return msg\n}\nelse {}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "67b6adb594a5bd1b"
+            ]
+        ]
+    },
+    {
+        "id": "cbc9b7488938b0de",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "01a09ab37ce09c9d"
+            ]
+        ]
+    },
+    {
+        "id": "34491b5c1a3038eb",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "ChatID",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "flow.set(\"chatId\",'-969309650');\nflow.set(\"appId\",'gaeclamassuguiere13')\n",
+        "finalize": "",
+        "libs": [],
+        "x": 80,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "add158933931a174",
+        "type": "switch",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "watar",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "lancelot",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "e8f4198673ec2bd7"
+            ],
+            [
+                "96b153e9f2bff2a5"
+            ],
+            [
+                "9295226178be4e03"
+            ]
+        ]
+    },
+    {
+        "id": "e8f4198673ec2bd7",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Watar",
+        "func": "var devicesData = flow.get(\"watar\");\nvar msg2 = msg.payload;\nvar oldValue ;\nvar alerte = \"\";\n\n// Vérifier si l'array existe déjà dans le contexte\nif (!devicesData) {\n  devicesData = []; // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n\n\n// Rechercher l'index de l'élément correspondant au \"capteur 2\" dans l'array\nvar capteurIndex = devicesData.findIndex(function (device) {\n  return device.name === msg2.name;\n});\n\n// Vérifier si l'élément \"capteur 2\" a été trouvé\nif (capteurIndex !== -1) {\n\n    oldValue = devicesData[capteurIndex].state;\n    // Le \"capteur\" existe dans l'array, mettez à jour son état\n    devicesData[capteurIndex].state = msg2.value;\n    \n} else {\n  // Le \"capteur\" n'existe pas dans l'array, donc nous allons le créer\n  var nouveauCapteur = {\n    \"name\": msg2.name,\n    \"state\": msg2.value}\n  ;\n  devicesData.push(nouveauCapteur);\n}\n\n// Fonction de comparaison pour trier par ordre alphabétique des noms\nfunction compareName(a, b) {\n  var nameA = a.name.toLowerCase();\n  var nameB = b.name.toLowerCase();\n  if (nameA < nameB) return -1;\n  if (nameA > nameB) return 1;\n  return 0;\n}\n\n// Trier l'array par ordre alphabétique des noms des capteurs en utilisant la fonction de comparaison\ndevicesData.sort(compareName);\n\n// Enregistrer à nouveau l'array trié dans la variable de contexte \"devicesData\"\nflow.set(\"watar\", devicesData);\n\n// Envoi alerte si l'état a changé\nmsg.telegram={};\n\nif (oldValue != msg.payload.value){\n    oldValue = msg.payload.value;\n    msg.telegram.payload={}\n    msg.telegram.payload.chatId =flow.get(\"chatId\");\n    msg.telegram.payload.content = \"le \" + msg2.name + \" passe en \" + msg2.value ;\n    msg.telegram.payload.type = \"message\";\n    return msg.telegram;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 80,
+        "wires": [
+            [
+                "8061abb8da8875c7"
+            ]
+        ]
+    },
+    {
+        "id": "8061abb8da8875c7",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96b153e9f2bff2a5",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "func": "var devicesData = flow.get(\"lancelot\");\nvar msg2 = msg.payload;\nvar oldValue ;\nvar alerte = \"\";\n\n// Vérifier si l'array existe déjà dans le contexte\nif (!devicesData) {\n  devicesData = []; // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n\n\n// Rechercher l'index de l'élément correspondant au \"capteur 2\" dans l'array\nvar capteurIndex = devicesData.findIndex(function (device) {\n  return device.name === msg2.name;\n});\n\n// Vérifier si l'élément \"capteur 2\" a été trouvé\nif (capteurIndex !== -1) {\n\n    // Le \"capteur\" existe dans l'array, mettez à jour son état\n    //devicesData[capteurIndex].state = msg2.value;\n    \n} else {\n  // Le \"capteur\" n'existe pas dans l'array, donc nous allons le créer\n  var nouveauCapteur = {\n    \"name\": msg2.name//,\n    //\"state\": msg2.value\n    }\n  ;\n  devicesData.push(nouveauCapteur);\n}\n\n// Fonction de comparaison pour trier par ordre alphabétique des noms\nfunction compareName(a, b) {\n  var nameA = a.name.toLowerCase();\n  var nameB = b.name.toLowerCase();\n  if (nameA < nameB) return -1;\n  if (nameA > nameB) return 1;\n  return 0;\n}\n\n// Trier l'array par ordre alphabétique des noms des capteurs en utilisant la fonction de comparaison\ndevicesData.sort(compareName);\n\n// Enregistrer à nouveau l'array trié dans la variable de contexte \"devicesData\"\nflow.set(\"lancelot\", devicesData);\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9295226178be4e03",
+        "type": "debug",
+        "z": "e06bc55d8dd361de",
+        "name": "Autre",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e016ce31b591b8eb",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "command": "/Lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "f6d94ee2d9a9c8ee"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "15efd0bd8fedcac7",
+        "type": "telegram event",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "bot": "47acec9daaaa46ab",
+        "event": "callback_query",
+        "autoanswer": true,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "c192185cbe21c6be"
+            ]
+        ]
+    },
+    {
+        "id": "01a09ab37ce09c9d",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "save msgId",
+        "func": "// We store the messageId to be able to edit this reply in the callback query. \ncontext.global.keyboard.messageId = msg.payload.sentMessageId;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "445d0fae3fccb3eb",
+        "type": "switch",
+        "z": "e06bc55d8dd361de",
+        "name": "check callback data",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "istype",
+                "v": "string",
+                "vt": "string"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "fb8c880e597bad8a"
+            ],
+            [
+                "98f2b3cebedaddbb"
+            ],
+            [
+                "4f47baaca6870882"
+            ]
+        ]
+    },
+    {
+        "id": "98f2b3cebedaddbb",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "annulation",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'message';\nmsg.payload.content = \"Annulation.\"\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "9414cf6577df12ce",
+                "8030b4c905da941e"
+            ]
+        ]
+    },
+    {
+        "id": "4f47baaca6870882",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "confirmation",
+        "func": "// This is the message id of the initial keyboard that is simply exchanged by a new one.\nvar messageId = context.global.keyboard.messageId;\ncontext.global.keyboard.Id = msg.payload.content;\n\n// This is a sample of how to send a second inline keyboard with modified buttons\nvar reply_markup = JSON.stringify({\n    \"inline_keyboard\": [[\n                {\n                    \"text\": msg.payload.content + \", sûr ?\",\n                    \"callback_data\": \"1\"        \n                }, \n                {\n                    \"text\": \"Fausse manip !\",\n                    \"callback_data\": \"0\"           \n                }]\n            ]\n  });\n\n\nvar options = {\n    chat_id : msg.payload.chatId,\n    reply_markup : reply_markup,\n    message_id : messageId\n};\n\nmsg.payload.type = 'editMessageReplyMarkup';\nmsg.payload.content = reply_markup;\nmsg.payload.options = options;\n\nreturn [ msg ];\n",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "9414cf6577df12ce"
+            ]
+        ]
+    },
+    {
+        "id": "fb8c880e597bad8a",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "envoi",
+        "func": "var messageId = context.global.keyboard.Id;\n\nmsg.payload.type = 'message';\nmsg.payload.content = \"C'est parti pour Lancelot \" + messageId +\"!\";\nmsg.payload.device = messageId;\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "9414cf6577df12ce",
+                "8030b4c905da941e",
+                "b7f77f7d58fefd3a"
+            ]
+        ]
+    },
+    {
+        "id": "8030b4c905da941e",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Remove message",
+        "func": "// Hide the keyboard and forget the messageId\nmsg.payload.type = 'deleteMessage';\nmsg.payload.content = context.global.keyboard.messageId\ncontext.global.keyboard.messageId = null;\n\n// You could also send a editMessageReplyMarkup with an empty reply_markup here\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "9414cf6577df12ce"
+            ]
+        ]
+    },
+    {
+        "id": "9414cf6577df12ce",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "send",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6d94ee2d9a9c8ee",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "msg",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n\ncontext.global.keyboard = { messageId : msg.payload.messageId };\n\n\nvar inputArray = flow.get(\"lancelot\");\n// Vérifier si l'array existe déjà dans le contexte\nif (!inputArray) {\n  // Si l'array n'existe pas, initialisez-le avec un array vide\n}\n// Initialiser un nouvel array pour stocker les boutons transformés du clavier\nvar keyboardButtons = [];\n\n// Utiliser forEach pour itérer sur chaque élément du tableau\ninputArray.forEach(function(item) {\n  // Extraire le nom du bouton (si \"name\" est défini, sinon utiliser une valeur par défaut)\n  var buttonText = item.name || \"no_name\";\n  // Extraire le callback_data du bouton (si \"name\" est défini, sinon utiliser une valeur par défaut)\n  var callbackData = item.name || \"no_name\";\n\n  var button = {\n    text: buttonText,\n    callback_data: callbackData\n  };\n\n  keyboardButtons.push(button);\n});\n\nvar transformedArray = keyboardButtons.map(function(item) {\n  return [item];\n});\n\n\nvar transformedObject = {\n  \"inline_keyboard\": transformedArray\n};\nvar opts = {\n  reply_to_message_id: msg.payload.messageId,\n  reply_markup: JSON.stringify(transformedObject)\n};\n\nmsg.payload.content = 'Bien reçu ! Quelle martelière dois-je fermer ?';\nmsg.payload.options = opts;\n\nreturn [ msg ];\n}\nelse {};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "cbc9b7488938b0de"
+            ]
+        ]
+    },
+    {
+        "id": "c192185cbe21c6be",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "filtre",
+        "func": "if (msg.payload.chatId== flow.get(\"chatId\")){\n    return msg;\n}\n\nelse ;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "445d0fae3fccb3eb"
+            ]
+        ]
+    },
+    {
+        "id": "de4492428ae02a5d",
+        "type": "mqtt out",
+        "z": "e06bc55d8dd361de",
+        "name": "Lancelot",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4cbc635de4d01ef6",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b7f77f7d58fefd3a",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "Prepare downlink",
+        "func": "return {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 15,\n      \"frm_payload\": \"AQ==\", //\"frm_payload\": Buffer.from(bytes).toString('base64'),\n      \"priority\": \"NORMAL\"\n    }]\n  },\n  \"topic\" : \"v3/\"+flow.get(\"appId\")+\"@ttn/devices/\"+msg.payload.device+\"/down/push\" //\"<ApplicationID>>/devices/\" + dev_id + \"/down\";\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [
+                "de4492428ae02a5d"
+            ]
+        ]
+    },
+    {
+        "id": "67b6adb594a5bd1b",
+        "type": "telegram sender",
+        "z": "e06bc55d8dd361de",
+        "name": "Send msg",
+        "bot": "47acec9daaaa46ab",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ee09cfb328ae6df",
+        "type": "telegram command",
+        "z": "e06bc55d8dd361de",
+        "name": "lancelot",
+        "command": "/lancelot",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "47acec9daaaa46ab",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 70,
+        "y": 240,
+        "wires": [
+            [
+                "f6d94ee2d9a9c8ee"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "257eec22672387b1",
+        "type": "inject",
+        "z": "e06bc55d8dd361de",
+        "name": " ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "ae41e87ecd977f44"
+            ]
+        ]
+    },
+    {
+        "id": "ae41e87ecd977f44",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "1",
+        "func": "var message = {\n    \"name\":\"lancelot-15\",\n    \"rssi\":-140,\n    \"snr\":10,\n    \"power\" : 80,\n    \"value\": 1\n};\nmsg.payload=message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "add158933931a174"
+            ]
+        ]
+    },
+    {
+        "id": "b0f5a8d4f2331f83",
+        "type": "inject",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "691f480e7812bdfd"
+            ]
+        ]
+    },
+    {
+        "id": "691f480e7812bdfd",
+        "type": "function",
+        "z": "e06bc55d8dd361de",
+        "name": "ChatID",
+        "func": "var test =flow.get(\"lancelot\");\n\nmsg.payload = test[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "22fb366ff4f0a566"
+            ]
+        ]
+    },
+    {
+        "id": "22fb366ff4f0a566",
+        "type": "debug",
+        "z": "e06bc55d8dd361de",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ef1b568734c2ffb5",
+        "type": "influxdb",
+        "hostname": "simonmoinard.ddns.net",
+        "port": "82",
+        "protocol": "http",
+        "database": "hubis",
+        "name": "",
+        "usetls": false,
+        "tls": "283a670c.e20a28",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "4cbc635de4d01ef6",
+        "type": "mqtt-broker",
+        "name": "massuguiere",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "47acec9daaaa46ab",
+        "type": "telegram bot",
+        "botname": "mobilab",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "283a670c.e20a28",
+        "type": "tls-config",
+        "name": "Default",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    }
+]
