@@ -38,7 +38,8 @@ static void lowPowerSleep(uint32_t sleeptime)
 ///////////////////////////////////////////////////
 void setup() {
   Serial.begin(115200);
-  
+  pinMode(GPIO7,OUTPUT);
+  digitalWrite(GPIO7,LOW);
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
   //Enable ADR
@@ -66,9 +67,11 @@ void loop()
   counter++; 
   delay(10);
   uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
-  
+  digitalWrite(GPIO7,HIGH);
+  delay(1500);
   int sensorValue2 = analogRead(ADC2)/16;
   int sensorValue3 = analogRead(ADC3)/16;
+  digitalWrite(GPIO7,LOW);
   Serial.printf("\nVal 2 : %d\n", sensorValue2);
   Serial.printf("\nVal 3 : %d\n", sensorValue3);
 
