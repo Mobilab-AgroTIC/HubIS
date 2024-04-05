@@ -2,14 +2,14 @@
 #include "Arduino.h"
 
 //Set these OTAA parameters to match your app/node in TTN
-uint8_t appEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 uint8_t devEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+uint8_t appEui[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 uint8_t appKey[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 int temps = 180; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
-uint8_t lora_data[2];
+uint8_t lora_data[3];
 uint8_t downlink ;
 
 ///////////////////////////////////////////////////
@@ -69,13 +69,15 @@ void loop()
   uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
   digitalWrite(GPIO7,HIGH);
   delay(1500);
-  int sensorValue2 = analogRead(ADC2)/16;
+  int sensorValue2 = analogRead(ADC2);
   digitalWrite(GPIO7,LOW);
   Serial.printf("\nVal 2 : %d\n", sensorValue2);
 
   Serial.printf("\nVoltage : %d\n", voltage);
   lora_data[0] = voltage;
-  lora_data[1] = sensorValue2;
+  lora_data[1] = highByte(sensorValue2);
+  lora_data[2] = lowByte(sensorValue2);
+
   //Now send the data. The parameters are "data size, data pointer, port, request ack"
   Serial.printf("\nSending packet with counter=%d\n", counter);
   Serial.printf("\nValue 1 to send : %d\n", lora_data[1]);
