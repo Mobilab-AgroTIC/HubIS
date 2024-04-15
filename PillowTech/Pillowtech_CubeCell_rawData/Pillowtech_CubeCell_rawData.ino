@@ -22,9 +22,9 @@ void loop()
   int sensorValue3 = analogRead(ADC3);
   digitalWrite(GPIO7,LOW);
   
-  Serial.printf("\voltage : %d\n", sensorValue2);
-  Serial.printf("\nVal 2 : %d\n", highByte(sensorValue2));
-  Serial.printf("\nVal 3 : %d\n", lowByte(sensorValue2));
+  Serial.printf("\voltage : %d\n", voltage);
+  Serial.printf("\nVal 2 : %d\n", sensorValue2);
+  Serial.printf("\nVal 3 : %d\n", sensorValue2);
 
   delay(100);
 }
