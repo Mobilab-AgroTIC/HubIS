@@ -23,8 +23,8 @@ void loop()
   digitalWrite(GPIO7,LOW);
   
   Serial.printf("\voltage : %d\n", voltage);
-  Serial.printf("\nVal 2 : %d\n", sensorValue2);
-  Serial.printf("\nVal 3 : %d\n", sensorValue2);
+  Serial.printf("\nValeur broche 2 : %d\n", sensorValue2);
+  Serial.printf("\nValeur broche 3 : %d\n", sensorValue3);
 
   delay(100);
 }
