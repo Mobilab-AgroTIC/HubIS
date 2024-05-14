@@ -10,7 +10,7 @@ int temps = 180; // Indiquez dans cette ligne la fréquence d'envoi de données,
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
-uint8_t lora_data[3];
+uint8_t lora_data[5];
 uint8_t downlink ;
 
 
