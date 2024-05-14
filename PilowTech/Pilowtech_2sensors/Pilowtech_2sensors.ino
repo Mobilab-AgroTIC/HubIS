@@ -108,17 +108,19 @@ void loop()
   uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
   digitalWrite(GPIO7,HIGH);
   delay(1500);
-  int sensorValue2 = analogRead(ADC2)/16;
-  int sensorValue3 = analogRead(ADC3)/16;
+  int sensorValue2 = analogRead(ADC2);
+  int sensorValue3 = analogRead(ADC3);
   digitalWrite(GPIO7,LOW);
   Serial.printf("\nVal 2 : %d\n", sensorValue2);
   Serial.printf("\nVal 3 : %d\n", sensorValue3);
 
   Serial.printf("\nVoltage : %d\n", voltage);
   lora_data[0] = voltage;
-  lora_data[1] = sensorValue2;
-  lora_data[2] = sensorValue3; 
-  //Now send the data. The parameters are "data size, data pointer, port, request ack"
+  lora_data[1] = highByte(sensorValue2);
+  lora_data[2] = lowByte(sensorValue2);
+  lora_data[3] = highByte(sensorValue3);
+  lora_data[4] = lowByte(sensorValue3);  //Now send the data. The parameters are "data size, data pointer, port, request ack"
+  
   Serial.printf("\nSending packet with counter=%d\n", counter);
   Serial.printf("\nValue 1 to send : %d\n", lora_data[1]);
 
