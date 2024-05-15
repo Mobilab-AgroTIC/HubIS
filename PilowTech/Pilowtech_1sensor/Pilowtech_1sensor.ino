@@ -7,7 +7,7 @@ const char* DEV_EUI = "0000000000000000";
 const char* APP_Key = "00000000000000000000000000000000";     
 
 
-int temps = 180; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
+int temps = 300; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
