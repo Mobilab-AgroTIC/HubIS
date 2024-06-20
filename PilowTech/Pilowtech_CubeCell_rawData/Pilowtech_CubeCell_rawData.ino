@@ -1,4 +1,3 @@
-#include "LoRaWanMinimal_APP.h"
 #include "Arduino.h"
 
 
