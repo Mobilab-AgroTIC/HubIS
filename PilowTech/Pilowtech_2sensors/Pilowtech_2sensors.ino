@@ -1,6 +1,7 @@
 #include "LoRaWanMinimal_APP.h"
 #include "Arduino.h"
 
+#define TRANSISTOR_PIN GPIO7
 //CLEFS A MODIFIER SELON TTN
 const char* APP_EUI = "0000000000000000";                     
 const char* DEV_EUI = "0000000000000000";                     
@@ -77,8 +78,8 @@ void setup() {
   remplirTableau(appKey, AppKey_clefConvertie, AppKey_len);
 
 
-  pinMode(GPIO7,OUTPUT);
-  digitalWrite(GPIO7,LOW);
+  pinMode(TRANSISTOR_PIN,OUTPUT);
+  digitalWrite(TRANSISTOR_PIN,LOW);
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
   //Enable ADR
@@ -106,11 +107,11 @@ void loop()
   counter++; 
   delay(10);
   uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
-  digitalWrite(GPIO7,HIGH);
+  digitalWrite(TRANSISTOR_PIN,HIGH);
   delay(1500);
   int sensorValue2 = analogRead(ADC2);
   int sensorValue3 = analogRead(ADC3);
-  digitalWrite(GPIO7,LOW);
+  digitalWrite(TRANSISTOR_PIN,LOW);
   Serial.printf("\nVal 2 : %d\n", sensorValue2);
   Serial.printf("\nVal 3 : %d\n", sensorValue3);
 
