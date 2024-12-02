@@ -1,17 +1,22 @@
 #include "LoRaWanMinimal_APP.h"
 #include "Arduino.h"
+//14mA en actif - 10mA en veille
+// Pb Battery : 0.7A
+//LowPower -  32uA
+// MOSFET IRF520 de Velleman
+
+#define PIN_TRANSISTOR GPIO2
 
 //CLEFS A MODIFIER SELON TTN
-const char* APP_EUI = "0000000000000000";                     
-const char* DEV_EUI = "70B3D57ED0068BEE";                     
-const char* APP_Key = "85948CABD5D6883B436476ECF8447F8A";  
+const char* APP_EUI = "2025435102035120";                     
+const char* DEV_EUI = "1651321365432120";                     
+const char* APP_Key = "13513216543213543213543543212135";  
 
-
-int temps = 300; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
+int temps = 120; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
-uint8_t lora_data[3];
+uint8_t lora_data[1];
 uint8_t downlink ;
 
 
@@ -51,7 +56,6 @@ static void lowPowerSleep(uint32_t sleeptime)
   TimerStop( &sleepTimer );
 }
 
-
 void convertirClef(const char* clef, byte* clefConvertie, int longueur) {
     for (int i = 0; i < longueur; i += 2) {
         char byteStr[3] = {clef[i], clef[i + 1], '\0'};
@@ -79,8 +83,8 @@ void setup() {
   remplirTableau(appKey, AppKey_clefConvertie, AppKey_len);
 
   
-  pinMode(GPIO7,OUTPUT);
-  digitalWrite(GPIO7,LOW);
+  pinMode(PIN_TRANSISTOR,OUTPUT);
+  digitalWrite(PIN_TRANSISTOR,LOW);
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
   
   //Enable ADR
@@ -108,16 +112,9 @@ void loop()
   counter++; 
   delay(10);
   uint8_t voltage = getBatteryVoltage()/50; //Voltage in %
-  digitalWrite(GPIO7,HIGH);
-  delay(1500);
-  int sensorValue2 = analogRead(ADC2);
-  digitalWrite(GPIO7,LOW);
-  Serial.printf("\nVal 2 : %d\n", sensorValue2);
-
+  
   Serial.printf("\nVoltage : %d\n", voltage);
   lora_data[0] = voltage;
-  lora_data[1] = highByte(sensorValue2);
-  lora_data[2] = lowByte(sensorValue2);
 
   //Now send the data. The parameters are "data size, data pointer, port, request ack"
   Serial.printf("\nSending packet with counter=%d\n", counter);
@@ -133,4 +130,25 @@ void loop()
 
   lowPowerSleep(temps*1000);  
   delay(10);
+}
+
+//Example of handling downlink data
+void downLinkDataHandle(McpsIndication_t *mcpsIndication)
+{
+  Serial.printf("Received downlink: %s, RXSIZE %d, PORT %d, DATA: ",mcpsIndication->RxSlot?"RXWIN2":"RXWIN1",mcpsIndication->BufferSize,mcpsIndication->Port);
+  for(uint8_t i=0;i<mcpsIndication->BufferSize;i++) {
+    Serial.printf("%02X",mcpsIndication->Buffer[i]);
+  }
+  Serial.println();
+  
+  downlink = mcpsIndication->Buffer[0];
+  Serial.println();
+  if (downlink == 1){
+    Serial.println("active downlink received");
+    digitalWrite(PIN_TRANSISTOR,HIGH);
+    delay(5000);
+    digitalWrite(PIN_TRANSISTOR,LOW);
+
+  }
+  else {Serial.println("passive donwlink received");}  
 }

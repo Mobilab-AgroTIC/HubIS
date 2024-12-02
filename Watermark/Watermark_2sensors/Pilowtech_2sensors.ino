@@ -3,15 +3,14 @@
 
 //CLEFS A MODIFIER SELON TTN
 const char* APP_EUI = "0000000000000000";                     
-const char* DEV_EUI = "70B3D57ED0068BEE";                     
-const char* APP_Key = "85948CABD5D6883B436476ECF8447F8A";  
-
+const char* DEV_EUI = "0000000000000000";                     
+const char* APP_Key = "00000000000000000000000000000000";     
 
 int temps = 300; // Indiquez dans cette ligne la fréquence d'envoi de données, en secondes. (Ne pas aller plus bas que 3minutes, soit 180sec)
 
 uint16_t userChannelsMask[6]={ 0x00FF,0x0000,0x0000,0x0000,0x0000,0x0000 };
 static uint8_t counter=0;
-uint8_t lora_data[3];
+uint8_t lora_data[5];
 uint8_t downlink ;
 
 
@@ -51,7 +50,6 @@ static void lowPowerSleep(uint32_t sleeptime)
   TimerStop( &sleepTimer );
 }
 
-
 void convertirClef(const char* clef, byte* clefConvertie, int longueur) {
     for (int i = 0; i < longueur; i += 2) {
         char byteStr[3] = {clef[i], clef[i + 1], '\0'};
@@ -69,7 +67,7 @@ void remplirTableau(uint8_t* tableau, byte* clefConvertie, int longueur) {
 void setup() {
   Serial.begin(115200);
 
-  
+    
   convertirClef(APP_EUI, AppEUI_clefConvertie, AppEUI_len);
   convertirClef(DEV_EUI, DevEUI_clefConvertie, DevEUI_len);
   convertirClef(APP_Key, AppKey_clefConvertie, AppKey_len);
@@ -78,7 +76,7 @@ void setup() {
   remplirTableau(devEui, DevEUI_clefConvertie, DevEUI_len);
   remplirTableau(appKey, AppKey_clefConvertie, AppKey_len);
 
-  
+
   pinMode(GPIO7,OUTPUT);
   digitalWrite(GPIO7,LOW);
   LoRaWAN.begin(LORAWAN_CLASS, ACTIVE_REGION);
@@ -111,15 +109,18 @@ void loop()
   digitalWrite(GPIO7,HIGH);
   delay(1500);
   int sensorValue2 = analogRead(ADC2);
+  int sensorValue3 = analogRead(ADC3);
   digitalWrite(GPIO7,LOW);
   Serial.printf("\nVal 2 : %d\n", sensorValue2);
+  Serial.printf("\nVal 3 : %d\n", sensorValue3);
 
   Serial.printf("\nVoltage : %d\n", voltage);
   lora_data[0] = voltage;
   lora_data[1] = highByte(sensorValue2);
   lora_data[2] = lowByte(sensorValue2);
-
-  //Now send the data. The parameters are "data size, data pointer, port, request ack"
+  lora_data[3] = highByte(sensorValue3);
+  lora_data[4] = lowByte(sensorValue3);  //Now send the data. The parameters are "data size, data pointer, port, request ack"
+  
   Serial.printf("\nSending packet with counter=%d\n", counter);
   Serial.printf("\nValue 1 to send : %d\n", lora_data[1]);
 
