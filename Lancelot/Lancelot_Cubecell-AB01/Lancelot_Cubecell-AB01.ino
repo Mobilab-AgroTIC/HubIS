@@ -5,7 +5,7 @@
 //LowPower -  32uA
 // MOSFET IRF520 de Velleman
 
-#define PIN_TRANSISTOR GPIO2
+#define PIN_TRANSISTOR GPIO4
 
 //CLEFS A MODIFIER SELON TTN
 const char* APP_EUI = "2025435102035120";                     
